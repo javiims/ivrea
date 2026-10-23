@@ -17,6 +17,7 @@ second line<br/>
 <a class="prev page-numbers" href="/ESP/preguntas/comment-page-7/#comments">Anterior</a>
 <a href="/ESP/preguntas/comment-page-7/?replytocom=10#respond">Reply</a>'''
 
+API_URL = 'https://www.editorialivrea.com/ESP/preguntas/wp-json/wp/v2/comments'
 T0, T1, T2 = '2026-01-01T00:00:00+00:00', '2026-01-02T00:00:00+00:00', '2026-01-03T00:00:00+00:00'
 
 
@@ -75,25 +76,66 @@ class Tests(unittest.TestCase):
             self.assertEqual(update(state, records(), T0), (0, True))
         self.assertEqual([e['id'] for e in state['events']], ['11'])
 
-    def test_migration_from_v3_state(self):
+    def test_old_state_is_rebaselined(self):
         recs = records()
-        state = {'initialised': True, 'seen': {cid: r['hash'] for cid, r in recs.items()},
+        state = {'initialised': True, 'version': 4, 'seen': {'1': 'x'},
                  'events': [{'guid': 'x', 'id': '1', 'kind': 'new', 'url': 'u', 'detected': T0}]}
-        self.assertEqual(update(state, recs, T1), (0, False))
-        self.assertEqual(state['version'], 4)
-        self.assertEqual(state['events'], [])  # old link-only events are dropped
+        self.assertEqual(update(state, recs, T1), (0, True))
+        self.assertEqual(state['version'], scraper.STATE_VERSION)
+        self.assertEqual(state['events'], [])
+        self.assertEqual(set(state['seen']), {'10', '11'})
 
-    def test_mhtml_utf8(self):
-        data = ('MIME-Version: 1.0\nContent-Type: multipart/related; boundary=x\n\n--x\n'
-                'Content-Type: text/html\nContent-Transfer-Encoding: 8bit\n\n'
-                + HTML.replace('Test question', 'Pregunta reimpresión') + '\n--x--\n')
+    def test_feed_has_no_item_link(self):
+        state = {}
+        update(state, records(), T0)
+        update(state, records(HTML.replace('comment-10', 'comment-12')), T1)
         with tempfile.TemporaryDirectory() as d:
-            p = Path(d) / 'test.mhtml'
-            p.write_bytes(data.encode('utf-8'))
-            recs = records(load_snapshot(p))
-            self.assertEqual(len(recs), 2)
-            self.assertIn('reimpresión', recs['10']['segments'][0][1])
+            write_feed(state, Path(d))
+            item = ET.parse(Path(d) / 'feed.xml').find('./channel/item')
+            self.assertIsNone(item.find('link'))
+            self.assertNotIn('href', item.find('description').text)
 
+    @staticmethod
+    def _api(*ids):
+        return scraper.json.dumps([{
+            'id': i, 'status': 'approved', 'author_name': f'Lector {i}',
+            'date_gmt': '2026-10-23T10:00:00',
+            'link': f'https://www.editorialivrea.com/ESP/preguntas/comment-page-22/#comment-{i}',
+            'content': {'rendered': f'<p>Pregunta {i}<br />\n<strong><br />\n(((Respuesta {i} -DANIEL)))</strong></p>\n'}}
+            for i in ids])
+
+    def _crawl(self, payload):
+        calls = []
+        def fake(url, **kw):
+            calls.append(url)
+            return payload, API_URL
+        with mock.patch.object(scraper, 'fetch_http', side_effect=fake):
+            return scraper.crawl(), calls
+
+    def test_api_source(self):
+        recs, calls = self._crawl(self._api(600))
+        self.assertEqual(len(calls), 1)
+        self.assertTrue(calls[0].startswith('https://editorialivrea.com/ESP/preguntas/wp-json/wp/v2/comments?'))
+        self.assertIn('per_page=100', calls[0])
+        self.assertEqual(recs['600']['segments'], [('q', 'Pregunta 600'), ('a', 'Respuesta 600 -DANIEL')])
+        self.assertEqual(recs['600']['author'], 'Lector 600')
+        self.assertEqual(recs['600']['published'], '2026-10-23T10:00:00+00:00')
+
+    def test_older_comments_leaving_the_api_are_not_a_problem(self):
+        state = {}
+        update(state, self._crawl(self._api(3, 2, 1))[0], T0)
+        # 1 dropped out of the API, 4 is new
+        self.assertEqual(update(state, self._crawl(self._api(4, 3, 2))[0], T1), (1, False))
+        self.assertEqual(state['events'][-1]['id'], '4')
+        self.assertIn('1', state['seen'])
+        # 1 dropped earlier and now 2 as well: still nothing new
+        self.assertEqual(update(state, self._crawl(self._api(4, 3))[0], T2), (0, False))
+
+    def test_api_errors_do_not_touch_state(self):
+        for payload in ('<html>blocked</html>', '[]', '{"code": "rest_disabled"}'):
+            with self.subTest(payload=payload):
+                with self.assertRaises(RuntimeError):
+                    self._crawl(payload)
 
 if __name__ == '__main__':
     unittest.main()
