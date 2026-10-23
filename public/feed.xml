@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>Ivrea España: preguntas y respuestas</title>
+    <link>https://www.editorialivrea.com/ESP/preguntas/</link>
+    <description>Avisos de preguntas, respuestas y cambios detectados. Consulta el contenido en la web original.</description>
+    <language>es</language>
+    <ttl>60</ttl>
+  </channel>
+</rss>
