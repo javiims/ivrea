@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
-      # No `playwright install --with-deps`: that apt-get step is what hung the old runs.
+      # Only BeautifulSoup is needed: no browser and no apt-get step.
       - name: Install Python packages
         run: pip install -r requirements.txt
         timeout-minutes: 3
@@ -37,7 +37,8 @@ jobs:
         run: python scraper.py
         timeout-minutes: 4
         env:
-          SCAN_PAGES: '2'
+          API_URL: 'https://editorialivrea.com/ESP/preguntas/wp-json/wp/v2/comments'
+          API_COMMENTS: '100'
           FEED_LIMIT: '200'
           BASELINE_ITEMS: '10'
       - name: Save persistent state
