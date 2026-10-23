@@ -1,0 +1,708 @@
+{
+  "seen": {
+    "416": {
+      "hash": "30359dd5dd7087e2ad1b9c5064ae636368f903c76e87ee181175030dff2482fd",
+      "question_hash": "a982c0c443d20fb7b8705728b62ec023068a13adea49aaa3e0ff08c606d6927a",
+      "answer_hash": "ce82f281e3d80bb8aabdc2211439474f424952df64bfcd4bb6e14c4eb028f411"
+    },
+    "417": {
+      "hash": "4eb4228cdbe642994e59fdc37fd076d9132ad35096256148836a7d50c59d4713",
+      "question_hash": "ed400b4afbebd49740f8e56817a8cd96148098177b7b4d1fcfd521c60ad458e5",
+      "answer_hash": "c39479b68fb4a70940d1f30e880b0f8aa943493ebe6ec05228db0c10a9eb5081"
+    },
+    "418": {
+      "hash": "5151d3ed04c182c3376e4123260b6adf2cd294814942a57773331d77bf069b13",
+      "question_hash": "45c338abf19abff90bcb4e7e7da4eb83475c29c1e6d36ff69969e556133de8e4",
+      "answer_hash": "5fa17fc876f08787875cf20ac10fc6172d0a100e114286eba5c56d0c8a540f88"
+    },
+    "419": {
+      "hash": "b7a3811dc0e62eaced19874700eb68b00f2ad67832711492c6fb8ad1dc0b6b23",
+      "question_hash": "13fa21b88dad7498f930ead3be3d03294474a62d65f1ea7f83f7e5716dc344e5",
+      "answer_hash": "9748a6fe7ff22d1e113ceeb581e1cd77bf9c08f60483b0fa4693d9a9b5d9e364"
+    },
+    "420": {
+      "hash": "6764b37b0510bf2e3979bed63031364f302f669acfe769f02182ca9812c16c02",
+      "question_hash": "c04b8e8cb23def790fbff8a060bc35597d824cd4735a2dc319e02ae012ad938b",
+      "answer_hash": "4ed7bcae71ac4be5d5b244310d5ac717380d01cb347242e34f4efc1b9c63c91b"
+    },
+    "421": {
+      "hash": "cce601b9992d319fbd57abed95e296036010219c0ccba8bb269b3afd0cd443a4",
+      "question_hash": "74d41ba1285110d25519e8cf365bdd8c5cb19af6bceea864ed1c43af987b9473",
+      "answer_hash": "41570e79559d7b4f7118c96e6b6546ccd83a71909fbb868a85798aaa4642aee4"
+    },
+    "422": {
+      "hash": "5fc341aee3be4fedb4d9b4ccefc600eca43032ded9052bf3b24e93034ea93b28",
+      "question_hash": "bb125bbc1ed71f9de22024a4d477c784675ee586b199b0e512e5a6d941fdfa42",
+      "answer_hash": "849d0e33148ec9a00774a86538720d9b22699be96c4e576dc3f80897f6791325"
+    },
+    "423": {
+      "hash": "23bb9a8dfbe7dcb89f2870d38027d2a4d4a43981fe58afc9e46608f46268d787",
+      "question_hash": "bdd33c3ed81397d49067b93e93fbce6a538e9694a8d4f07664a4e5c877f189f4",
+      "answer_hash": "66184243a4c3b8bb64a3bca10137f8714d7a9fc8db9d54f81348eef2e56029f6"
+    },
+    "424": {
+      "hash": "14f10be7a80f9f7a8e524e22ea43ec398763e2341eeac45557b7f99c9db62d9b",
+      "question_hash": "e8d6ce5aeec0208532a30c11222c4921362e634aa114f8fec081f9cfbf6e66c7",
+      "answer_hash": "96f24a401ba5b8e78e69cc709a2a3011a0c50b0f6fbe05f8ab01c2fb78a02470"
+    },
+    "425": {
+      "hash": "95b3912eab74ee2276e7ba691a82722b1afcf62798c926bb282e0042750f8e38",
+      "question_hash": "cbf4b02886eeaa9a199be340054a8e4f09795950de1818b5809adedd387edc99",
+      "answer_hash": "f97d7c1688bd0389acbd8d44d89cba2ac1dad77f305d3e4a4ed5ce0cc29c8e2c"
+    },
+    "426": {
+      "hash": "190478342174cc9a1cf5e1b8fd471571ff5bc1014ac2070b3627ae08eaee61ad",
+      "question_hash": "b707b987448e2bcd7192cf8608b17899de5cf5a538fc308a597956469911d15c",
+      "answer_hash": "593c345fc35e0cc79b68d3c639990557f15cc56362c6d5be959e4d5aa240818e"
+    },
+    "427": {
+      "hash": "b93a8852f639e6f958612cb8c480fc316cd604f520cc2d7ce1fe159d8d519249",
+      "question_hash": "0c6a4e0287fd1b91eb54673cd8414773f783805385ff4c861a699205dc93ecba",
+      "answer_hash": "f7175ba7a002fe93ccea130dbfbf5ea7d6b031e208ad9502a51f0125dc05a2b9"
+    },
+    "428": {
+      "hash": "2ba6e281b569f8eed8aedf02497e84562dadfd4fa001902ab600a0e79af34a82",
+      "question_hash": "023b34a4331c113b213715d843c6776f57f70162254f6dc00c436a23a6984ba4",
+      "answer_hash": "bf5e9a162d7d979279ca5442f6592be2d0476a460841c2163b1c8b07b212d588"
+    },
+    "429": {
+      "hash": "dffeaf987ede92c4f630e852400020fa9b403d8c3fca92ee96e521a8733bb66e",
+      "question_hash": "cd2d8e03f47b556cf25232100a7a519300424a88d48b9763a90640f48d8df80a",
+      "answer_hash": "51d47ac8e19822a228641ba0c74fbbcbabd9199f03012b0af20c1588c3a57bac"
+    },
+    "430": {
+      "hash": "ad316ddfa2051d33cc330c47176d6d687bf814ed38b1d7048f49bc77f3322eb2",
+      "question_hash": "67c1efac5047777f90799a01f5b118a1efe60b3878418acebf8c71cb8e1401a7",
+      "answer_hash": "d316258f7e340421a121c20ce814ea628e7b243b3d75284cd2f5eda23e542838"
+    },
+    "432": {
+      "hash": "fc7dee58411a2a0bafa21a3c0a5cb460bf1d0cf59a5737e39f3a2e0823b62dd6",
+      "question_hash": "fa137a5b2917c8a2d44c20e19be80d7c78397ad994d402a6d1c107a9061a13ec",
+      "answer_hash": "fedaea8a09154a04c7aad82502728650339561a48ec16b027197734537f9cb4a"
+    },
+    "433": {
+      "hash": "9cbf23a76dbc1342a190a20332d41915aafea92c2e165b90ef405fd5829bb1bf",
+      "question_hash": "7e4e7f29e5e721e4315378d95067743263eddbc5f1f7a05d18dbf31808c168f6",
+      "answer_hash": "9f9bf5c7c82ce4a7523015fb61638f37ad50a675e139874276ff5dd0f898d271"
+    },
+    "434": {
+      "hash": "204ab84ca77e611f26b04d402ab9a4c537bc4f910d97e2881d05f94139330a27",
+      "question_hash": "ce83c24e513a99da397fb2acf7516597e093861003d6e541765650fb9b99a5d4",
+      "answer_hash": "252960b82f46b45b4fb4aa97856ead5fa9c59f12bb2f6a07eebe241e29929beb"
+    },
+    "435": {
+      "hash": "d2364352526e25b478ecac81bc14f882fa90fe3667e034fd52b8550eca271399",
+      "question_hash": "a279bc5f7c925df1a6b3629564b34fca541ddb5ad29760e677c0f9ae27906687",
+      "answer_hash": "c74fe45bcb0561436debf6088b6fbace1c2ef7f8479d7c92ac4a03a8575e1208"
+    },
+    "436": {
+      "hash": "d2a25baa1fb0e7311f0e6ed39908870bd6d013462ee43a3509795205702127d3",
+      "question_hash": "cf99ccdca1c6a55928811cfb346acc414aaaa7e5dff564dc666521f90317f110",
+      "answer_hash": "68b5c0c473f367b1f029afbf29c949b5fa364326d1cc13aec75a0dc02fb186ba"
+    },
+    "437": {
+      "hash": "f6415608ce78ab3c93e36572c4eb2de64469e646b7e0638dca9ba3c1c014ce92",
+      "question_hash": "0781c1c08b55c33526554a7b9e6372dc016efb8d2d443d80a26d1cbc9793cd33",
+      "answer_hash": "b694dd40bd766127818b9936112675e130f84f7d340a2c932fd25031f470be4f"
+    },
+    "438": {
+      "hash": "b7e64c7761df5e1654685c9b360250fbe3e3efc73b4f823bcf9564f4091e850c",
+      "question_hash": "3b41ab783deabb696f40337c790586853132fa297cd087f244df03fc3ca23b0d",
+      "answer_hash": "ac698846e454619bc0b852574092fc8b417ed13f5b3a3ae7734840af08fb90f7"
+    },
+    "439": {
+      "hash": "1d2a66a058bdc1c765378d92a2f244492ba6a16b747bac69179be9540c180b0a",
+      "question_hash": "b690d2f29a10d8bc8e8184d09085425fb981f14af42ec97ab239eaee3181e457",
+      "answer_hash": "23823045568b1f4b0d1343d8e6fe0ac9fd4babbaabfe34c17973b575d07335ef"
+    },
+    "440": {
+      "hash": "293aa39606733b54ccfcd4e70de29611568a7990b0190089e3320a035aa1e99f",
+      "question_hash": "1cd8b445ea99bf14cbe2c99a0891a8deef7a267c60e239bc8fcc08e5ec7446d9",
+      "answer_hash": "0154c27dff084ca9a8353ddf84b02c266b19d8fcfd83e7ca04a917387f38c0df"
+    },
+    "441": {
+      "hash": "05a4ef36e81eff7d0b8d0379b96bd7f3e3c8fb6baa2fb9687c97c2debc18715b",
+      "question_hash": "4e47d9e3d0994dbc3cb04d1355f5fb00f668879454fca3e0411e9e1e63424c08",
+      "answer_hash": "cdffe03522d040c485aae0216a888b61a6f93cd040f6b036ca881f47147a293a"
+    },
+    "442": {
+      "hash": "a10396710b9212a3f74db3922fe137c45a3657bf25ba66f400f1a148170fe8b3",
+      "question_hash": "33085cb45664765f1a0cc358204ef11f53db08ca4c574f09e17e6c5f90c985fe",
+      "answer_hash": "6cef4a5ca899fc19e94fd4ab82cfb9d63e7d8834646182e30a71d4847bd5b685"
+    },
+    "443": {
+      "hash": "edcf6f5377d2b577f2c7e3cb9971e2bba9006828542bf73f906e28f261efcee9",
+      "question_hash": "15762b1c7821f46884b752136eec12897cc706d2f91ffab4ff554cbfee87b145",
+      "answer_hash": "2d0b633d34381109778f840be9e3fecf5cb9062d250a82015e0032d317c4bccc"
+    },
+    "444": {
+      "hash": "152b0ac0c7bf4c2218c1b6dcdc0e23aa0de1eba713d643586d98045b850d2aa3",
+      "question_hash": "35d0496981176a1ba1954c7997cb80066fda581551b1296f96c63408b3bbf702",
+      "answer_hash": "378b9cc9539ed579348623a8eea5b08b6202f64f00c0cc1d00a1c5cbc911c207"
+    },
+    "445": {
+      "hash": "c0f8ac71110c743d085b3873da2fd68e4ac68ee91b0ff14e0c6bec9e55dd6d5c",
+      "question_hash": "783d1374bcc46264c5830b9fba7b14d54650a27c584f6a2d681a651fa1c45d2a",
+      "answer_hash": "4ef23ffe387f74406c7777b9c60bcd66fcc3bbffc152a79d62aa2bfc2946084f"
+    },
+    "448": {
+      "hash": "84295b1c068351becae86be602c30a268570da46a45bc9dbf59413103f6a2ffe",
+      "question_hash": "8cf3362f98c34b31c4c4d22525d3ed081691ae934559e0337f073001ccff645f",
+      "answer_hash": "24399972e6ebc8b14a63581ef59d5e6ababdc1e5d578241793b4d8e3e8e11040"
+    },
+    "449": {
+      "hash": "90d2622f16ca65775baaff3ea1ad2b2229084f32193e9033814eb80081633e13",
+      "question_hash": "5c380b9d29f41cbc6e8c1f883ddeecd6112e1ee667680c43eb91998212441dd1",
+      "answer_hash": "def47416d27f6f71ff071ea97945e1bf2d5c1f0b7ba44e2888ea789979eba763"
+    },
+    "450": {
+      "hash": "1c9e44fe431abf0357997b49f53381a5cf1e68d2c98dcf7deddb1686425ade4d",
+      "question_hash": "1e14cbcc75adb89de82bd0c3ad87943976e960dc11a765a4f0c983f48d4707b1",
+      "answer_hash": "02e592089d758c69387434752112b55d4834d4bb446ab09893ab303ba30b11e5"
+    },
+    "451": {
+      "hash": "c152458030d9044c94422c2cfd7bff946bf5e42a1f281bef3c4eb2890275feb1",
+      "question_hash": "590267d4b7f3dc6eb58fdcc6dd3070f5b012bda8ce4e24e96adb0f5c8410eb41",
+      "answer_hash": "7ba302204302447443fdc89076f0144a9fcf31488a6dd5428fb68c51939fa09b"
+    },
+    "452": {
+      "hash": "c2b59ddfb1264fc8f822be023cf6c12546bf8eb00d96ca1ac00a9f069246d478",
+      "question_hash": "a705d7d58c0d74ecb180f987c00329ce0225ad56f2a341253acbb971a8d6f6fe",
+      "answer_hash": "6c32f9195ddf5e1ee65637f996997047f2e5248a721063fa3fa80b072170baab"
+    },
+    "453": {
+      "hash": "e7490af1f866ce332e23013efd30d882148fb43683d81c0f0de201919da4a193",
+      "question_hash": "02b92f637ea347d6d7d53d437552281a346aba039912b4fe750f6071c8c0970c",
+      "answer_hash": "65d9e07c8f6cc55d77e7aa5d6f837315706ab43e47fb706395a3405a2d8721ce"
+    },
+    "455": {
+      "hash": "9c7f183c5a7891f62feb95c3c4759e7cad38cf17ce5312a0a9670a2a22f1add0",
+      "question_hash": "1a4821b5231d32c45fb5bf2b79f23136425cdf3401529e2a9970324047ca2c03",
+      "answer_hash": "fcedbcbf145fb4321d47eaca35b963c024660e0b3a38b39e186e889ff7877be7"
+    },
+    "459": {
+      "hash": "9aa7530163caafa9afac53f8686c10b59c36c176862814ace2e60f1dd260875b",
+      "question_hash": "eaa5aad71fba4d99387a359e9994fc7499526ad3aa4a9774c1f9f2fed32abfde",
+      "answer_hash": "1e48aaa4d6f5a7413575a40e6f60720bfdb5abe2dbeec0a6eb3a425cd19de3ad"
+    },
+    "460": {
+      "hash": "869b45acb1d7684efe4eb55842108c2a58b94ff49f076f360e7b70b40691ee73",
+      "question_hash": "f099afe8d956fa74b795ccff7402bfb073e72f6b36a10685907ce9d1e1c6d817",
+      "answer_hash": "49f87bd30ec01a9d3f9f3d31a4c2b10d56ad0bcd05fa9052b8263bafb7b8455e"
+    },
+    "462": {
+      "hash": "a9829a19d83d9e20d938c0fe19c430d031bf7e23a6f27f734c99f8ef47c3961f",
+      "question_hash": "70c557209241042afd1acb75cd382ba5452dbe6cb274e744b7d73592a0b290f3",
+      "answer_hash": "8c7b7c547f5e39b238a7fb01dac32ebba6c5262e7443dca002c886666f463bf7"
+    },
+    "463": {
+      "hash": "38faa12785f96fb630d8e6ea700c91743fb118f1c49f96798f97b59d72780e02",
+      "question_hash": "56723211d055147da935fc8005d0894f8f099b993610981c1f0140e7def903c3",
+      "answer_hash": "5ff97585d37b51c5166aeaa1ae1d78057e00ea440575b2f956156006e25d0c4f"
+    },
+    "464": {
+      "hash": "6e0d72cd5740c76c93137de1e56f0e6a439fb55dfe2b92c713ebdf2bb52e1a49",
+      "question_hash": "7bee0a2823b031fd0a3040a6f2b02bca5d2395e67796f55629609005440efbab",
+      "answer_hash": "0c683ceed4702a0dc7b3666cb9579ffd0dac05602435a3977f1e7a3e73d407b7"
+    },
+    "465": {
+      "hash": "19ddfa9a853ee12f5c6c8797330cec8995eb636797a0664ce5c4e9e824605708",
+      "question_hash": "30db21a41684f9e299aa7944be013ad3247668374a27740358b971d07eed0a26",
+      "answer_hash": "85ea515381b33298e65e11586f043c4a912a111a36898614821687ab3681cf1d"
+    },
+    "467": {
+      "hash": "1b4f80b73cd5b163061c2d8e104aa20907673cba45d01eb980a32a5a90155ab3",
+      "question_hash": "85a5c27f5c47652e01d17fcd1bb982e7622749efe25b1fbb6a5c1b28b96a886e",
+      "answer_hash": "c103f832318f718ce3b5b358e094a0c6b2dc69cd6b2f6b3323c69f3a01400ca7"
+    },
+    "469": {
+      "hash": "2518d23e7666410575e3bed8cc17342990296ebda3f145651337d9a6b13b9a58",
+      "question_hash": "5da0e41c90f155f27666d655d45fcc05a1908d642d8437f2422d3c51f111dea9",
+      "answer_hash": "55c21477ec9028a9754c597dc6f8ec38673248e3a8bb8a5b574b9a7871d2cc44"
+    },
+    "470": {
+      "hash": "bdb5f825adf82e6388789c9b3818a1e4cce33ac811e5db0f3ab4c8474b8bdc07",
+      "question_hash": "f276a995ddd8bb803c2a30e7a93cd42b8f314ad6049928b525db2c5add68a616",
+      "answer_hash": "beddb98627edc9d95eb7a8dcceebc64699d0c8d267415ca241ee8007f3cb70c7"
+    },
+    "471": {
+      "hash": "736817042278c1f355a344c8f7e741278e919762258e65f23ab5ed1d87d02b09",
+      "question_hash": "1c57946c99d6860c424391a7ffe6d5f77ce482273fa39b778742d2bd7134440d",
+      "answer_hash": "bc23b24b26b3f3b053e2622bb6b07503481275413ec5ab1c50c45eb3117a5639"
+    },
+    "473": {
+      "hash": "f2db66b01634da8094fc5bcad32ef0af9dbe8a638347e73265d84f55fa16a0b6",
+      "question_hash": "bf5d9c682a03b2117eb2d715271b40f369c607e00c7d4bb649972317181936b0",
+      "answer_hash": "06b3749973ff8c60e16e63aa6d7dd92405fd66e2feeb160ad94530b2d7eec243"
+    },
+    "474": {
+      "hash": "340976b89757eb366dee821c1afddbcc069dde7a969fbda8b2b20a59ef3f835b",
+      "question_hash": "57da41d6746c01bc9948acecc704ea135951e211c4820af7941643e112896768",
+      "answer_hash": "30f5ab6268df419490af4d6bd2d2dc53d03bde1a12039be1d9af0e8ab163d9d2"
+    },
+    "475": {
+      "hash": "16bc62816bcb80b5751897c9eb5b5d0e0165757fd645dd1c22ea241a57459b65",
+      "question_hash": "a54d159354ade55474a93201ce7fad3f4044c5fe3eb1ce803c3eff64631119f6",
+      "answer_hash": "b16d1ccca6fba072546de651cbc9ab23128bff0e54b777cf98b97515ee9cfbe2"
+    },
+    "476": {
+      "hash": "60cd52b0b5cef18675c74689cb7a3e0c7006f3a276d9a364a15e19c3179990c2",
+      "question_hash": "b6d2d10c2b2a1f6deb3df4b2c1d1c52a8300cca3fd21b9e24a165ca1ef80e461",
+      "answer_hash": "a08adcb20b6683e6795cbd3527eca8b04f109330272ee4b03953043d424bf990"
+    },
+    "478": {
+      "hash": "035e417267eed6aeb85d89cd6bc5e208136fe9e2dc9f3c5fbc548ae91546311b",
+      "question_hash": "0cad405309171e3539815e65299a65bdb0f2c07f46727ff9b3e9dd5e720ce58a",
+      "answer_hash": "98e612f4cdda24b5e430234b6976e726ac9bc454fb987a4a50ad0f6ea66123c6"
+    },
+    "481": {
+      "hash": "b024c0541259d5f9d7c43f2705d361d07964ee9e1d0d8a1b23440571b3b1cdf7",
+      "question_hash": "87ea678b48a6c73652ce009fe76634430aec42343e83defea3685bed99ace1b3",
+      "answer_hash": "b1965535e9751559b4bc3ba5743b806830c346e25a9c2d76aba5279b97a276d8"
+    },
+    "482": {
+      "hash": "9fde51b6bce1d2f808edba5ae7afbcb8576e294b4d0cdf1ee33e7a2f806ccf57",
+      "question_hash": "f7fefea0426d1a936eb3357657a44ac8edabad2548ce90f1405353a426a23918",
+      "answer_hash": "376fbe42f55971b75740415b16b56fd8ee63f55c072e8d2e63fcf16ad2fe4698"
+    },
+    "483": {
+      "hash": "97b83b28f597b9ae7d66c0641d8a07d7610dbc721e9d6567806e7e2a7ba991d2",
+      "question_hash": "5e611c43a6c913b30f3815fdd4076856024cde6fcadc0796742be7d2ff5004d2",
+      "answer_hash": "c16ee7bb7adfc916a01c8c64ba610815ab464fe3c37b9862bad675ce2d86929f"
+    },
+    "484": {
+      "hash": "deb9be282af796e6809904507aa1fdd9b8f027d8b12546603afea8eca23e66ef",
+      "question_hash": "5e3cc1edd55ed7e3610b30d3f021a3306bf755ebf1b91932f2e9f122c5d7c526",
+      "answer_hash": "0139a62e6e1e39dd296703cdd95b25387510d687a757f1bdc9d377043dd14f3d"
+    },
+    "485": {
+      "hash": "065ec2105a1e4f0e5a3cecd810c6057bb47f1577b2b0f0af62842110b2f79e24",
+      "question_hash": "8b0ae4c5b00d1677b31ca51980cb6843ccf3631f6aae43062d0cd7541eed1e11",
+      "answer_hash": "0fe0b5ca3270c06627bd9b5b48976fdf9dd81e13a6546565bafb03d5752adfec"
+    },
+    "486": {
+      "hash": "d8aed9836c973c42310245cd8423e83ee7646f9608eac5699016ddc494f1f733",
+      "question_hash": "8820c13aedeff175ae2f63e038bf981fbcca887cd0f70dd9a4e74d96ff770023",
+      "answer_hash": "c6d842ca4b1288da084acb2a901741419c2de534686a005eb268a7f879932162"
+    },
+    "487": {
+      "hash": "47190de4157d85151ee02f064c268105bb3cfa6e5204e8922e61051e739b7ff7",
+      "question_hash": "e79c043341a162bb4789fecc8b1dbac7886153ae65f21ff3a595f94843fa746d",
+      "answer_hash": "d56348c1e491e7234a093354c22946859d592e94ca0acec378a571c60027b151"
+    },
+    "488": {
+      "hash": "682c3df3a047287707839bac09fa20f06748680ac508d6bc97e09b0a143bf0b8",
+      "question_hash": "70b01dcf3ddb9802828be00c73fece925cb9ad66775301fd41125ce80e5f203a",
+      "answer_hash": "9eeac6a60094c0dfbb3c517442ed3d5109b51c43920006a9ebee742d456c661b"
+    },
+    "490": {
+      "hash": "6da698192642bc6e97aafa176efde10e1a107d5bfb5ce148c9e0e8600cb509b1",
+      "question_hash": "53cd0d5d1b79192917cd81cf156e6bf64e607ced95a991f6b443e097fd063d84",
+      "answer_hash": "f71b87f2a277a8add9d0e430d24bd254c61e3b7d64233034d70b8765e4cda62a"
+    },
+    "491": {
+      "hash": "11438fb76d9f56c81f9f6dbf81bdacb3f8af0546f639360eae14628772112f1c",
+      "question_hash": "419dae5c979644e8c326b48d921bb79e48f2d70158a1af6ee74f5cd5118231ab",
+      "answer_hash": "7ba302204302447443fdc89076f0144a9fcf31488a6dd5428fb68c51939fa09b"
+    },
+    "492": {
+      "hash": "03ffdbe7838c69493f4dd6e8ad261bd6950df41bb71f53af3b6e89e972ab5a26",
+      "question_hash": "32dfbcbc17c567a6039bcbf4f88f5e443591d0157ec02d59fc2e98e8bd1edc44",
+      "answer_hash": "9a814c05a58e65577739db5d61e22cb7a913690b086332d8c60d59cd91979024"
+    },
+    "493": {
+      "hash": "4b9145c35858ad540a5cbc3d9fcdbaf25f577e7799db299a7b288ace7c234820",
+      "question_hash": "710a40906ce77b123d02b7f0f34385ed6a81a308cf3a5ef19ee96ca3c38f6dd9",
+      "answer_hash": "5adb9779f9973cec439545bc2d2e0a1eaaa7b4df1ddc682032817c6b035ccb2a"
+    },
+    "494": {
+      "hash": "3361461b4ec16e6edd3ff58d4d1d7d44236e0b0d40d01b3ca4de07aff0f14854",
+      "question_hash": "c20ca803e85aa32b3760830b1db3976ce79b4a7eee3fdab8d7387fb855c196b2",
+      "answer_hash": "7ba302204302447443fdc89076f0144a9fcf31488a6dd5428fb68c51939fa09b"
+    },
+    "495": {
+      "hash": "3ab1b1850e7b339d1c2a147f9e9bcf1ca99ea2ac0a07249a0b2db582cc77d597",
+      "question_hash": "c6f368a8b27131e0e74f80b16d9f7e1aae75fe3f0abd73370e89fbe7057bfe84",
+      "answer_hash": "edc7159519c7db4f92a5a53a7187f32f73c321997b66f9c22f38cddbc269be5c"
+    },
+    "496": {
+      "hash": "07a85475e0266dbdc4f61a50de2fc3e42d4c37696fcb2009ec0ee704b985c111",
+      "question_hash": "dfdb845e5e581731ed0215348972b4bf0b76d40f474a1f63b432739519942fd5",
+      "answer_hash": "68b5c0c473f367b1f029afbf29c949b5fa364326d1cc13aec75a0dc02fb186ba"
+    },
+    "497": {
+      "hash": "253d2b4e0b12e3887bba8119be843a8a24cec4294150be723463b38f349f8043",
+      "question_hash": "7f13b26e6f64dc1ef53fe0984c7152560e69ab506c7c1a1582a320098ce9072f",
+      "answer_hash": "5bcee22b7efb7babd18725c684389a7fa367c8176f49b1c614646dde9fc22562"
+    },
+    "498": {
+      "hash": "b4d5aee3606d17e09bc6b6ee74607b95de62b16b912e304b5dc2e289f04072ab",
+      "question_hash": "40848599bb38beb5017a0c8b1992adc5e8d54711885cf778ddfefe47f76e9cdf",
+      "answer_hash": "aa1d7ae37aaba79473287a2329c23ff07828e3f22c7770b1f4daffd3b99b1f81"
+    },
+    "499": {
+      "hash": "39cabf2f2b09e0239c0776881c4c29f329674f8b4b55090f9fbead74472c0abf",
+      "question_hash": "bda80889dfa7550d6414a04a70e898e09bfc13c7c95b6ef3c21774b55df5911e",
+      "answer_hash": "82832607b27ec3e25603cf82ddddb265c95185390ca35690428a4e3358e740e7"
+    },
+    "500": {
+      "hash": "9ceae6fa30a681b4871c5cdaab3c27571d5deb1438e0e057355d73d1f634c0ff",
+      "question_hash": "89e842d363c17f67c56abd77df3e01cbe4ffb5fbc174d66cfe400092f42c74e0",
+      "answer_hash": "59509837bdd774aba8724390771790f87b60904d73b93e1ac4d6f8707d0b49f4"
+    },
+    "501": {
+      "hash": "13cbd1099c8cff7f19868a4394fe92e8f4c50cb98a32b062b06520d6b3dcb71d",
+      "question_hash": "2e472eb4b0ef29929558f7a1179feabe75762ca1b6e9d127f4f7ef721b8edf52",
+      "answer_hash": "7072f8435799982c2605e46beadfc2b9f5cfbd1287cc279fd67373c276df6049"
+    },
+    "502": {
+      "hash": "9482f11e8101c6a419943c710f59a3cd572e6381cb361a7e68ae7bcdd23aa670",
+      "question_hash": "5b08d30058b15f599a60e04c69081853132df19d908bfcaf26cdd7aa5de9a082",
+      "answer_hash": "7ba302204302447443fdc89076f0144a9fcf31488a6dd5428fb68c51939fa09b"
+    },
+    "503": {
+      "hash": "24648c6bbfbc8125f4b72b62cc8ea5f2427fae1b2860e90a4e724d178d33752a",
+      "question_hash": "ce7fbf9f3e478767b37a9b10ba349b5372ceae4e4fd1e7815cdbaedbe071f00c",
+      "answer_hash": "b82fac5e599e629f69e4f2427bc290db2a0ec94e1a7a95810e42b20f19e9e97f"
+    },
+    "504": {
+      "hash": "d46a12bd73eebd141bdb2cb69504f6da1338c53f5dca05760ef196defb059dff",
+      "question_hash": "ef863322b1a8e2d462b621f98c79ae8c8fafa1beb0099914e1d4a24d708437f9",
+      "answer_hash": "7b90c3c236de09866465b5e112e62e3486c7e589473abf74087075079b7ccdb9"
+    },
+    "505": {
+      "hash": "805705d5cde002e560c047fc20cccc207b41e488aaccd34c6d9b8ba45c608dfa",
+      "question_hash": "38ab2a26fe4a7237d0a6cf8a28cd8e6ccb55992343f872e90b97d83c2055a5bb",
+      "answer_hash": "fc67b15a3ca655383cddfcf262266d22dd61495fe83814d8928701f9e78b1873"
+    },
+    "506": {
+      "hash": "8e8f2b635b786bfe386c02df38291d70621089298d2f15c6cffc035aad79eceb",
+      "question_hash": "e135e0dc722125a4dce5edb9d12cf4c757609fc4c691e00acb589b3636f1e057",
+      "answer_hash": "012fa901c8ee61444fc8b050b44b1a9943f9229e822f788eff5f4ab3a8e75d05"
+    },
+    "507": {
+      "hash": "fe49254e202346cff43b1bd9c12bf46ae54c80ef20f800a379220d130feb9af8",
+      "question_hash": "545372e2508d06c6aee7412a2e476f2dffb295617834fb772062b27a5db4d116",
+      "answer_hash": "accdf4d190d0f0bcba43cb751282dfeb28f6186f6190b946a558e445b65dda23"
+    },
+    "508": {
+      "hash": "1b2fb576f9ed1ed12d04eef5b89b05a6a81f0738f2a2726fb607dc8dff164e02",
+      "question_hash": "65c5ffa634f1537501259bed3a045410e7bbdd78f16725a8e86f80cef3a506a6",
+      "answer_hash": "4432ceba96ae5f8d37ee7d4891431c677516f264bbe150c43c47ffb205bf8be9"
+    },
+    "509": {
+      "hash": "37bd551a342212745172998280509c098e4d9892797defaec8e62cd018ab2e44",
+      "question_hash": "601ce38d4b4f88e20d52c0a11767788a4d772c1383e8ab5f57e7ca79bb84e5fd",
+      "answer_hash": "e638370503ef83008fd5fa9cbe913f2508ba54498de2dbd7768ffe7a0a2b2b48"
+    },
+    "510": {
+      "hash": "f30aaff2e3f0e697f2a322bab5e4fa4af1779e52949b63d2a1d95a1240d4a5c7",
+      "question_hash": "267ae8e3d4b5a18474a433e867df476ab9a6dea431bc0da03ad874b0bf10bcd5",
+      "answer_hash": "5f0a7d7b34302deb9f3ec968c1199986a215b5a723aa6460084325c1522fa541"
+    },
+    "511": {
+      "hash": "e48c9d0c514f6723151a372b3f6cb7d610d932687627375b1eef89586d47b24a",
+      "question_hash": "95f1f419cc822cfa2c0bd6dbae438d415a9c9cac840512933e9034e868ceaf92",
+      "answer_hash": "8cedfa4ad94d7cef2d4971a34645bc9836e841d5e16e20970b0e4a435993c5af"
+    },
+    "512": {
+      "hash": "127dd16ec88bd526abe7ba33d0fb67cd40bc59021773b97883aab8f9e0465d16",
+      "question_hash": "7c900c6f64b14d347fd348cfb3ecae9cc571149628b963c3723d868ebe016755",
+      "answer_hash": "b1223d36e385d4fa771fa8181fad7144a86cc464a3ce27a25b3c84f5e6beb210"
+    },
+    "513": {
+      "hash": "f1896a4f4b653208f0fea97a28e4080fbd9ba4a23906d9e109eae6254f98315f",
+      "question_hash": "43429554009f173c2534dd775ee72fd9780cad026232b484e5bd79037e25a946",
+      "answer_hash": "390ae0b9181d9c39e348505a3dca4b7e315024ffee7d096ad42f036a7e55fc6f"
+    },
+    "514": {
+      "hash": "6e6d3695b0da2ad575fa60e3aabf101943a93feccf68c051f1ba7660472c875a",
+      "question_hash": "db6a20f96b970ad37f0a98aaf88cfebe149e4320a32c5124d897f259bd911da0",
+      "answer_hash": "98e612f4cdda24b5e430234b6976e726ac9bc454fb987a4a50ad0f6ea66123c6"
+    },
+    "515": {
+      "hash": "c45040d333dfb85a6836b54ddee97794e51e7b2fb5314f89527c2656632ecf54",
+      "question_hash": "36eec9273f45755ad2004e7ab1d5409543af45ed5d754c76c36badef27cb9d95",
+      "answer_hash": "c3f5f162755ae7e73e694518e7ec177ab0e70e9e7c51f4e0c35ab2782de4e5fd"
+    },
+    "516": {
+      "hash": "c236caccae90802ba19e9a989755ecc0c93f69941e01573fe4cf94b4479deca8",
+      "question_hash": "1d68b0acfda0ab25f75b7bbdc8ab6576ab3cfc1fd89152ea4a277a6c5f1197a9",
+      "answer_hash": "48a60f3b3da6d74d8f9757713465c1cd3cc746ae224a7e488e1073694f8323f6"
+    },
+    "517": {
+      "hash": "2036215f71a7003676cce36a58d45fabeda2dfd81e328c730e8c1760bbfa0015",
+      "question_hash": "ebd1b9286a46a08e7c6a3144af08a069267b8c254b999337f67f35411862a34c",
+      "answer_hash": "209e8b8f5017c258758ba553e115946b238ede87238f45561050aeef0ced623c"
+    },
+    "518": {
+      "hash": "e5f9909f7b2b66dbfb18eb4a2f24485bf77fba48130c04167359c5f955785cf2",
+      "question_hash": "ee4d75d9cf1aa21b855a74f0c5371814b1e796380e674f1b103cf29283e674c5",
+      "answer_hash": "0d637271560f69ffbfff044f9502ed28c11d21cd049fe6ef34bf7631e81e597c"
+    },
+    "519": {
+      "hash": "baf0b04838b77dbfe304ada05048bb8588c3a574143a6c686d2e8ebac7c876d0",
+      "question_hash": "6061f28b66860bc9d9c2fb262d8c8469b189d4fb51fa9848ddf9bc678de3f4d3",
+      "answer_hash": "4853acdd7f7c3a801c61b739ca9b4d32b6cf0efc36427fcf94d7bb9cea371ab2"
+    },
+    "520": {
+      "hash": "4a21e4c9dae193b6351334bbcb6b76035ecfbaca0a3357c5242d08b79a679335",
+      "question_hash": "88d02329f1f09092403efd2e3af2d3112d36e8710f96b483c98f450cb254f551",
+      "answer_hash": "1c74d574d7e658a9bd6871895d7f0dbcf5e3037ddb97e590b0889a71b43e09f2"
+    },
+    "522": {
+      "hash": "58961f0070879faf83f12ae7745df38fa9ddbba204f23ba069db37bce69ffe78",
+      "question_hash": "0c9b055eae7057d8056442951b08aecae00d4b2670aad59559dde10834042495",
+      "answer_hash": "d30ccab217a4331f67c993a42134025a4069943f50b565a4fa453cbf026dc8f9"
+    },
+    "523": {
+      "hash": "df9aa874e2a9c7464ac0c752969a66001ed3e67ead5c334486b804c92ec83d3c",
+      "question_hash": "a93e8ad42e00b58b305f5461ae245a2f9700b097edcb04a06cefee64efe1d4ca",
+      "answer_hash": "0fbe764744ffd44142aee45314cce0614231a82ee7ae91ff644a5342e99e721f"
+    },
+    "524": {
+      "hash": "fb673413f3d6259ef6a19295e940302146d05a8bc92be6a598a1aa6cff799c36",
+      "question_hash": "2bdf841e040aa5cdbdafb220b94d0f7286c282755148645ffb3c0145cb1541e8",
+      "answer_hash": "4e2e6011045ce5fd501631322cb959306880df784dc129b9e84913d4c1ca6068"
+    },
+    "525": {
+      "hash": "1ea482b6be5b6cbe03611d40a0d40c88bcc95d83557e9e0a43cf100bccd2e313",
+      "question_hash": "fcf003662855d393949f6f0f3ab937d1c8e78d09f4a985aad4ff5c42e63395fc",
+      "answer_hash": "999efc60a00e0ec6d3cfa40784ad934b5e0050627ba194268e0f3d4f619fcb39"
+    },
+    "527": {
+      "hash": "e66bd045bb54b55059e54a267ad624a88b6a6b0c46236cc946cdc808fc7966e2",
+      "question_hash": "2af3f0e7222e7c3c4aed122a7235063cd0f6d3fa0a723f19a6c2b168837061ac",
+      "answer_hash": "7a92bcff495e415978cc6ad14ff8ff77fa2927d429fa4bd24b07f6d31eed4bf7"
+    },
+    "528": {
+      "hash": "66660e6abddb53456b90d4aad6201656e22779cd5821eaad7a2d7ed8b41c0c20",
+      "question_hash": "baf85f43264cdaacce9929c84d5dfaefe2955f08286063fa4c4054950f71c099",
+      "answer_hash": "68b5c0c473f367b1f029afbf29c949b5fa364326d1cc13aec75a0dc02fb186ba"
+    },
+    "529": {
+      "hash": "fea7d48674890f53fc5af289e66d16dd56b687bc278f03b4b54cb94d62697ce6",
+      "question_hash": "40168c2decd1e4698711cdf8ad5e5b35e85f718cfab41db493027931f5388bf9",
+      "answer_hash": "926f128c35951fc499ed1e38fcfdb8b957a6a24cb3a0757d6407ea3dc71926dc"
+    },
+    "530": {
+      "hash": "f408084eff9672e9c00f7c3d86b77c9905e029b46b76c85c426a915240ed49cd",
+      "question_hash": "4dcab3d6587487b76c67b1ada45cdc38ce32d6d7f76dd373ad17abaecefb447d",
+      "answer_hash": "32dadd1b883fa49a25f32a63a4a9e66c26ee4acf707e4286de0df4f3082cce96"
+    },
+    "531": {
+      "hash": "4b74e19857824c2e6149153cda3c53e0fe3413d399a2aba57c6004dc16ef0791",
+      "question_hash": "3b5b58d26229b6d2c838996f27f9657356bb341ee1daffede792814d05849b80",
+      "answer_hash": "bb83ec4f11c924e3e64f0872cffded92ee195adefbc927a068262499d7d476b9"
+    },
+    "532": {
+      "hash": "90e297b1ae460bef373a410d33e61bf25e19a422e5d3100fb6e04dd3b4ef1fbc",
+      "question_hash": "0cb4dab5516531763cac8a87a31b6a3133766b0e14f7cba2bc1fd29dac154e36",
+      "answer_hash": "e22de2e1bcc2b387afaefb5f0431a4d259ff61b928e82cec879cb6ded907d516"
+    }
+  },
+  "events": [
+    {
+      "guid": "ivrea:522:58961f0070879faf83f12ae7745df38fa9ddbba204f23ba069db37bce69ffe78:2026-10-23T18:43:08.401545+00:00",
+      "id": "522",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-8/#comment-522",
+      "detected": "2026-10-23T18:43:08.401545+00:00",
+      "date": "2026-10-19T17:26:10+00:00",
+      "author": "Alba González Pardo",
+      "published": "2026-10-19T17:26:10+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola ivrea! Se que es improbable que leais este mensaje pero me haría mucha ilusión que si pudierais sacar el manga de love tyrant(renai boukun) en español es mi serie favorita y me haria muy feliz que le sacaran una edición en español.\n\nMuchas gracias!\nUn saludo!"
+        ],
+        [
+          "a",
+          "Pero si antes de dejar tu pregunta puedes ver una tonelada de mensajes, todos con respuestas nuestras muy detalladas… ¿Realmente lees esta zona de nuestra web o sólo has venido a dejar el pedido porque tu amigo Jobran, del comentario anterior, te lo ha pedido? XD -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:523:df9aa874e2a9c7464ac0c752969a66001ed3e67ead5c334486b804c92ec83d3c:2026-10-23T18:43:08.401545+00:00",
+      "id": "523",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-8/#comment-523",
+      "detected": "2026-10-23T18:43:08.401545+00:00",
+      "date": "2026-10-19T18:11:22+00:00",
+      "author": "Rubén",
+      "published": "2026-10-19T18:11:22+00:00",
+      "segments": [
+        [
+          "q",
+          "Buenas tardes, me pareció interesante la respuesta que disteis a otra pregunta sobre las licencias del manga BCN y lo de que os dijeron 600 mangas distintos cuando preguntasteis, yo con mi grupo de amigos y con los lectores que suelo hablar ( que no significa que sea la mayoría de gente y lo que piensa todo el mundo) opinamos en que por el momento no queremos series nuevas que lleven 3 tomos abierta en Japón y tener que esperar vete tu a saber en cuantos tomos acabará , queremos cosas que se piden de hace años y acabadas, pedían jojos, trajisteis jojos y la gente yo creo que cumplió su parte por que si no no estaríamos al día ahora prácticamente xD, compraríamos antes una 3 en 1 de Tutor Hitman Reborn o alguna obra de jump no tan conocida por la gente como Ninku, nos fijamos en que cuando se pedía Hajime no Ippo por ejemplo o Gundam decían es difícil, puede que vendan poco etc, salen por que la gente las pedía y sorpresa según dijeron muchas veces venden muy bien, se pedía mucho la deluxe de berserk y diría que bastante bien, al igual que ya habéis dejado caer vosotros que tal vez una deluxe o algo de Vagabond pueda caer, en plan que está en estudio, la gente lo pide y seguro que va a ir bien, se que hay casos que la gente pide pide y luego no compra por que no les gusta la edición, el precio o que lo haya traído x editorial en concreto, pero al menos desde mi entorno si veo un poco eso, manga que llevan pidiendo tiempo, sale, funciona bien, nos apetecen más series acabadas, nueva edición de algún manga como Claymore o Air Gear antes que alguna nueva, hay series nuevas buenas pero me entendéis y yo entiendo que las series nuevas ayudan a que puedan seguir saliendo las que ya hay de hace tiempo y tal, o que Japón muchas veces te dice si quieres licenciar x me tienes que licenciar esto a cambio tambien, tambien opino que la gente nos compara mucho con otros paises y no deberían de hacer eso, es que en Francia sacan esta edición guapísima, ya claro, pero eso cuesta dinero y tan solo en Francia Fairy Tail por ejemplo vendió 16 millones de copias jajaja, piden que sea barato, le das un producto acorde a eso y se quejan de que la calidad es pocha, quieren buena calidad, regalos, brillitos, spoiler, es caro por que eso cuesta dinero y se quejan tambien xD, esto hablando desde el desconocimiento y mis opiniones personales vaya, que tengan buen día : )"
+        ],
+        [
+          "a",
+          "Gracias por el extenso mensaje. Entiendo el debate, pero no termino de entender a qué punto quieres llegar en lo que respecta a nosotros. Es decir, recomiendas hacer nuevas ediciones de mangas de Shueisha publicados por Norma o Planeta, cuyos derechos, evidentemente, no están disponibles para que los coja otra editorial.\nLo que sí puedo decirte, para aportar al debate, es que ojalá existiera una fórmula mágica para dar con series que funcionasen bien en ventas. Cuando hablamos de nuevas series, nunca nos referimos exclusivamente a títulos que acaban de empezar en Japón, sino a cualquier obra que se pueda publicar, tanto si lleva cuatro meses publicada allí como si tiene cuarenta años.\nJoJo’s ha sido un gran éxito, pero por cada serie histórica como JoJo’s que funciona, siempre habrá varias que fracasen. La proporción entre éxitos y fracasos es muy similar a la de las series contemporáneas. Por poner algunos ejemplos de clásicos muy solicitados que luego se pegaron un batacazo en ventas, puedo mencionar 3×3 Eyes, Yu Yu Hakusho o Love Hina. Todas contaban con ediciones cuya calidad y precio eran irreprochables.\nComo decía, no es fácil dar con una obra que interese lo suficiente a un número significativo de lectores, independientemente de que sea un clásico o un título recién publicado en Japón. Me consta que el equipo de derechos de Ivrea valora constantemente, y en la misma medida, tanto las obras antiguas como las modernas.\nTambién hay que tener en cuenta que muchas editoriales declaran, como estrategia general, que todo vende bien, tanto si realmente funciona como si es un fracaso. Y, como en España no se publican cifras de ventas, al final la única forma de hacerse una idea de la realidad es buscar indicios por otras vías. Por ejemplo, comprobar si varios libreros coinciden en que determinadas series se venden bien, observar si una colección mantiene su periodicidad después de haber publicado un buen número de tomos o fijarse en si la editorial acaba publicando spin-offs u otras obras del mismo autor.\nPara terminar, aprovecho para comentar algo que me dicen los compañeros del departamento de derechos sobre tu mensaje. Me dicen que no entienden de dónde puede venir esa idea de que «Japón muchas veces te dice que, si quieres licenciar X, también tienes que licenciar esto otro a cambio». Aseguran que, en treinta años, nunca les ha sucedido algo así. Según me cuentan, ese tipo de prácticas suelen darse en la industria audiovisual, pero no en la editorial. Un gran saludo. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:524:fb673413f3d6259ef6a19295e940302146d05a8bc92be6a598a1aa6cff799c36:2026-10-23T18:43:08.401545+00:00",
+      "id": "524",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-8/#comment-524",
+      "detected": "2026-10-23T18:43:08.401545+00:00",
+      "date": "2026-10-19T18:45:29+00:00",
+      "author": "V",
+      "published": "2026-10-19T18:45:29+00:00",
+      "segments": [
+        [
+          "q",
+          "Buenas! Me encantaría Mushihime 2, os lo hago saber jajaja\n\nGracias por vuestro trabajo 🙂"
+        ],
+        [
+          "a",
+          "Lo analizaremos cuando concluya en Japón, ¡gracias! -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:525:1ea482b6be5b6cbe03611d40a0d40c88bcc95d83557e9e0a43cf100bccd2e313:2026-10-23T18:43:08.401545+00:00",
+      "id": "525",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-8/#comment-525",
+      "detected": "2026-10-23T18:43:08.401545+00:00",
+      "date": "2026-10-19T08:48:58+00:00",
+      "author": "Xavier",
+      "published": "2026-10-19T08:48:58+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola, quería proponeros una posible recuperación de Tenjho Tenge / Del Cielo al Infierno, de Oh! Great, para España.\n\nLa edición antigua de Norma está descatalogada desde hace años y algunos tomos finales son muy difíciles de encontrar. Creo que una reedición recopilatoria moderna, en una línea similar a vuestra Ikkitousen Edición Remix, podría encajar muy bien: una obra completa, muy visual, de una época similar y con un público nostálgico que ahora está recuperando este tipo de series.\n\nEn EE. UU. VIZ llegó a publicar una edición 2-en-1 en formato grande de 11 tomos, que demuestra que la obra funciona muy bien en formato recopilatorio.\n\n¿Sabéis si actualmente sería posible licenciar Tenjho Tenge para España o si os habéis planteado alguna vez recuperarla?\n\nMuchas gracias."
+        ],
+        [
+          "a",
+          "Aunque Norma haya descatalogado su edición, lo normal es que siga conservando los derechos de publicación, como casi siempre ocurre con las series de Shueisha. Si no sacan una nueva edición, será porque la anterior no habrá funcionado bien, más allá de lo que quieras imaginar movido por el clásico voluntarismo de quien ama algo. La filial argentina de Ivrea publicó Tenjo Tenge allí y tampoco funcionó bien en ese mercado. Y el Ikkitousen Remix que mencionas como referencia tampoco ha tenido buenas ventas, lo siento. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:527:e66bd045bb54b55059e54a267ad624a88b6a6b0c46236cc946cdc808fc7966e2:2026-10-23T18:43:08.401545+00:00",
+      "id": "527",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-8/#comment-527",
+      "detected": "2026-10-23T18:43:08.401545+00:00",
+      "date": "2026-10-20T10:13:31+00:00",
+      "author": "Luisplissken",
+      "published": "2026-10-20T10:13:31+00:00",
+      "segments": [
+        [
+          "q",
+          "Quería preguntar por el manga Trinity Seven, a primeros de año aparecía en vuestro listado con dos tomos, luego fue retrasándose, hasta que en mayo dejo de aparecer en los listados, luego en este blog dijisteis que en verano, luego a finales de año, y ya publicasteis en listado de diciembre y no aparece. ¿Quería saber cuándo publicareis al fin estos tomos y si empezareis a publicarlos con cierta regularidad?"
+        ],
+        [
+          "a",
+          "Sí, pero en los primeros meses de 2027. Sentimos el retraso. Sus nulas ventas y su eternización en Japón no ayudan en nada. Lleva ya 16 años saliendo lentamente en Japón y hace más de 10 años que finalizó el anime y dejó de interesarle a la inmensa mayoría de lectores. El que siquiera tenga un final en puerta complica más todavía todo. Escapa a nuestra compresión la razón de hacer estas cosas de continuar al infinito mangas que no venden que tiene frecuentemente la editorial japonesa Kadokawa. Hace muy dificil su publicación. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:528:66660e6abddb53456b90d4aad6201656e22779cd5821eaad7a2d7ed8b41c0c20:2026-10-23T18:43:08.401545+00:00",
+      "id": "528",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-8/#comment-528",
+      "detected": "2026-10-23T18:43:08.401545+00:00",
+      "date": "2026-10-20T16:10:33+00:00",
+      "author": "Daniel",
+      "published": "2026-10-20T16:10:33+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola ivrea me gustaria recomendrles Judos de Shinsuke Kondo ya que ni en ingles ni en español ha sido traducido"
+        ],
+        [
+          "a",
+          "Gracias por la sugerencia. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:529:fea7d48674890f53fc5af289e66d16dd56b687bc278f03b4b54cb94d62697ce6:2026-10-23T18:43:08.401545+00:00",
+      "id": "529",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-8/#comment-529",
+      "detected": "2026-10-23T18:43:08.401545+00:00",
+      "date": "2026-10-20T19:15:10+00:00",
+      "author": "Paco",
+      "published": "2026-10-20T19:15:10+00:00",
+      "segments": [
+        [
+          "q",
+          "Buenas tardes. ¿Al final no vais a publicar ningún tomo de Ranking of kings este año? Gracias."
+        ],
+        [
+          "a",
+          "Estamos renegociando condiciones de publicación y lleva algo más de tiempo que lo esperado. Continuará en 2027. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:530:f408084eff9672e9c00f7c3d86b77c9905e029b46b76c85c426a915240ed49cd:2026-10-23T18:43:08.401545+00:00",
+      "id": "530",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-8/#comment-530",
+      "detected": "2026-10-23T18:43:08.401545+00:00",
+      "date": "2026-10-20T19:34:59+00:00",
+      "author": "Jorge",
+      "published": "2026-10-20T19:34:59+00:00",
+      "segments": [
+        [
+          "q",
+          "Se volvió a retrasar la novela de classroom of the elite 😢. Espero que la espera merezca mucha la pena porque le tengo demasiadas ganas. Un saludo y mucho ánimo con el trabajo ✌🏻😄"
+        ],
+        [
+          "a",
+          "Nosotros también, jaja. Queremos que quede lo mejor que sea posible. Gracias. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:531:4b74e19857824c2e6149153cda3c53e0fe3413d399a2aba57c6004dc16ef0791:2026-10-23T18:43:08.401545+00:00",
+      "id": "531",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-8/#comment-531",
+      "detected": "2026-10-23T18:43:08.401545+00:00",
+      "date": "2026-10-22T00:15:55+00:00",
+      "author": "Borja Gabriel",
+      "published": "2026-10-22T00:15:55+00:00",
+      "segments": [
+        [
+          "q",
+          "Buenas, he visto el calendario de salidas y me he fijado que en Noviembre sacarán reimpresión de todos volúmenes agotados de To Love Ru.\nLa verdad es que os lo agradezco mucho porque llevaba tiempo con el manga parado por el tema de los tomos agotados.\nY viendo que habéis hecho esto, os pediría por favor que hiciesen lo mismo con los tomos agotados de Nisekoi, que tengo la serie igual de paralizada que To Love Ru por el problema de los tomos agotados.\nOs lo agradecería mucho🙏🏻.\nQue tengan buen día."
+        ],
+        [
+          "a",
+          "La reedición de todos los To Love Ru agotados ahora en Noviembre es una gran apuesta. Esperemos salga bien. Me consta hay planes de editar los agotados de Nisekoi pronto también. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:532:90e297b1ae460bef373a410d33e61bf25e19a422e5d3100fb6e04dd3b4ef1fbc:2026-10-23T18:43:08.401545+00:00",
+      "id": "532",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-8/#comment-532",
+      "detected": "2026-10-23T18:43:08.401545+00:00",
+      "date": "2026-10-23T10:37:48+00:00",
+      "author": "Luisplissken",
+      "published": "2026-10-23T10:37:48+00:00",
+      "segments": [
+        [
+          "q",
+          "Os pregunte por Trinity Seven y en vuestra respuesta me pusisteis entre otras cosas «El que siquiera tenga un final en puerta complica más todavía todo. » Busque información sobre su publicación en Japón, y descubrí que el manga entro en su arco final en el tomo 32 (en noviembre saldrá el 35 en Japón) y se rumorea que podría acabar su publicación a mediados de 2027 y en torno a los 38 tomos. No se en que tomo acabará finalmente este arco final, pero quería informaros de ello, porque de ser cierto, quiere decir que si tiene un final a la vista, un saludo."
+        ],
+        [
+          "a",
+          "Sería un excelente noticia si se concreta el final. Pero siendo de Kadokawa estas cosas no indican nada. Por ejemplo el autor de Triage X (manga de Kadokawa que está en una situación similar a Trinity Seven por razones idénticas) ha dicho en 2020 exactamente lo mismo que estaba en el «arco final» y aquí estamos en 2026 donde sigue saliendo y no pinta que vaya a terminar en esta década siquiera. Los «rumores» sobre finales son la mayoría de las veces expresiones de voluntarísmo de los fans y no algo que provenga de la editorial o el autor. He buscado la info que dices esa de 2027 y efectivamente proviene solo de fans. Unos dicen eso y otros vaticinan una duración de por lo menos 40 vols y serialización hasta 2029 o 2030 como mínimo. En la editorial japonesa, en cambio, nos dicen que seguirá mientras en Japón funcione o el autor así lo desee. Saludos. -DANIEL"
+        ]
+      ]
+    }
+  ],
+  "initialised": true,
+  "version": 7
+}
