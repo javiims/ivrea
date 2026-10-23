@@ -12,33 +12,34 @@ concurrency:
   cancel-in-progress: false
 jobs:
   update:
-    runs-on: ubuntu-latest
-    timeout-minutes: 25
+    runs-on: ubuntu-24.04
+    # A normal run takes about 1 minute; fail fast instead of hanging for 25 minutes.
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: ${{ github.event.repository.default_branch }}
-          
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-          
-      - run: pip install -r requirements.txt
-      
-      # FIX: Bypass unresponsive Azure Ubuntu mirrors to prevent the 25-minute hang during --with-deps
-      - name: Fix Ubuntu mirrors
-        run: sudo sed -i 's/azure.archive.ubuntu.com/archive.ubuntu.com/g' /etc/apt/sources.list.d/ubuntu.sources
-        
-      - run: python -m playwright install --with-deps chromium
-      
-      - run: python -m unittest discover -s tests -v
-      
+          cache: pip
+      # No `playwright install --with-deps`: that apt-get step is what hung the old runs.
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+        timeout-minutes: 3
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+        timeout-minutes: 2
       - name: Detect new entries
         run: python scraper.py
-        
+        timeout-minutes: 4
+        env:
+          SCAN_PAGES: '2'
+          FEED_LIMIT: '200'
+          BASELINE_ITEMS: '10'
       - name: Save persistent state
         run: |
           git config user.name 'github-actions[bot]'
@@ -48,13 +49,10 @@ jobs:
             git commit -m 'Update RSS detection state'
             git push origin HEAD:${{ github.event.repository.default_branch }}
           fi
-          
       - uses: actions/configure-pages@v5
-      
       - uses: actions/upload-pages-artifact@v4
         with:
           path: public
-          
       - name: Publish feed
         id: deploy
         uses: actions/deploy-pages@v4
