@@ -1,8 +1,8 @@
 """Ivrea España Q&A -> RSS.
 
-Fetches the public Q&A page with plain HTTP (no browser, no apt packages), detects
-newly published entries and writes an RSS feed whose items contain the full
-question and Ivrea's answer.
+Reads the newest comments from the WordPress REST API of the Q&A section, detects newly
+published or edited entries and writes an RSS feed whose items contain the full question
+and Ivrea's answer.
 """
 import argparse
 import hashlib
@@ -23,18 +23,19 @@ import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup, NavigableString
 
+
 SOURCE = "https://www.editorialivrea.com/ESP/preguntas/"
-# The base URL always shows the newest comment page (newest first). Scanning it plus
-# the previous page is enough to catch new answers, even right after a page rollover.
-SCAN_PAGES = int(os.environ.get("SCAN_PAGES", "2"))
-FULL_SCAN = os.environ.get("FULL_SCAN", "").lower() in {"1", "true", "yes"}
-MAX_PAGES = int(os.environ.get("MAX_PAGES", "100"))
+# Only source: the WordPress REST API of the Q&A section. It always contains the newest
+# comments (older ones drop out of it, which is fine: state.json remembers what was seen).
+API = os.environ.get("API_URL", "https://editorialivrea.com/ESP/preguntas/wp-json/wp/v2/comments")
+API_COMMENTS = min(int(os.environ.get("API_COMMENTS", "100")), 100)  # WordPress maximum is 100
+STATE_VERSION = 7
 FEED_LIMIT = int(os.environ.get("FEED_LIMIT", "200"))
 # On the very first run, put the latest N entries in the feed so it is not empty.
 BASELINE_ITEMS = int(os.environ.get("BASELINE_ITEMS", "10"))
 TIMEOUT = int(os.environ.get("HTTP_TIMEOUT", "30"))
 USER_AGENT = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
-              "Chrome/130.0 Safari/537.36 IvreaRSS/4.0")
+              "Chrome/130.0 Safari/537.36 IvreaRSS/7.0")
 ANSWER_RE = re.compile(r"\(\(\((.*?)\)\)\)", re.S)
 
 
@@ -53,57 +54,31 @@ def load_snapshot(path):
     return raw.decode("utf-8-sig")
 
 
-def fetch_http(url, retries=3):
+def no_cache(url):
+    """Add a unique query parameter so page caches/CDNs cannot return an old copy."""
+    return url + ("&" if "?" in url else "?") + f"nocache={int(time.time() * 1000)}"
+
+
+def fetch_http(url, retries=3, accept="text/html,application/xhtml+xml"):
     last = None
     for attempt in range(1, retries + 1):
         try:
-            req = urllib.request.Request(url, headers={
+            req = urllib.request.Request(no_cache(url), headers={
                 "User-Agent": USER_AGENT,
-                "Accept": "text/html,application/xhtml+xml",
+                "Accept": accept,
                 "Accept-Language": "es-ES,es;q=0.9",
+                "Cache-Control": "no-cache",
+                "Pragma": "no-cache",
             })
             with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
                 charset = resp.headers.get_content_charset() or "utf-8"
-                return resp.read().decode(charset, errors="replace"), urldefrag(resp.geturl())[0]
+                final = urlunparse(urlparse(resp.geturl())._replace(query="", fragment=""))
+                return resp.read().decode(charset, errors="replace"), final
         except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
             last = exc
             print(f"HTTP attempt {attempt}/{retries} failed for {url}: {exc}")
             time.sleep(5 * attempt)
     raise RuntimeError(f"Could not fetch {url}: {last}")
-
-
-def fetch_browser(url):
-    """Fallback only: uses the Google Chrome already installed on GitHub runners.
-
-    No `playwright install --with-deps` (that apt step is what hung the old workflow).
-    """
-    from playwright.sync_api import sync_playwright
-    with sync_playwright() as pw:
-        browser = pw.chromium.launch(channel="chrome")
-        try:
-            page = browser.new_page(user_agent=USER_AGENT)
-            page.goto(url, wait_until="domcontentloaded", timeout=45000)
-            try:
-                page.wait_for_selector(".comment-content", timeout=15000)
-            except Exception:
-                pass
-            return page.content(), urldefrag(page.url)[0]
-        finally:
-            browser.close()
-
-
-def fetch(url):
-    try:
-        text, final = fetch_http(url)
-        if 'class="comment-content' in text or "class='comment-content" in text:
-            return text, final
-        print(f"No comments in plain HTTP response for {url}; trying browser fallback.")
-    except RuntimeError as exc:
-        print(f"{exc}; trying browser fallback.")
-    try:
-        return fetch_browser(url)
-    except ImportError:
-        raise RuntimeError("Plain HTTP failed and Playwright is not installed for the fallback.")
 
 
 # ------------------------------------------------------------------------- parsing
@@ -198,33 +173,44 @@ def extract(page_html, url):
 
 # --------------------------------------------------------------------------- crawl
 
-def crawl():
-    all_records, visited = {}, set()
-    pending = [SOURCE]
-    limit = MAX_PAGES if FULL_SCAN else SCAN_PAGES
-    while pending and len(visited) < limit:
-        url = pending.pop(0)
-        if url in visited:
+def api_to_html(items):
+    """Render REST API comments with the same markup as the page, so one parser serves both."""
+    parts = []
+    for c in items:
+        if c.get("status", "approved") != "approved":
             continue
-        page_html, final = fetch(url)
-        records, links, prev_page = extract(page_html, final)
-        if not records:
-            raise RuntimeError(
-                f"No comments found at {final}. The site may have changed markup or blocked the "
-                "request. No state or feed was overwritten.")
-        visited.update([url, final])
-        print(f"{final}: {len(records)} comments")
-        for cid, record in records.items():
-            all_records.setdefault(cid, record)
-        if FULL_SCAN:
-            pending.extend(sorted(links - visited - set(pending)))
-        elif prev_page and prev_page not in visited:
-            pending.append(prev_page)
-        if pending:
-            time.sleep(1)
-    if FULL_SCAN and pending:
-        raise RuntimeError("Pagination limit reached. Increase MAX_PAGES; state has not been changed.")
-    return all_records
+        date = c.get("date_gmt")
+        date = f"{date}+00:00" if date else c.get("date", "")
+        parts.append(
+            f'<li id="comment-{int(c["id"])}"><span class="comment-author"><cite class="fn">'
+            f'{html.escape(c.get("author_name", ""))}</cite></span>'
+            f'<a class="comment-date" href="{html.escape(c.get("link", ""))}">'
+            f'<time datetime="{html.escape(date)}"></time></a>'
+            f'<div class="comment-content">{(c.get("content") or {}).get("rendered", "")}</div></li>')
+    return "".join(parts)
+
+
+def crawl():
+    url = f"{API}?per_page={API_COMMENTS}&orderby=date&order=desc"
+    text, _ = fetch_http(url, accept="application/json")
+    try:
+        items = json.loads(text)
+    except json.JSONDecodeError:
+        raise RuntimeError(f"The API did not return JSON (blocked?): {text[:200]!r}. "
+                           "No state or feed was overwritten.")
+    if not isinstance(items, list) or not items:
+        raise RuntimeError(f"The API returned no comments: {text[:200]!r}. "
+                           "No state or feed was overwritten.")
+    records = extract(api_to_html(items), SOURCE)[0]
+    if not records:
+        raise RuntimeError("API comments could not be parsed. No state or feed was overwritten.")
+    print(f"REST API: {len(records)} comments (ids {min(map(int, records))}-{max(map(int, records))})")
+    return records
+
+
+def newest(records):
+    dates = [r["published"] for r in records.values() if r.get("published")]
+    return max(dates, key=lambda d: datetime.fromisoformat(d)) if dates else None
 
 
 # --------------------------------------------------------------------------- state
@@ -237,7 +223,10 @@ def _event(record, cid, kind, now, date=None):
 
 
 def update(state, records, now):
-    initial = not state.get("initialised", False)
+    # Older versions could read a stale cached page, so their state is rebuilt once.
+    initial = not state.get("initialised", False) or state.get("version", 0) < STATE_VERSION
+    if initial:
+        state["seen"], state["events"] = {}, []
     seen = state.setdefault("seen", {})
     events = state.setdefault("events", [])
     count = 0
@@ -262,7 +251,7 @@ def update(state, records, now):
     # Old link-only events have no text; drop them so the feed only shows full entries.
     state["events"] = [e for e in events if e.get("segments")][-FEED_LIMIT:]
     state["initialised"] = True
-    state["version"] = 4
+    state["version"] = STATE_VERSION
     return count, initial
 
 
@@ -293,7 +282,6 @@ def render_html(event):
                          f"<p><strong>💬 Respuesta de Ivrea:</strong></p>{_paragraphs(text)}</blockquote>")
     if not any(k == "a" for k, _ in event["segments"]):
         parts.append("<p><em>(Sin respuesta marcada con (((…))).)</em></p>")
-    parts.append(f'<p><a href="{html.escape(event["url"])}">Ver en la web de Ivrea</a></p>')
     return "".join(parts)
 
 
@@ -325,7 +313,6 @@ def write_feed(state, directory):
         prefix = "✏️ " if event.get("kind") == "updated" else ""
         title = _shorten(questions[0]) if questions else f"Entrada #{event['id']}"
         add(item, "title", prefix + title)
-        add(item, "link", event["url"])
         if event.get("author"):
             add(item, "{http://purl.org/dc/elements/1.1/}creator", event["author"])
         guid = ET.SubElement(item, "guid", isPermaLink="false")
@@ -354,6 +341,7 @@ def main():
     args = parser.parse_args()
     if args.snapshot:
         records, pages, prev_page = extract(load_snapshot(args.snapshot), SOURCE)
+        print(f"Newest comment: {newest(records)}")
         if not records:
             raise RuntimeError("No comments detected in snapshot")
         print(json.dumps({"comments": len(records), "answered": sum(r["answered"] for r in records.values()),
@@ -370,6 +358,7 @@ def main():
     count, initial = update(state, records, now)
     write_feed(state, Path("public"))
     state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Newest comment found: {newest(records)}")
     print(f"Scanned {len(records)} comments; {count} new/updated entries; baseline={initial}.")
 
 
