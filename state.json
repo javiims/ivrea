@@ -2164,9 +2164,22 @@
       "hash": "4b74e19857824c2e6149153cda3c53e0fe3413d399a2aba57c6004dc16ef0791",
       "question_hash": "e327b96b843be67c6a1ff8fa85f58b64fa049668d65bd1c20b4ef15cd99e97e1",
       "answer_hash": "7580d5b5f090039653ae55d4d457c7a21e0f2653271d3c89eae399acfc81e601"
+    },
+    "532": {
+      "hash": "90e297b1ae460bef373a410d33e61bf25e19a422e5d3100fb6e04dd3b4ef1fbc",
+      "question_hash": "0cb4dab5516531763cac8a87a31b6a3133766b0e14f7cba2bc1fd29dac154e36",
+      "answer_hash": "bb1d569fd510d642d1ad862a3276b572ccb160bdfd54f06f965f07ef6f85201b"
     }
   },
-  "events": [],
+  "events": [
+    {
+      "guid": "ivrea:532:90e297b1ae460bef373a410d33e61bf25e19a422e5d3100fb6e04dd3b4ef1fbc:2026-10-23T17:55:21.794560+00:00",
+      "id": "532",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-1/#comment-532",
+      "detected": "2026-10-23T17:55:21.794560+00:00"
+    }
+  ],
   "initialised": true,
   "version": 3
 }
