@@ -1,2 +1,4 @@
 beautifulsoup4==4.13.4
+# Optional browser fallback only (uses the Chrome preinstalled on GitHub runners;
+# no `playwright install` / apt step is needed).
 playwright==1.52.0

@@ -1,60 +1,61 @@
 # Ivrea Q&A RSS monitor
 
-A GitHub Actions project for https://editorialivrea.com/ESP/preguntas.
+GitHub Actions project that turns https://www.editorialivrea.com/ESP/preguntas/ into an RSS
+feed. Each RSS item contains **the reader's question and Ivrea's answer** (text inside
+`(((…)))`), so you can read everything directly in your RSS reader.
 
-## Snapshot-verified extraction (v2)
-The parser has been tested against the supplied saved MHTML snapshot: 50 comments, all 50 with an inline answer. The page uses li#comment-ID > article.comment-body > .comment-content, and answers appear inside strong elements containing (((...))). Pagination links include replytocom links; these are normalised to avoid duplicate requests. Live HTTP access and GitHub deployment remain unverified.
+## What changed in v4
+- **Fixed the hanging/cancelled runs.** The old workflow ran
+  `python -m playwright install --with-deps chromium`, which calls `apt-get`. On the runner the
+  Ubuntu mirror (`azure.archive.ubuntu.com`) did not respond, so the job hung ~25 min until the
+  timeout cancelled it. The page is plain server-rendered WordPress, so the scraper now uses a
+  normal HTTP request (no browser, no apt). A browser fallback remains, using the Google Chrome
+  already installed on GitHub runners (`channel="chrome"`), so it never needs `playwright install`.
+- **Faster scans.** The base URL always shows the newest page (newest first). Only that page plus
+  the previous one are fetched (2 requests) instead of crawling every page each hour.
+  Set `FULL_SCAN=1` to crawl all pages if you ever need to.
+- **Full content in the feed.** Item title = start of the question; description and
+  `content:encoded` = question(s) + Ivrea's answer(s), in reading order (some entries have
+  several question/answer pairs). Author is in `dc:creator`. A link to the original remains.
+- Job timeout reduced to 10 minutes, with per-step timeouts. `actions/checkout@v5` and
+  `actions/setup-python@v6` remove the Node.js 20 deprecation warning.
+- MHTML snapshots are now decoded as UTF-8 (accents were garbled before).
 
-## Publication model (v3)
-The user confirmed that unanswered questions cannot be published. Every published comment is therefore treated as one Q&A entry. All new comment IDs generate an RSS item; changes to an existing entry generate an update item. Inline answer markers are parsed for diagnostics only and never suppress a notification. ANSWERED_ONLY has been removed.
+## Setup / upgrade
+1. Replace the files in the repository with the contents of this archive, keeping the structure
+   (`.github/workflows/rss.yml`, `tests/test_scraper.py`, `scraper.py`, `requirements.txt`).
+   If a `state.json` already exists, keep it: hashes are compatible and no duplicates are created.
+2. Settings > Pages > Source: **GitHub Actions**.
+3. Actions > Update Ivrea RSS > **Run workflow**.
+4. The *Detect new entries* step should print about 50 comments per page and finish in seconds.
+   The first run (no state) creates a baseline and puts the latest `BASELINE_ITEMS` (default 10)
+   entries in the feed so you can see the format; afterwards only new or changed entries appear.
+5. Subscribe to `https://<user>.github.io/<repo>/feed.xml`.
 
-Validate a saved file without network access or state changes:
+## Configuration (env of *Detect new entries*)
+| Variable | Default | Meaning |
+|---|---|---|
+| `SCAN_PAGES` | 2 | Pages scanned per run (newest first) |
+| `FULL_SCAN` | off | `1` = crawl every comment page (up to `MAX_PAGES`) |
+| `FEED_LIMIT` | 200 | Items kept in the feed |
+| `BASELINE_ITEMS` | 10 | Items shown after the first run (0 = empty feed) |
+| `HTTP_TIMEOUT` | 30 | Seconds per HTTP request (3 retries) |
 
-```sh
-python scraper.py --snapshot "saved-page.mhtml.txt"
-```
-
-The supplied snapshot is not bundled and is not used as the production baseline. Existing v1 hash-only and v2 structured state are compatible. Keep state.json when upgrading; changed content is detected using the full-entry hash.
-
-## Setup
-1. Create a public GitHub repository with its default branch (normally main).
-2. Extract this archive and upload ALL files, including .github/workflows/rss.yml. Preserve the directory structure. Using git is the most reliable way to include hidden directories.
-3. Under Settings > Pages, set Source to GitHub Actions.
-4. Ensure Actions is enabled. The workflow requests contents: write, pages: write and id-token: write. Repository/organisation policy must permit those permissions and commits by github-actions[bot] to the default branch. Protected branches may require a policy change or an alternative state store.
-5. Open Actions > Update Ivrea RSS > Run workflow on the default branch.
-6. Check that the Detect new entries step reports a non-zero number of scanned comments and baseline=True. A successful first run intentionally creates an empty feed and records existing comments, avoiding a historical notification flood.
-7. Open the deployed site from Settings > Pages or the workflow deployment link. Click Subscribe to the RSS feed and copy that link into your RSS reader.
-
-## Behaviour
-- Polls hourly at minute 17 UTC; manual runs are also supported.
-- Uses Chromium to allow JavaScript-rendered comments, then extracts WordPress-style comment IDs and comment bodies.
-- Follows same-host comment-page-N pagination links, including older pages where a new answer could appear. Stops with an error if MAX_PAGES (default 100) is exceeded or a page contains no supported comments.
-- Detects every newly published Q&A entry and changes to its content, regardless of answer-marker formatting.
-- Emits link-only Spanish RSS entries, not copyrighted question/answer text. No third-party comment text is stored; state contains IDs and content hashes.
-- Each changed body gets a new RSS GUID. Dates represent detection time, not publication time. Repeated unchanged scans do not produce duplicate items.
-- Keeps all seen IDs in state.json, and the latest 200 events in public/feed.xml. State is committed to the default branch, not kept in an expiring Actions cache.
-- Treats each published comment as a Q&A entry, without identifying individual commenters.
-- It cannot guarantee detection of content added and removed between polls, content hidden from the browser, or comments not reachable through pagination. Static FAQ sections are not monitored.
-- A failure leaves the previous deployed feed intact. Enable workflow failure notifications in your GitHub notification settings if desired.
-
-## Configuration
-Set MAX_PAGES or FEED_LIMIT in the Detect new entries step's env mapping. Increase the job timeout if you intentionally scan a large archive. Avoid unnecessarily frequent polling.
+## Behaviour notes
+- New entries use the detection time as `pubDate` (comments are published when Ivrea approves and
+  answers them, which can be much later than the question date).
+- If an existing entry changes (e.g. answer edited) an item marked with ✏️ is added.
+  Edits on pages older than the scanned ones are only detected with `FULL_SCAN=1`.
+- If the site blocks the request or the markup changes, the run fails and the previous feed and
+  state are left untouched.
+- The feed published on GitHub Pages is public and contains text written by readers and Ivrea.
+  Use it for personal reading; consider a private alternative if you do not want to republish it.
 
 ## Local testing
-Use Python 3.12. Install requirements, then run:
-
 ```sh
 python -m pip install -r requirements.txt
-python -m playwright install chromium
 python -m unittest discover -s tests -v
-python scraper.py
+python scraper.py --snapshot "saved-page.mhtml.txt" --preview preview   # writes preview/feed.xml
+python scraper.py                                                       # live run
 ```
-
-The included unit tests use artificial markup matching the supplied snapshot structure; the parser was also checked against the supplied snapshot. If live extraction fails, inspect the comment DOM in your browser and adapt extract() selectors. Do not delete state.json to troubleshoot: deleting it resets the baseline.
-
-## GitHub caveats and references
-Scheduled workflows run on the default branch, may be delayed or dropped during high load, and public-repository schedules can be disabled after 60 days without repository activity. Check the Actions tab periodically; this is polling, not a real-time webhook.
-
-- https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows
-- https://docs.github.com/en/actions/how-tos/manage-workflow-runs/disable-and-enable-workflows
-- https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+Do not delete `state.json` in the repository: it resets the baseline.
