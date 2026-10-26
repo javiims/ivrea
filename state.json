@@ -499,6 +499,31 @@
       "hash": "90e297b1ae460bef373a410d33e61bf25e19a422e5d3100fb6e04dd3b4ef1fbc",
       "question_hash": "0cb4dab5516531763cac8a87a31b6a3133766b0e14f7cba2bc1fd29dac154e36",
       "answer_hash": "e22de2e1bcc2b387afaefb5f0431a4d259ff61b928e82cec879cb6ded907d516"
+    },
+    "533": {
+      "hash": "0edd8916efd87830a803b04b3a29ef5ac72c31e0385b211b8584f9620857f6a3",
+      "question_hash": "0065840d90c4eb298e2369d56422e8cec32d4682c7bd973c7fbc5ea0af1880be",
+      "answer_hash": "863d2fb71f16038c03371f3fd46b0f7f15e52fd8ed963ac14f451256320b49ce"
+    },
+    "534": {
+      "hash": "2e204a02fad0b0909f1594eedaf90ee4fb6827fd5175e92b875d0c8c154a8e88",
+      "question_hash": "b8d49289a3f4699be93eeda20792285f46d2d45feedd193616c798b5a726a6c7",
+      "answer_hash": "774e50ca5c5507288c02691d545a9c711a14cdd590280e78472b330ee4c41701"
+    },
+    "535": {
+      "hash": "55ee1501516baddfca65308db5c94a7a892a0cabff13093c99ba7885d84043bf",
+      "question_hash": "74766cd3d81306a971438922abc9199529ada7762dbf0b3983e45faa9d706d0a",
+      "answer_hash": "2b1119a8aeba885c178553d066feb044283a972b2130e0a6086d6b6a3a099d80"
+    },
+    "536": {
+      "hash": "f1f6b62c22cee1fe506bd300c696373810e617ce9fb08373c229f048831e75f4",
+      "question_hash": "b0f5833df3ae5dfbc2a5da2a8ef45d72e65b095e775ed0347ce8521e9686009e",
+      "answer_hash": "d9ed473a5b0e4e3671803a6e39671180bd60bf87156a8abc837538749076a824"
+    },
+    "537": {
+      "hash": "a8c45ab698e24e387a4a4dac41e83f8c68a22e9b15728d79f3723ea10e747d18",
+      "question_hash": "536d9b874d13a7defa9669f81f34524c65daf5016c6d690c7166f8b6779afde2",
+      "answer_hash": "7b9a768d227119e487afbea12e17e6ca2aeb2c610c926d5aa4b5be435ce716a2"
     }
   },
   "events": [
@@ -699,6 +724,114 @@
         [
           "a",
           "Sería un excelente noticia si se concreta el final. Pero siendo de Kadokawa estas cosas no indican nada. Por ejemplo el autor de Triage X (manga de Kadokawa que está en una situación similar a Trinity Seven por razones idénticas) ha dicho en 2020 exactamente lo mismo que estaba en el «arco final» y aquí estamos en 2026 donde sigue saliendo y no pinta que vaya a terminar en esta década siquiera. Los «rumores» sobre finales son la mayoría de las veces expresiones de voluntarísmo de los fans y no algo que provenga de la editorial o el autor. He buscado la info que dices esa de 2027 y efectivamente proviene solo de fans. Unos dicen eso y otros vaticinan una duración de por lo menos 40 vols y serialización hasta 2029 o 2030 como mínimo. En la editorial japonesa, en cambio, nos dicen que seguirá mientras en Japón funcione o el autor así lo desee. Saludos. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:533:0edd8916efd87830a803b04b3a29ef5ac72c31e0385b211b8584f9620857f6a3:2026-10-26T20:30:19.674952+00:00",
+      "id": "533",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-533",
+      "detected": "2026-10-26T20:30:19.674952+00:00",
+      "date": "2026-10-26T20:30:19.674952+00:00",
+      "author": "RAUL PEREZ",
+      "published": "2026-10-24T05:06:26+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola, gracias por el espectacular trabajo con la Kanzenban de Yu Yu Hakusho, la edición ha sido un sueño.\n¿Habría posibilidad de que licencien el «Official Characters Book – Reikai Shinsho»? En Japón salió a juego con este mismo formato A5 y estética de lujo, perfecto para completar.\nOjalá puedan tenerlo en cuenta:\n\nGracias"
+        ],
+        [
+          "a",
+          "Gracias por la sugerencia. El problema es que, aunque tiene una gran edición, la serie ha vendido bastante mal, por lo que nos tira para atrás al momento de valorar publicar este tipo de complementos. Al menos de momento. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:534:2e204a02fad0b0909f1594eedaf90ee4fb6827fd5175e92b875d0c8c154a8e88:2026-10-26T20:30:19.674952+00:00",
+      "id": "534",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-534",
+      "detected": "2026-10-26T20:30:19.674952+00:00",
+      "date": "2026-10-26T20:30:19.674952+00:00",
+      "author": "Pedro",
+      "published": "2026-10-25T10:05:30+00:00",
+      "segments": [
+        [
+          "q",
+          "Buenos días. Quería preguntar sobre cuándo estará en venta el tomo integral número 9 de Saint Seiya Lost Canvas.\nGracias"
+        ],
+        [
+          "a",
+          "Tal como se muestra en el calendario de nuestra web, el tomo 9 de Lost Canvas va a estar saliendo a la venta este jueves: https://www.editorialivrea.com/ESP/proximas. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:535:55ee1501516baddfca65308db5c94a7a892a0cabff13093c99ba7885d84043bf:2026-10-26T20:30:19.674952+00:00",
+      "id": "535",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-535",
+      "detected": "2026-10-26T20:30:19.674952+00:00",
+      "date": "2026-10-26T20:30:19.674952+00:00",
+      "author": "Cristine VB",
+      "published": "2026-10-25T10:34:02+00:00",
+      "segments": [
+        [
+          "q",
+          "Holaa, me gustaría saber como va lo de la sesión del salon del manga de natsu hyuga lo de los autógrafos y eso, será por sorteo o algo asiii??\nGracias!"
+        ],
+        [
+          "a",
+          "Te copio lo que he escrito hace solo unos días en esta sección: Se anunciará en las semanas previas a la feria. De todas formas son extremadamente limitadas las firmas en este caso, creo que menos de 100 por editorial. Las que corresponden a nuestra edición seguramente las asignemos por sorteo en nuestros stand. Actualmente se está trabajado con esta idea (pendiente de confirmación final): Cada persona que se acerque a nuestro stand con un ejemplar de Boticaria de Ivrea hará girar un bolillero tipo bingo donde si tiene suerte ganará un ticket que dará acceso a la firma así como el shikishi donde firmará la autora. Al participar se sellará la parte blanca (reverso) de la sobrecubierta con un sello conmemorativo de la serie, por lo que solo se podrá usar 1 vez. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:536:f1f6b62c22cee1fe506bd300c696373810e617ce9fb08373c229f048831e75f4:2026-10-26T20:30:19.674952+00:00",
+      "id": "536",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-536",
+      "detected": "2026-10-26T20:30:19.674952+00:00",
+      "date": "2026-10-26T20:30:19.674952+00:00",
+      "author": "Marco",
+      "published": "2026-10-25T17:31:43+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola ivrea ¿Cómo se encuentran? «Oniichan wa Boku ga Katte Ageru» hoy sugiero, de paso sugiero también el manga de yume Nikki, no sé si conocerán la obra original, ¿si es así les pareció?"
+        ],
+        [
+          "a",
+          "La primer obra que mencionas es un manga amateur que no cuenta con una edición física siquiera. El otro, por mi parte, no lo conozco, pero te lo tomamos como sugerencia."
+        ],
+        [
+          "q",
+          "Por otro lado os preguntare algo curioso, espero que no sea molesto ni ofensivo, de todos los mangas que licencian ustedes supongo que es posible que conozcáis a algún mangaka en persona o al menos a distancia por llamada, ?hay alguno que os hacha caído muy bien? Disculpa si esto último les molesta, un saludo"
+        ],
+        [
+          "a",
+          "Yo personalmente no, ninguna de las dos cosas. Pero sí, hay gente dentro de la editorial que ha conocido varios mangakas en persona. De hecho, un par de personas del equipo de derechos de Ivrea mantienen una relación de amistad con Takehiko Inoue y su familia. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:537:a8c45ab698e24e387a4a4dac41e83f8c68a22e9b15728d79f3723ea10e747d18:2026-10-26T20:30:19.674952+00:00",
+      "id": "537",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-537",
+      "detected": "2026-10-26T20:30:19.674952+00:00",
+      "date": "2026-10-26T20:30:19.674952+00:00",
+      "author": "Marc",
+      "published": "2026-10-25T19:25:12+00:00",
+      "segments": [
+        [
+          "q",
+          "¡Buenas! He estado siguiendo un manga que creo que puede ser una buena sugerencia: Dungeon no Osananajimi.\nAcabo hace nada, un par de semanas y son 8 volúmenes en total. Es de un estilo parecido al de Tsumiki Ogami, pero más directo a lo interesante, creo que tiene potencial.\n\nTambién, de cara a futuras sugerencias, ¿qué tipo de series os interesan? Tengo unos cuantos mangas que me encantaría ver en físico, pero no sé qué tanto pueden interesar («Akuma no Niizuma» y «Slime Seijo», para poner un par de los que también pueden tener potencial, pero la lista es enorme)."
+        ],
+        [
+          "a",
+          "Gracias por las sugerencias. Más allá de que a cierto perfil de lectores le guste decir cosas como «este manga es muy Ivrea» o «esta serie encaja perfectamente en su catálogo», nosotros consideramos que nuestras publicaciones abarcan un abanico de públicos y temáticas amplísimo y muy variado. Dar por hecho que tenemos un perfil de series definido cuando basta con echar un vistazo a nuestro catálogo para comprobar que no es así hace que nos tomemos las recomendaciones bastante menos en serio. -DANIEL"
         ]
       ]
     }
