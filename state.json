@@ -524,6 +524,31 @@
       "hash": "a8c45ab698e24e387a4a4dac41e83f8c68a22e9b15728d79f3723ea10e747d18",
       "question_hash": "536d9b874d13a7defa9669f81f34524c65daf5016c6d690c7166f8b6779afde2",
       "answer_hash": "7b9a768d227119e487afbea12e17e6ca2aeb2c610c926d5aa4b5be435ce716a2"
+    },
+    "538": {
+      "hash": "750261d319bf2a7d0dd8ece2259fe51f9ea122a8b4cccf6699a2f6053092ae25",
+      "question_hash": "1023a02050377097cbebf82f10bdd5f753f2f61217dcc6df98a2f9d23172bd23",
+      "answer_hash": "27297ccb3ffd1feb9494414e43e66d2855b20b8ef2fdfe5ce9d6cccd7edf146f"
+    },
+    "539": {
+      "hash": "e8bc5a73c7ad42b6377a17f558b17d8a97c2abcf3fca54cf47ca4a728ed606c5",
+      "question_hash": "37a58dec256cd198f74880021fc708a23bcef50f2762c5bc4a43aaed6b03553c",
+      "answer_hash": "5f6b37507be8d483fef416afd9e6d5aa748a92376d15b22515bcebf7049253ca"
+    },
+    "540": {
+      "hash": "4d6d22a5a534921198f625265012a0ce4841f246b779b80acdf02723954319d5",
+      "question_hash": "752ccbd7c9d6a5ac19d2d8c9ea34938500ed7f121525d04a4ae16f69f428c8e6",
+      "answer_hash": "8581873fa6d9c8ae527a4e5a5604ffe2ec8a8e412e7f5d6e153dce2af7ef8b4a"
+    },
+    "541": {
+      "hash": "fe4467e06e54a9be3e19b2fec6a84d04bc95c8c766951f93b8f29e28646eb985",
+      "question_hash": "b6553d55eee0ad8396a6fe982258e82bf1973f1c206fae9d1c589142cce91102",
+      "answer_hash": "c7da74f9ee0687fbcd0034c66db6018a4c40e1482f95167dd7c0d3d66c78f0fd"
+    },
+    "542": {
+      "hash": "f08ac4f81dee740d66449f875b2172a9a4fd111df3780a4951f9f5089d3aa11e",
+      "question_hash": "474a0c2fe7ed2738b27e6f744b8e532b665b1fb834191089939169a3f135fc35",
+      "answer_hash": "68b5c0c473f367b1f029afbf29c949b5fa364326d1cc13aec75a0dc02fb186ba"
     }
   },
   "events": [
@@ -832,6 +857,106 @@
         [
           "a",
           "Gracias por las sugerencias. Más allá de que a cierto perfil de lectores le guste decir cosas como «este manga es muy Ivrea» o «esta serie encaja perfectamente en su catálogo», nosotros consideramos que nuestras publicaciones abarcan un abanico de públicos y temáticas amplísimo y muy variado. Dar por hecho que tenemos un perfil de series definido cuando basta con echar un vistazo a nuestro catálogo para comprobar que no es así hace que nos tomemos las recomendaciones bastante menos en serio. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:538:750261d319bf2a7d0dd8ece2259fe51f9ea122a8b4cccf6699a2f6053092ae25:2026-10-28T16:39:21.617484+00:00",
+      "id": "538",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-538",
+      "detected": "2026-10-28T16:39:21.617484+00:00",
+      "date": "2026-10-28T16:39:21.617484+00:00",
+      "author": "Esteban",
+      "published": "2026-10-26T16:52:55+00:00",
+      "segments": [
+        [
+          "q",
+          "Saludos. Ya tienen una fecha exacta de cuando saldrán las novelas de Classroom Of The Élite?"
+        ],
+        [
+          "a",
+          "Como se indica en nuestra web, el primer tomo se encuentra programado para salir a mediados de noviembre. Puedes consultar siempre las fechas de lanzamiento aquí: https://www.editorialivrea.com/ESP/proximas/. Si hay cambios de fecha, se actualiza cada semana esta sección. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:539:e8bc5a73c7ad42b6377a17f558b17d8a97c2abcf3fca54cf47ca4a728ed606c5:2026-10-28T16:39:21.617484+00:00",
+      "id": "539",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-539",
+      "detected": "2026-10-28T16:39:21.617484+00:00",
+      "date": "2026-10-28T16:39:21.617484+00:00",
+      "author": "Javier",
+      "published": "2026-10-27T01:07:04+00:00",
+      "segments": [
+        [
+          "q",
+          "Buenas Ivrea! Justo acababa de acabar el tomo 40 de Kingdom, y me estaban saltando las lágrimas por llegar a la mitad de esta obra tan memorable y preciosa. Es lo mejor que he leído en mi vida y quería dejar unas palabras de agradecimiento por haberlo hecho posible.\nHe visto que la obra ha dejado de publicarse mensualmente, y es una pena. Ojalá que más gente pudiera conocerla, porque veo imposible que no pueda gustarte si le das una oportunidad. No sé si con una mayor promoción para que llegue a más personas sería eficaz. Y no pierdo la esperanza de poder ver si autor algún año en el Salón del Manga!\n\nMuchas gracias!"
+        ],
+        [
+          "a",
+          "Muchísimas gracias por tus palabras. Por nuestra parte, seguimos apostando por la serie y haciendo promoción y difusión de ella con frecuencia. El problema es que, aunque se trata de una obra extraordinaria, su enorme extensión puede intimidar a muchos lectores a la hora de animarse a empezarla y eso quizás le marca el ritmo a la frecuencia de salida. Aun así, seguimos trabajando para que cada vez más gente la descubra y le dé una oportunidad. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:540:4d6d22a5a534921198f625265012a0ce4841f246b779b80acdf02723954319d5:2026-10-28T16:39:21.617484+00:00",
+      "id": "540",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-540",
+      "detected": "2026-10-28T16:39:21.617484+00:00",
+      "date": "2026-10-28T16:39:21.617484+00:00",
+      "author": "Realta",
+      "published": "2026-10-27T05:46:08+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola Ivrea! Me gustaría recomendar un manga llamado The suspects of necromancy. No sé si este tipo de manga va mucho con vuestra línea editorial pero me parece un buen manga. Nada más! Hasta pronto!"
+        ],
+        [
+          "a",
+          "Gracias por la sugerencia. Como dije hace algunos comentarios: nosotros consideramos que nuestras publicaciones abarcan un abanico de públicos y temáticas amplísimo y muy variado. Basta con mirar nuestra tienda online o nuestra web para verlo. Si lo vieras o nos conocieras más entenderías que no hay algo que pueda «ir o no ir» con nuestra línea editorial. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:541:fe4467e06e54a9be3e19b2fec6a84d04bc95c8c766951f93b8f29e28646eb985:2026-10-28T16:39:21.617484+00:00",
+      "id": "541",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-541",
+      "detected": "2026-10-28T16:39:21.617484+00:00",
+      "date": "2026-10-28T16:39:21.617484+00:00",
+      "author": "Miren Itsaso Martin",
+      "published": "2026-10-27T06:33:51+00:00",
+      "segments": [
+        [
+          "q",
+          "¿Hay nuevas noticias sobre el retorno de Cherry Magic? Gracias 😊"
+        ],
+        [
+          "a",
+          "Ahora mismo estamos pendientes de que en Japón salga el tomo 17, que todo apunta a que será el cierre de la serie, para así poder cerrar la contratación de los volúmenes restantes. Una vez suceda esto, podremos programar su salida con una cadencia regular hasta finalizarla. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:542:f08ac4f81dee740d66449f875b2172a9a4fd111df3780a4951f9f5089d3aa11e:2026-10-28T16:39:21.617484+00:00",
+      "id": "542",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-542",
+      "detected": "2026-10-28T16:39:21.617484+00:00",
+      "date": "2026-10-28T16:39:21.617484+00:00",
+      "author": "Felipe",
+      "published": "2026-10-27T19:09:16+00:00",
+      "segments": [
+        [
+          "q",
+          "Buenas! Ahora que ha salido ya el final en Japón de «Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai» (Bunny girl senpai para los colegas), me gustaría saber si existe la posibilidad de que en un futuro se pueda traer las novelas ligeras aquí a España. Supongo que esto no se puede responder por privacidad pero es que es de mis series favoritas y no veo nada en español y me pone muy triste ya que en teoría es una serie bastante famosa internacionalmente. Muchas gracias!"
+        ],
+        [
+          "a",
+          "Gracias por la sugerencia. -DANIEL"
         ]
       ]
     }
