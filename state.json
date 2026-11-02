@@ -549,6 +549,31 @@
       "hash": "f08ac4f81dee740d66449f875b2172a9a4fd111df3780a4951f9f5089d3aa11e",
       "question_hash": "474a0c2fe7ed2738b27e6f744b8e532b665b1fb834191089939169a3f135fc35",
       "answer_hash": "68b5c0c473f367b1f029afbf29c949b5fa364326d1cc13aec75a0dc02fb186ba"
+    },
+    "543": {
+      "hash": "de8880cf5a1affcd1d890a8b1924f247a262511a58577d719e9c82a0c6f369ff",
+      "question_hash": "8a22746bc01658cdce8162e2ee1b4ff274ef27785313adea4d701cc6fdd841c5",
+      "answer_hash": "b32ee4219cb512bbc8a4cccbabb46800c89cdb3a5ce85a2b90041971b8c69d37"
+    },
+    "544": {
+      "hash": "38be152b5b08604ead94ba0215dc88b25c9b76748b7f7bae2a6478a4e6834240",
+      "question_hash": "3aa9d5952f40713a884c20cdc67433d686bb30200124a4ea97daf014abc4c920",
+      "answer_hash": "9cfb52bf911662bd89c421db9d6ab684d38945347b58e01fb2d5150d7f6e97d8"
+    },
+    "545": {
+      "hash": "a4a76b5bf7464748023595dc3c023595248edc230f4f230dba676061d004ecb4",
+      "question_hash": "81ad46979632a69512aa42c81d9b540743af266d3eb36ba7b3856c577e386ff6",
+      "answer_hash": "81506f74629185cc7ba2e3d45a4a93682db3aa14ea021e87e0f863615d6224c7"
+    },
+    "546": {
+      "hash": "7e0b3f86ba4511ab2fa693be3351bd100695554c24cbb9032c4a9318d3a7ffb8",
+      "question_hash": "48aec738215717f400f0eeceb839196d7f74d2a5415308304b2c66b5f3f99d37",
+      "answer_hash": "6a429daf6388727be17135754b352031f41df9b768b849cb538f202d3ba1a7b5"
+    },
+    "547": {
+      "hash": "a840e0de25bb2f1816bd133eb2f0a52bfb0206cf3a56ae6719f484c6e9ffa1a1",
+      "question_hash": "d3fb0270821882687793348d1bc74149b05a73fef4d9653278a0aae56322eb42",
+      "answer_hash": "3a20c861ce0a0556220e807b6cb5c0ab9be12d2c0bcba3abb557508f3f356689"
     }
   },
   "events": [
@@ -957,6 +982,122 @@
         [
           "a",
           "Gracias por la sugerencia. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:543:de8880cf5a1affcd1d890a8b1924f247a262511a58577d719e9c82a0c6f369ff:2026-11-02T15:57:48.060203+00:00",
+      "id": "543",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-543",
+      "detected": "2026-11-02T15:57:48.060203+00:00",
+      "date": "2026-11-02T15:57:48.060203+00:00",
+      "author": "Jonatán",
+      "published": "2026-10-28T19:46:14+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola!!!\nPrimero, gracias por vuestro trabajo, agradezco mucho poder comprar series que me encantan con una genial traducción y buena edición.\nLo primero agradeceros de nuevo por traer BUG EGO, me flipa la serie y el dibujo.\nTambién agradecer que trajeseis FANTASMAS SIN IMAGEN, de verdad me flipa el dibujo y el contraste entre comedia y terror. ¿Cómo le va en ventas? Se que el tercer tomo ha tenido varios retrasos pero lo espero con mucha ilusión. Lo suelo recomendar y en la aplicación Whakoom le dejé buena reseña para animar a la gente a hacerse con el."
+        ],
+        [
+          "a",
+          "Gracias por el comentario. Sobre Fantasmas, es muy pronto para poder sacar conclusiones, pero parece haber arrancado de forma correcta. Los retrasos en el tercer tomo se deben exclusivamente a temas de aprobaciones por parte de los japoneses por idas y vueltas sobre cómo adaptar las canciones. La serie es realmente muy divertida y atrapa."
+        ],
+        [
+          "q",
+          "Otra cosa. ¿Cuando sale el próximo número de EIZOUKEN?"
+        ],
+        [
+          "a",
+          "En algún punto del primer semestre de 2027. La serie está saliendo de forma extremadamente lenta en Japón, tirandose más de 1 año entre tomo y tomo y llevando ya más de una década en curso."
+        ],
+        [
+          "q",
+          "Y por último. Me di cuenta tras leer el tomo 16 de YAKUZA AMO DE CASA, al guardarlo en mi librería, que el dibujo del canto es el mismo que el del volumen 15. Y al parecer no es un caso aislado, al pasar por las tiendas parece ser un problema de la tirada que se hizo.\nMuchas gracias por vuestra atención!"
+        ],
+        [
+          "a",
+          "Sí, ese tipo de errores no pueden darse de forma aislada ya que básicamente es algo de diseño incluso aprobado por los japoneses, es algo general. En cualquier forma, como hemos comentado en su momento, el tomo 17 incluirá una sobrecubierta extra para reemplazar la del tomo 16. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:544:38be152b5b08604ead94ba0215dc88b25c9b76748b7f7bae2a6478a4e6834240:2026-11-02T15:57:48.060203+00:00",
+      "id": "544",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-544",
+      "detected": "2026-11-02T15:57:48.060203+00:00",
+      "date": "2026-11-02T15:57:48.060203+00:00",
+      "author": "Dani",
+      "published": "2026-10-29T13:55:58+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola, me interesa el manga Shigurui, pero he visto que varios tomos están agotados. ¿Tenéis intención de reimprimirlos? Gracias"
+        ],
+        [
+          "a",
+          "De momento no tenemos fechas previstas para reimprimir tomos agotados de la serie. Más adelante habría que valorar si merece la pena reimprimir tomos de una serie con tantos años a sus espaldas (la hemos lanzado hace ya 20 años!) y que además históricamente ha funcionado tan mal en ventas. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:545:a4a76b5bf7464748023595dc3c023595248edc230f4f230dba676061d004ecb4:2026-11-02T15:57:48.060203+00:00",
+      "id": "545",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-545",
+      "detected": "2026-11-02T15:57:48.060203+00:00",
+      "date": "2026-11-02T15:57:48.060203+00:00",
+      "author": "Pablo",
+      "published": "2026-10-31T14:15:47+00:00",
+      "segments": [
+        [
+          "q",
+          "¿Tras finalizar Ikkitousen Remix hay algún planteamiento de publicar Shin Ikkitousen?"
+        ],
+        [
+          "a",
+          "La publicación de la edición Remix de Ikkitousen finalizó hace ya bastante tiempo y todos los tomos están disponibles. En cuanto a Shin Ikkitousen, como hemos comentado muchas veces, su publicación en Japón es muy irregular, con muchos hiatus y no llega a un promedio de un tomo nuevo cada 2 años… por lo que preferimos esperar a que la serie finalice antes de valorar la posibilidad de editarla en España ya que en estas condiciones si la publicáramos fracasaría con total seguridad. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:546:7e0b3f86ba4511ab2fa693be3351bd100695554c24cbb9032c4a9318d3a7ffb8:2026-11-02T15:57:48.060203+00:00",
+      "id": "546",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-546",
+      "detected": "2026-11-02T15:57:48.060203+00:00",
+      "date": "2026-11-02T15:57:48.060203+00:00",
+      "author": "Uni",
+      "published": "2026-11-01T17:32:03+00:00",
+      "segments": [
+        [
+          "q",
+          "Buenas! Según vuestro calendario de salidas, parece que este año no se va a publicar ningún tomo de Spacewalking with you. Teniendo en cuenta que hace ya más de un año desde que se publicó el último, se sabe cuándo se va a reanudar su publicación? Espero que sea pronto, gracias."
+        ],
+        [
+          "a",
+          "La serie sale extremadamente lento en Japón. Estamos apenas unos tomos por detrás de la edición japonesa. En 2027 nos pondremos al día nuevamente. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:547:a840e0de25bb2f1816bd133eb2f0a52bfb0206cf3a56ae6719f484c6e9ffa1a1:2026-11-02T15:57:48.060203+00:00",
+      "id": "547",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-547",
+      "detected": "2026-11-02T15:57:48.060203+00:00",
+      "date": "2026-11-02T15:57:48.060203+00:00",
+      "author": "Javier",
+      "published": "2026-11-01T19:06:08+00:00",
+      "segments": [
+        [
+          "q",
+          "Asunto: Petición de publicación de los spin-offs de Record of Ragnarok\n\nHola, equipo de Ivrea:\n\nSoy lector de Record of Ragnarok y me gustaría solicitar que considerarais publicar en España los spin-offs:\n\n– Jack the Ripper Case Files.\n– Apocalypse of the Gods.\n\nCreo que tienen bastante potencial entre los lectores de la serie, especialmente el de Jack y el torneo de los dioses, que amplían el universo de la obra principal.\n\nMe gustaría saber si tenéis previsto publicarlos en castellano o si existe alguna posibilidad de hacerlo en el futuro.\n\n¡Hay lectores interesados y estaríamos encantados de comprarlos!\n\nMuchas gracias por vuestro tiempo."
+        ],
+        [
+          "a",
+          "Pese al enorme éxito de Shumatsu no Valkyrie lamentablemente el primer spin off qu hemos publicado de la serie, Lu-Bu, ha funcionado bastante mal en ventas. Lo cual nos ha hecho volvernos mucho más prudentes a la hora de sacar más spin-off. A futuro no descartamos la posibilidad de editar otras obras de la franquicia, es algo que se evalúa periódicamente, prestando suma atención a los pedidos de los lectores y el grado de popularidad de la serie en Japón y el resto del mundo. El tiempo dirá si a futuro se abre una ventana de posibilidad o no. -DANIEL"
         ]
       ]
     }
