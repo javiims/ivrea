@@ -571,9 +571,9 @@
       "answer_hash": "6a429daf6388727be17135754b352031f41df9b768b849cb538f202d3ba1a7b5"
     },
     "547": {
-      "hash": "a840e0de25bb2f1816bd133eb2f0a52bfb0206cf3a56ae6719f484c6e9ffa1a1",
+      "hash": "31ce6bdd3b3daca46ad78446a77e622308a8ad46f1a70ac782ab00c202fd0ac7",
       "question_hash": "d3fb0270821882687793348d1bc74149b05a73fef4d9653278a0aae56322eb42",
-      "answer_hash": "3a20c861ce0a0556220e807b6cb5c0ab9be12d2c0bcba3abb557508f3f356689"
+      "answer_hash": "53b729e9eb52a0ba6c913f272710737528947b892c774460f57515020c116df3"
     },
     "548": {
       "hash": "f5a7e29292e9e4f07473779ec277823502daeaa8858cfdd71fab04e6155040ef",
@@ -1148,6 +1148,26 @@
         [
           "a",
           "Como sabes no podemos responder a este tipo de consultas, ya que la llegada de nuevos títulos depende de muchos factores y, además, por temas de negociaciones y la cantidad de competidores que hay no nos resulta conveniente hacer público qué obras nos interesan o estamos valorando. Te agradecemos mucho la recomendación. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:547:31ce6bdd3b3daca46ad78446a77e622308a8ad46f1a70ac782ab00c202fd0ac7:2026-11-04T09:16:43.428578+00:00",
+      "id": "547",
+      "kind": "updated",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-547",
+      "detected": "2026-11-04T09:16:43.428578+00:00",
+      "date": "2026-11-04T09:16:43.428578+00:00",
+      "author": "Javier",
+      "published": "2026-11-01T19:06:08+00:00",
+      "segments": [
+        [
+          "q",
+          "Asunto: Petición de publicación de los spin-offs de Record of Ragnarok\n\nHola, equipo de Ivrea:\n\nSoy lector de Record of Ragnarok y me gustaría solicitar que considerarais publicar en España los spin-offs:\n\n– Jack the Ripper Case Files.\n– Apocalypse of the Gods.\n\nCreo que tienen bastante potencial entre los lectores de la serie, especialmente el de Jack y el torneo de los dioses, que amplían el universo de la obra principal.\n\nMe gustaría saber si tenéis previsto publicarlos en castellano o si existe alguna posibilidad de hacerlo en el futuro.\n\n¡Hay lectores interesados y estaríamos encantados de comprarlos!\n\nMuchas gracias por vuestro tiempo."
+        ],
+        [
+          "a",
+          "Pese al enorme éxito de Shumatsu no Valkyrie lamentablemente el primer spin off que hemos publicado de la serie, Lu-Bu, ha funcionado bastante mal en ventas. Lo cual nos ha hecho volvernos mucho más prudentes a la hora de sacar más spin-off. A futuro no descartamos la posibilidad de editar otras obras de la franquicia, es algo que se evalúa periódicamente, prestando suma atención a los pedidos de los lectores y el grado de popularidad de la serie en Japón y el resto del mundo. El tiempo dirá si a futuro se abre una ventana de posibilidad o no. -DANIEL"
         ]
       ]
     }
