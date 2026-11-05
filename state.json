@@ -584,6 +584,11 @@
       "hash": "94e377666b0ab10b443b04746292435495476211221d0bde335b74b6f0f2ad1a",
       "question_hash": "3b06890808d16004d6b112462776c5ce72b4b38d852ec2ebe061d36c655f1b6d",
       "answer_hash": "98e612f4cdda24b5e430234b6976e726ac9bc454fb987a4a50ad0f6ea66123c6"
+    },
+    "550": {
+      "hash": "ede40d8408116e3c58e398af800e6e875c282f770a7c09619572ed7fa192e5d4",
+      "question_hash": "bdfd314e4abb8ae18f1ed69705915e458591f5c63827d6d1bd05c3c63e029ee5",
+      "answer_hash": "98e612f4cdda24b5e430234b6976e726ac9bc454fb987a4a50ad0f6ea66123c6"
     }
   },
   "events": [
@@ -1168,6 +1173,26 @@
         [
           "a",
           "Pese al enorme éxito de Shumatsu no Valkyrie lamentablemente el primer spin off que hemos publicado de la serie, Lu-Bu, ha funcionado bastante mal en ventas. Lo cual nos ha hecho volvernos mucho más prudentes a la hora de sacar más spin-off. A futuro no descartamos la posibilidad de editar otras obras de la franquicia, es algo que se evalúa periódicamente, prestando suma atención a los pedidos de los lectores y el grado de popularidad de la serie en Japón y el resto del mundo. El tiempo dirá si a futuro se abre una ventana de posibilidad o no. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:550:ede40d8408116e3c58e398af800e6e875c282f770a7c09619572ed7fa192e5d4:2026-11-05T15:29:13.539831+00:00",
+      "id": "550",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-550",
+      "detected": "2026-11-05T15:29:13.539831+00:00",
+      "date": "2026-11-05T15:29:13.539831+00:00",
+      "author": "Juan Carlos",
+      "published": "2026-11-04T14:45:55+00:00",
+      "segments": [
+        [
+          "q",
+          "Buenas Ivrea, quería preguntar si alguna vez será posible la traducción al español del manga Uzaki-chan wa Asobitai!\n\nGracias por leer."
+        ],
+        [
+          "a",
+          "Como sabes no podemos responder a este tipo de consultas, ya que la llegada de nuevos títulos depende de muchos factores y, además, por temas de negociaciones y la cantidad de competidores que hay no nos resulta conveniente hacer público qué obras nos interesan o estamos valorando. Te agradecemos mucho la recomendación. -DANIEL"
         ]
       ]
     }
