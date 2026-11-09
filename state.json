@@ -589,6 +589,31 @@
       "hash": "ede40d8408116e3c58e398af800e6e875c282f770a7c09619572ed7fa192e5d4",
       "question_hash": "bdfd314e4abb8ae18f1ed69705915e458591f5c63827d6d1bd05c3c63e029ee5",
       "answer_hash": "98e612f4cdda24b5e430234b6976e726ac9bc454fb987a4a50ad0f6ea66123c6"
+    },
+    "551": {
+      "hash": "3dd9b962fd7a8f3642af083c1cd2efc5a28235d40bb2d694b22349ace1623a9c",
+      "question_hash": "cf9f36cb061d005ceb3277bac78a01ce76c54a2514e551595d334e41e9cd16c8",
+      "answer_hash": "639aeee19b8f9d31133a26e82eaaa63b610262b0739ec0dee7ba7f8a6f155a9d"
+    },
+    "552": {
+      "hash": "242879b2d238cc51d2b6058e45d6ac6ea810c2ba779a2448f785933dd6663b96",
+      "question_hash": "1e5902fc3ac2254829972cc9d7c253d76bcbd057642b456ca7cba7ed15d95a84",
+      "answer_hash": "49a51207459e07038c34300f80eea52c01181d062134c72c96689d1e13701320"
+    },
+    "553": {
+      "hash": "4f433a20e2c37f1e0dac346bf42e82e2698076ebfa0bb37d2ad14b5ea734c95f",
+      "question_hash": "6edf6dc33125fca97ca0a73846dee1ab9e32af2d8bef907a3f25fc4e2ad0d753",
+      "answer_hash": "68b5c0c473f367b1f029afbf29c949b5fa364326d1cc13aec75a0dc02fb186ba"
+    },
+    "554": {
+      "hash": "b8d43bd36efd29e997d1e627196812da54018f14df7f7af87677e4e3f451d022",
+      "question_hash": "7d691a5a6064f5b5afce934a14bef8d3457e70350b6acc2b57552cfceb20a612",
+      "answer_hash": "f1b628843a2988b6ccbd2ea284d913d9c1109aa1cf05ab9e6eabca1c89d82126"
+    },
+    "556": {
+      "hash": "5aa37aed7eb358183013e97f4ac413c8f1309e0de32a7fbc50609d989aeb545e",
+      "question_hash": "e0e58296d25208ed4922f4af8443ac71d9c6e85ac26d90505d4211f66d1f23c7",
+      "answer_hash": "68b5c0c473f367b1f029afbf29c949b5fa364326d1cc13aec75a0dc02fb186ba"
     }
   },
   "events": [
@@ -1193,6 +1218,106 @@
         [
           "a",
           "Como sabes no podemos responder a este tipo de consultas, ya que la llegada de nuevos títulos depende de muchos factores y, además, por temas de negociaciones y la cantidad de competidores que hay no nos resulta conveniente hacer público qué obras nos interesan o estamos valorando. Te agradecemos mucho la recomendación. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:551:3dd9b962fd7a8f3642af083c1cd2efc5a28235d40bb2d694b22349ace1623a9c:2026-11-09T17:32:09.741009+00:00",
+      "id": "551",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-551",
+      "detected": "2026-11-09T17:32:09.741009+00:00",
+      "date": "2026-11-09T17:32:09.741009+00:00",
+      "author": "Javier",
+      "published": "2026-11-05T19:25:32+00:00",
+      "segments": [
+        [
+          "q",
+          "¡Buenas de nuevo, Daniel!\n\nQuería añadir algunas razones por las que creo que los spin-offs de Record of Ragnarok podrían funcionar bien en España.\n\n– Jack the Ripper Case Files: Jack es uno de los personajes más reconocibles de la obra y su spin-off ofrece una historia de misterio e investigación bastante diferente al manga principal.\n– Apocalypse of the Gods: amplía enormemente el universo de Record of Ragnarok, introduce nuevos personajes y combates y puede atraer tanto a los lectores habituales como a quienes disfrutan especialmente de las historias de enfrentamientos.\n– Creo que las malas ventas del spin-off de Lu Bu no tienen por qué representar el rendimiento de todos los demás. Cada spin-off tiene protagonistas, historias y públicos potenciales diferentes.\n– Además, publicar estos títulos permitiría mantener el interés de los lectores por la franquicia y ofrecerles más contenido mientras siguen la serie principal.\n\nEntiendo que las ventas son un factor fundamental a la hora de decidir qué publicar, pero creo que estos dos títulos merecerían una oportunidad.\n\n¡Muchas gracias por responder y por tener en cuenta nuestras sugerencias!\n(Lo siento por molestar se que no soy experto en ventas pero esta es mi opinión y soy muy persistente en cosas que me gustan gracias y disculpas de nuevo)"
+        ],
+        [
+          "a",
+          "Gracias por el mensaje. Como hemos mencionado, no estamos del todo cerrados a publicar otros spin-offs, es algo que se evalúa periódicamente. No soy del equipo de derechos, pero personalmente creo que alguno caerá tarde o temprano. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:552:242879b2d238cc51d2b6058e45d6ac6ea810c2ba779a2448f785933dd6663b96:2026-11-09T17:32:09.741009+00:00",
+      "id": "552",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-552",
+      "detected": "2026-11-09T17:32:09.741009+00:00",
+      "date": "2026-11-09T17:32:09.741009+00:00",
+      "author": "Alan",
+      "published": "2026-11-06T11:01:48+00:00",
+      "segments": [
+        [
+          "q",
+          "¿tienen planes de reimprimir Elfen Lied? en especifico el volumen 04"
+        ],
+        [
+          "a",
+          "Está programada reimpresión de los agotados de Elfen Lied para algún punto del invierno. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:553:4f433a20e2c37f1e0dac346bf42e82e2698076ebfa0bb37d2ad14b5ea734c95f:2026-11-09T17:32:09.741009+00:00",
+      "id": "553",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-553",
+      "detected": "2026-11-09T17:32:09.741009+00:00",
+      "date": "2026-11-09T17:32:09.741009+00:00",
+      "author": "Javier",
+      "published": "2026-11-06T19:06:39+00:00",
+      "segments": [
+        [
+          "q",
+          "Porfavor hagan los demás spin off de RoR los apuesto que hay mucha más gente queriendo esos spin-offs porque si pintan mucho más interesantes que el de lubu que es un personaje muy poco conocido no como los dioses ya que yo creo en lo personal que se inspiró va a vender muchísimo más que el de Lubu gracias por vuestro tiempo"
+        ],
+        [
+          "a",
+          "Gracias por la sugerencia. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:554:b8d43bd36efd29e997d1e627196812da54018f14df7f7af87677e4e3f451d022:2026-11-09T17:32:09.741009+00:00",
+      "id": "554",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-554",
+      "detected": "2026-11-09T17:32:09.741009+00:00",
+      "date": "2026-11-09T17:32:09.741009+00:00",
+      "author": "Tae",
+      "published": "2026-11-06T22:06:52+00:00",
+      "segments": [
+        [
+          "q",
+          "Estamos esperando nuevos tomos de Cherry Magic. ¿Podremos seguir el próximo año con esta obra? ¿Existe la opción de alguna edición especial para el final del manga?"
+        ],
+        [
+          "a",
+          "Tal como hemos comentado solo unos mensajes antes, estamos pendientes de que en Japón salga el tomo 17, que todo apunta a que será el cierre de la serie, para así poder contratar los volúmenes restantes. Una vez suceda esto, podremos programar su salida con una cadencia regular hasta finalizarla. En cuanto a la posibilidad de incluir extras, parece algo remoto, hay que tener en cuenta que si bien la serie no es un fracaso estrepitoso, vende bastante poco. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:556:5aa37aed7eb358183013e97f4ac413c8f1309e0de32a7fbc50609d989aeb545e:2026-11-09T17:32:09.741009+00:00",
+      "id": "556",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-556",
+      "detected": "2026-11-09T17:32:09.741009+00:00",
+      "date": "2026-11-09T17:32:09.741009+00:00",
+      "author": "Sergio",
+      "published": "2026-11-08T09:38:02+00:00",
+      "segments": [
+        [
+          "q",
+          "Buenos días. En primer lugar felicidades por el fantástico trabajo que hacéis publicando manga en España.\n\nEscribo para sugerir la publicación en castellano de Hinomaru Zumou, un shonen deportivo, finalizado en Japón, que cuenta con una versión animada de 24 capítulos.\n\nAunque el sumo no es algo popular en España, el manga lo aborda con explicaciones y me recuerda mucho a otros como Captain Tsubasa, por su enfoque en la amistad, el equipo y el espíritu de superación.\n\nMuchas gracias por leerme."
+        ],
+        [
+          "a",
+          "Gracias por la sugerencia. -DANIEL"
         ]
       ]
     }
