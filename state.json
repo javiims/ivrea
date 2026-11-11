@@ -624,6 +624,21 @@
       "hash": "7fc0f0fa07bd1196bc985edb1683f6b7ba94cab3d380eebab9cc91989443cf61",
       "question_hash": "cf582a32b4d01936dc66a484260df87df644c1861926bf54b63545bf7cad1eb4",
       "answer_hash": "d5a1ca937080f53a2c62cfd06446a76fc74f0979e2a72534c8ccb3382f549190"
+    },
+    "560": {
+      "hash": "311ec4c04d48f78f3f8720180240901ec11cf26078f5294d70475447c3f696c3",
+      "question_hash": "bfa1080a153afa56a8c69d7a8de213bc43978219d5e8b8691eee7ae8b666c29d",
+      "answer_hash": "5a45ee2ab7ced0d4127f1e5c0cd6f5f6647b68fc0090ac5a920563daa9883a3e"
+    },
+    "561": {
+      "hash": "94ee57159ff66daf1642bd800cfe4a470537ee5e88fb05607f0792ce42850c79",
+      "question_hash": "f7a4b787c4567b286c9fed60024b5be3b9ab6fe2ad1c4b3b73b16d92e04723fd",
+      "answer_hash": "4959a962e88a12d1663c5096b4a302e0aece538638a21f3a2656c1025ad61c71"
+    },
+    "562": {
+      "hash": "fb0ea3edb5a5887ce1bd5d2a14e5918ed407591409e66753bcfd5f76da0fb462",
+      "question_hash": "d090a87dd28dfb9931258b2758948a5700e9d6e153ac66e1c68b03304a5dd862",
+      "answer_hash": "8816fc2168cdd9dbcebd4d37c0765e7d6b77bc3deacd0421ac13d5df8ddb3c9b"
     }
   },
   "events": [
@@ -1408,6 +1423,66 @@
         [
           "a",
           "Gracias por el mensaje. Como hemos mencionado, no estamos del todo cerrados a publicar otros spin-offs, es algo que se valora periódicamente. No soy del equipo de derechos, pero personalmente creo que alguno caerá tarde o temprano. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:560:311ec4c04d48f78f3f8720180240901ec11cf26078f5294d70475447c3f696c3:2026-11-11T22:00:44.953053+00:00",
+      "id": "560",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-560",
+      "detected": "2026-11-11T22:00:44.953053+00:00",
+      "date": "2026-11-11T22:00:44.953053+00:00",
+      "author": "Javier",
+      "published": "2026-11-11T00:59:48+00:00",
+      "segments": [
+        [
+          "q",
+          "Me dirijo a ustedes con el mayor respeto para compartir una inquietud respecto a las novelas de Classroom of the Elite.\nMe sorprende la escasa promoción que ha recibido este título. Tras los numerosos aplazamientos acumulados durante los últimos seis meses, resulta llamativo que prácticamente nadie se haya enterado de que su publicación está prevista para la próxima semana. Me parece una lástima, ya que considero que se trata de un proyecto muy interesante.\nAdemás, al comparar esta situación con el lanzamiento reciente de otras novelas de la competencia, la impresión que se obtiene es diametralmente opuesta en cuanto a visibilidad y apoyo promocional.\n¿Tienen pensado realizar alguna acción de difusión adicional en los próximos días?\nSaludos y suerte!"
+        ],
+        [
+          "a",
+          "Generalizar a partir de la propia experiencia personal no suele ser la mejor forma de describir una situación con precisión. Dudo mucho que «nadie» sepa que Classroom of the Elite sale ahora. En todo caso, ese «nadie» se limitará al grupo de personas con las que hayas hablado. Se le ha dado toda la promoción habitual y me consta que tanto los puntos de venta como los propios fans esperan su lanzamiento con interés. De hecho, tú mismo eres un ejemplo perfecto de que la información sí ha llegado a su público.\nSinceramente, no sé con qué estás comparando su difusión publicitaria, pero cada mes se publican en España un montón de novelas japonesas y la única serie a la que he visto dar un nivel de promoción superior es La Boticaria, que además partía con la ventaja de que su autora iba a asistir a la feria Manga Barcelona y de que sus dos mangas (uno de ellos publicado por nosotros) ya están vendiendo como churros.\nClassroom of the Elite no está ni remotamente en esa situación, y tampoco podemos pretender que se convierta por arte de magia en otro fenómeno como La Boticaria.\nEn cualquier caso, esto es una carrera de fondo, no una prueba de 100 metros lisos. Quedan muchos tomos por delante y el verdadero reto es conseguir que la serie funcione y mantenga unas ventas constantes durante los próximos años. Que eso nos permita seguir publicándola con regularidad y avanzar con todas sus secuelas, que el boca a boca sea positivo y que los lectores, satisfechos con la historia y con la edición, la recomienden a otros.\nQue todo el mundo conozca la fecha exacta de publicación del primer tomo va a aportar más bien poco a la hora de conseguir esos objetivos. No estamos hablando de un concierto al que vas una vez y que no se va a repetir. El éxito de un libro depende de que consiga mantener un nivel de ventas estable durante un periodo prolongado de tiempo. Pregúntale a cualquier librería especializada y te dirá que, aproximadamente, el 80 % de su facturación mensual procede del catálogo general, mientras que las novedades del mes representan solo el 20 %. La mayor parte de las ventas de un libro no se produce, ni mucho menos, durante su primer mes en las librerías. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:561:94ee57159ff66daf1642bd800cfe4a470537ee5e88fb05607f0792ce42850c79:2026-11-11T22:00:44.953053+00:00",
+      "id": "561",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-561",
+      "detected": "2026-11-11T22:00:44.953053+00:00",
+      "date": "2026-11-11T22:00:44.953053+00:00",
+      "author": "Jorge",
+      "published": "2026-11-11T14:06:50+00:00",
+      "segments": [
+        [
+          "q",
+          "Buenas ivrea, se que es muy precipitado porque ha salido hace poco en japon pero ¿cuando podríamos ver el nuevo tomo de Spy x Family? Se que por temas de licencias y tal son algunos meses pero me gustaría poder tener un estimado, muchas gracias por todo vuestro trabajo."
+        ],
+        [
+          "a",
+          "El tomo 18 salió la semana pasada en Japón. El proceso siempre es el mismo: una vez se publica allí, se le asigna internamente una fecha orientativa a la edición española y se pone en marcha todo el proceso (gestión del contrato, traducción, diseño, etc.). El tomo 17 conseguimos publicarlo solo 3 meses y 20 días después de su salida en Japón, así que calculo que este tardará también entre 3 y 4 meses. Normalmente, Ivrea es una de las editoriales extranjeras que más rápido publica los nuevos tomos de las series en curso, gracias a una estructura interna mucho menos burocratizada que las demás editoriales. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:562:fb0ea3edb5a5887ce1bd5d2a14e5918ed407591409e66753bcfd5f76da0fb462:2026-11-11T22:00:44.953053+00:00",
+      "id": "562",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-562",
+      "detected": "2026-11-11T22:00:44.953053+00:00",
+      "date": "2026-11-11T22:00:44.953053+00:00",
+      "author": "Nassim Chiara Merloni",
+      "published": "2026-11-11T15:15:55+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola, buenas tardes.\n\nMe gustaría recibir información sobre cómo se organizará la sesión de firmas de Hyūganatsu durante el Manga Barcelona 2026.\n\nViajaré desde Italia especialmente para asistir al evento y quisiera saber si será necesario inscribirse previamente, participar en un sorteo o acudir directamente al stand.\n\nTambién me gustaría saber si es obligatorio comprar un tomo de la editorial para participar, si se puede llevar un ejemplar propio y si existen requisitos específicos para los visitantes extranjeros.\n\nPor último, ¿se conocen ya las fechas y los horarios de las sesiones de firmas?\n\nMuchas gracias de antemano por vuestra ayuda.\n\n¡Un saludo!"
+        ],
+        [
+          "a",
+          "Todo lo que preguntas sigue todavía en conversaciones con el agente de autora, así que ninguna de las editoriales ha podido anunciar nada por el momento. En cuanto esté todo definido, las tres editoriales que publicamos mangas y novelas de La Boticaria lo anunciaremos al mismo tiempo. Dicho esto, mi recomendación personal es que NO viajes expresamente con la única intención de conseguir un autógrafo, porque lo más probable es que acabes llevándote una decepción. Por lo que me comenta el departamento de derechos, apenas se concederán entre 40 y 50 autógrafos por editorial, en una zona privada y de acceso restringido de la feria. Además, lo más probable es que se adjudiquen mediante sorteo, por lo que las posibilidades de conseguir uno serán extremadamente bajas, especialmente en una feria que recibe a cientos de miles de visitantes.\nPara poder participar en el sorteo, es muy probable que las editoriales exijan, como es lógico, que seas lectora de su edición y que, además, tengas entrada para el día en que finalmente se celebren las sesiones de firmas.\nPor otro lado, el autógrafo, como suele ser habitual en estos casos, se hará exclusivamente sobre un shikishi preparado especialmente para la ocasión y dedicado a la persona que lo reciba. La autora no firmará mangas ni novelas. Sí que es más probable que puedas verla en alguna de las charlas y entrevistas que de en salas de la feria. -DANIEL"
         ]
       ]
     }
