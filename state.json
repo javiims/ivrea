@@ -639,6 +639,21 @@
       "hash": "fb0ea3edb5a5887ce1bd5d2a14e5918ed407591409e66753bcfd5f76da0fb462",
       "question_hash": "d090a87dd28dfb9931258b2758948a5700e9d6e153ac66e1c68b03304a5dd862",
       "answer_hash": "8816fc2168cdd9dbcebd4d37c0765e7d6b77bc3deacd0421ac13d5df8ddb3c9b"
+    },
+    "563": {
+      "hash": "dd58e0c5ea5e10cac9a673aeeb84cb0c3f7c56f9d97ad3d601eaef7ab5774416",
+      "question_hash": "611d1d2da501f90949689b1d405edd78068b6e1e873f42ae0a5eed6994da9bc6",
+      "answer_hash": "13d35dc5b2e17ddd73a2abda05dd585d0ef15129b3869c20252cc45e1537fc4a"
+    },
+    "564": {
+      "hash": "45452473a6247e893275e3f90cd627025025e5f257bafe8f092b7ed594d121b5",
+      "question_hash": "3f3de591617d4588e33c87d6a7b005b0960f5dd36b848cce7091e33b4cdb23e0",
+      "answer_hash": "58e49947e282dadc78818dc40f782aa0c59313d7141eb2af9e142d357299ac0f"
+    },
+    "565": {
+      "hash": "ef60e5f36e222767ff57d997ae9db3baf8e65910ae69d6cbc761ffb7f0bcfbb8",
+      "question_hash": "e19712f2e69f79b74c13248c3bfdd11bdb8270c830bc1d2e83206d2476f3ed71",
+      "answer_hash": "26daf4db06dc6e851d320b15f83b6bf7fa67b4c65cd674e45a16a906439fb9ed"
     }
   },
   "events": [
@@ -1483,6 +1498,66 @@
         [
           "a",
           "Todo lo que preguntas sigue todavía en conversaciones con el agente de autora, así que ninguna de las editoriales ha podido anunciar nada por el momento. En cuanto esté todo definido, las tres editoriales que publicamos mangas y novelas de La Boticaria lo anunciaremos al mismo tiempo. Dicho esto, mi recomendación personal es que NO viajes expresamente con la única intención de conseguir un autógrafo, porque lo más probable es que acabes llevándote una decepción. Por lo que me comenta el departamento de derechos, apenas se concederán entre 40 y 50 autógrafos por editorial, en una zona privada y de acceso restringido de la feria. Además, lo más probable es que se adjudiquen mediante sorteo, por lo que las posibilidades de conseguir uno serán extremadamente bajas, especialmente en una feria que recibe a cientos de miles de visitantes.\nPara poder participar en el sorteo, es muy probable que las editoriales exijan, como es lógico, que seas lectora de su edición y que, además, tengas entrada para el día en que finalmente se celebren las sesiones de firmas.\nPor otro lado, el autógrafo, como suele ser habitual en estos casos, se hará exclusivamente sobre un shikishi preparado especialmente para la ocasión y dedicado a la persona que lo reciba. La autora no firmará mangas ni novelas. Sí que es más probable que puedas verla en alguna de las charlas y entrevistas que de en salas de la feria. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:563:dd58e0c5ea5e10cac9a673aeeb84cb0c3f7c56f9d97ad3d601eaef7ab5774416:2026-11-13T00:27:48.607836+00:00",
+      "id": "563",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-563",
+      "detected": "2026-11-13T00:27:48.607836+00:00",
+      "date": "2026-11-13T00:27:48.607836+00:00",
+      "author": "Jorge",
+      "published": "2026-11-11T16:30:45+00:00",
+      "segments": [
+        [
+          "q",
+          "Buena ivrea perdón por volver a escribir el mismo día, pero necesito preguntar esto 😅, la novela de classroom of the elite sale la semana que viene (como ya he comentado varias veces le tengo mucho hype) y quería preguntar cual es el estado actual de este tomo, a lo que me quiero referir es si está 100% acabada y es seguro que sale el 19 o hay probabilidades de un nuevo retraso, tengo el calendario ya preparado y tengo ese día reservado a la novela y tengo demasiadas ganas ya 😝, también decir que muchas gracias por traer ¿Las Gals no soportan a los Otakus? Que sale este jueves y que también me voy a comprar, un saludo"
+        ],
+        [
+          "a",
+          "Classroom of the Elite ha sido entregada hoy de imprenta al distribuidor e inicia su proceso de para estar a la venta el jueves 19 de Noviembre tal como figura en el calendario de nuestra web: https://www.editorialivrea.com/ESP/proximas/#2611 – DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:564:45452473a6247e893275e3f90cd627025025e5f257bafe8f092b7ed594d121b5:2026-11-13T00:27:48.607836+00:00",
+      "id": "564",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-564",
+      "detected": "2026-11-13T00:27:48.607836+00:00",
+      "date": "2026-11-13T00:27:48.607836+00:00",
+      "author": "Angel",
+      "published": "2026-11-11T20:30:27+00:00",
+      "segments": [
+        [
+          "q",
+          "hola buenas ivrea!\nQuería preguntar que a pasado con trinity seven, a principios de año se suponía que iban a salir tomos y de momento no habéis dicho nada sobre los próximos tomos, podríamos saber que ha pasado al respecto o que tenéis pensado en un futuro con la serie??\nMuchas gracias y un saludo!"
+        ],
+        [
+          "a",
+          "Sus nulas ventas y la lentitud con la que avanza en Japón no ayudan precisamente: lleva ya 16 años publicándose allí y hace más de 10 años que terminó el anime y dejó de interesarle a la inmensa mayoría de los lectores. El hecho de que la serie todavía no tenga un final a la vista complica aún más la situación. Habrá nuevos tomos cuando haya finalizado en Japón y así pueda tener un poco de esperanza de recuperar a al menos una parte de los lectores que ha perdido por extenderse tanto a ritmo tan lento. En cualquier caso no te preocupes que completarse se completará. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:565:ef60e5f36e222767ff57d997ae9db3baf8e65910ae69d6cbc761ffb7f0bcfbb8:2026-11-13T00:27:48.607836+00:00",
+      "id": "565",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-565",
+      "detected": "2026-11-13T00:27:48.607836+00:00",
+      "date": "2026-11-13T00:27:48.607836+00:00",
+      "author": "Jesus",
+      "published": "2026-11-12T18:29:14+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola, muchas gracias por vuestro trabajo. Solo es un detalle interesante que he encontrado de ivrea, ¿por que no se acredita la persona que realiza la traduccion? No es perniciosa mi pregunta ni mucho menos, solo que he visto que en otros sitios si lo hacen y no se si existe algun motivo para ocultarlo.\n\nSaludos."
+        ],
+        [
+          "a",
+          "No comprendo, ¿nunca has visto la página de créditos de nuestras publicaciones? Absolutamente en todas está acreditada la persona que hizo la traducción… De hecho no figura ni más ni menos preponderantemente que lo que figura el traductor en cualquier página de créditos de los competidores. ¿Nunca jamás de los jamáces has comprado un libro nuestro y aún así vienes aquí a preguntar algo tan específico? ¿por qué? -DANIEL"
         ]
       ]
     }
