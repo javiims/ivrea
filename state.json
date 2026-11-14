@@ -654,6 +654,16 @@
       "hash": "ef60e5f36e222767ff57d997ae9db3baf8e65910ae69d6cbc761ffb7f0bcfbb8",
       "question_hash": "e19712f2e69f79b74c13248c3bfdd11bdb8270c830bc1d2e83206d2476f3ed71",
       "answer_hash": "26daf4db06dc6e851d320b15f83b6bf7fa67b4c65cd674e45a16a906439fb9ed"
+    },
+    "559": {
+      "hash": "47994d297d03cf162e1a0288a26f66f0a8953fda479d4129b61193271c94fe5a",
+      "question_hash": "4264cad22d11cfd35dd43149b901220277456ece8b7aca1ba5451f2719790640",
+      "answer_hash": "0850761d346be398ecdd59f31d77c1ee318fae1b67fa3e93f65b6c75c795ac47"
+    },
+    "566": {
+      "hash": "f3d85a4ea497077760a568d456c78b56075368ebe75f80242bc5e5e92fba4707",
+      "question_hash": "27e2fe531ac135e0bfa37b244bd3adfbf18d6d61bfccdd166fd6cd9c3ffd5b63",
+      "answer_hash": "5a69ae2be78167a21113489fc9841738256ebc782ed8169dc3c84dd16f3cb68b"
     }
   },
   "events": [
@@ -1558,6 +1568,62 @@
         [
           "a",
           "No comprendo, ¿nunca has visto la página de créditos de nuestras publicaciones? Absolutamente en todas está acreditada la persona que hizo la traducción… De hecho no figura ni más ni menos preponderantemente que lo que figura el traductor en cualquier página de créditos de los competidores. ¿Nunca jamás de los jamáces has comprado un libro nuestro y aún así vienes aquí a preguntar algo tan específico? ¿por qué? -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:559:47994d297d03cf162e1a0288a26f66f0a8953fda479d4129b61193271c94fe5a:2026-11-14T18:05:45.669564+00:00",
+      "id": "559",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-559",
+      "detected": "2026-11-14T18:05:45.669564+00:00",
+      "date": "2026-11-14T18:05:45.669564+00:00",
+      "author": "Sebas",
+      "published": "2026-11-10T21:42:08+00:00",
+      "segments": [
+        [
+          "q",
+          "Buenas!\n\nPrimero que todo quería agradeceros por las publicaciones que estáis haciendo de Jojolands, que son de altísima calidad y disfruto bastante, pero me han surgido un par de dudas.\n\nEl volumen 9 salió en septiembre en Japón, dado que no aparece en el calendario de salidas y otras publicaciones como la francesa tampoco lo han sacado, me imagino que aún no se podrá lanzar. Mi duda es: ¿cómo va a funcionar ahora la salida de los nuevos volúmenes que se publiquen en Japón? ¿Se va a esperar a que salga otro para que la publicación japonesa vaya siempre uno por delante o algo así?"
+        ],
+        [
+          "a",
+          "El tomo 9 de The Jojolands está previsto para principios del próximo año. Como es habitual en las series que llevamos al día con Japón, una vez que se publica allí un nuevo tomo, se pueden comenzar los trámites de contratación para poder publicar nuestra edición. A los tramites del papeleo hay que sumarle los tiempos de producción del libro (traducción, diseño, impresión etc). El proceso según lo fluido que sea tarda 3 a 6 meses con respecto al momento que sale en Japón. Normalmente estamos entre las editoriales del mundo que sacan más rapido con respecto a Japón las ediciones locales como se puede ver en series como Sakamoto Days, SpyXFamily. One Punch Man etc."
+        ],
+        [
+          "q",
+          "Otra duda que tengo, en la publicación francesa tratan a Dragona Joestar con pronombres femeninos mientras que aquí se le trata con pronombres masculinos, a pesar de que vi en twitter que, antes de empezar vuestra publicación el año pasado, le dijisteis a un usuario que se iban a usar pronombres femeninos. ¿De dónde salió la decisión de usar masculinos?"
+        ],
+        [
+          "a",
+          "En realidad, el japonés es bastante ambiguo en este sentido (para variar…). Dragona tiene una forma de hablar que presenta ciertos matices femeninos, pero no utiliza de manera marcada ni constante las expresiones más claramente asociadas al habla femenina. Teniendo en cuenta esto y a que Jodio ya lo trata en masculino, los demás integrantes de su grupo hacen eso mismo, pero en las interacciones con personajes externos sí se utiliza el femenino. La idea fue respetar los matices y las ambigüedades que presenta el original, tomando decisiones de adaptación según el contexto. Quizás la respuesta que has visto en X fue apresurada teniendo en cuenta que aún no habíamos empezado el trabajo de traducción y adaptación para la edición española. Hablaré con la gente que gestiona esa red para que no hagan afirmaciones así sin consultar al equipo de editores."
+        ],
+        [
+          "q",
+          "Mi última duda, ya no relacionada con Jojolands en sí. Dado que la publicación está básicamente al día, ¿hay planes para sacar otras cosas de Jojos o de Araki para el año que viene?\n\nMuchas gracias!!"
+        ],
+        [
+          "a",
+          "Nuestra idea es poder publicar todo lo que sea posible de Jojo’s y Araki, así que sí, a futuro vamos a tener novedades sobre ambos. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:566:f3d85a4ea497077760a568d456c78b56075368ebe75f80242bc5e5e92fba4707:2026-11-14T18:05:45.669564+00:00",
+      "id": "566",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-566",
+      "detected": "2026-11-14T18:05:45.669564+00:00",
+      "date": "2026-11-14T18:05:45.669564+00:00",
+      "author": "Jesus",
+      "published": "2026-11-14T08:55:42+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola. Precisamente porque he comprado varias series con vosotros tenía la duda. Revisando las que tengo vi que en algún momento (hace poco?) se cambió el diseño donde iba acreditado el traductor que de costumbre iba (arriba a la derecha) y ahora viene abajo junto al resto (que es lo normal) Eso admito el culpa mia. Ahora bien, la prepotencia y dudar de un comprador asiduo no os deja en buen lugar. Yo por ahora me replanteo comprar cualquiera cosa con el trato que dais por aqui. Saludos."
+        ],
+        [
+          "a",
+          "Disculpa si te lo has sentido de esa manera; desde luego, no era mi intención. Simplemente te preguntaba de dónde venía esa inquietud, porque, por lo que parecía, la única forma de tenerla es que nunca hubieras comprado un libro nuestro y, por tanto, no habías tenido ocasión de comprobarlo directamente. Me sorprendió que, como único planteamiento en tu mensaje, afirmaras que no incluimos los nombres de los traductores y preguntaras por qué. Mi respuesta iba un poco en esa misma línea: entender qué te llevaba a plantear esa cuestión que siquiera era real. Me alegra que hayamos podido aclararlo y que tú mismo hayas comprobado que, en realidad, no es así. En cualquier caso, te reitero mis disculpas si mi respuesta te ha parecido prepotente o te ha hecho sentir incómodo. No era en absoluto mi intención y lamento que se haya podido interpretar así. Un abrazo. -DANIEL"
         ]
       ]
     }
