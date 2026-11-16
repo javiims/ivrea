@@ -4,6 +4,23 @@ GitHub Actions project that turns https://www.editorialivrea.com/ESP/preguntas/ 
 feed. Each RSS item contains **the reader's question and Ivrea's answer** (text inside
 `(((…)))`), so you can read everything directly in your RSS reader.
 
+## What changed in v7.1
+- **Fixed the failing runs (`HTTP Error 403: Forbidden`).** Since 14 Nov 2026 most runs were
+  rejected by the site with `403 Forbidden`, while the same request from a home connection
+  worked (most likely the site's firewall refusing requests from GitHub's servers). When an
+  address fails, the scraper now asks for the same comments at the next one:
+  1. `API_URL` (`https://editorialivrea.com/ESP/preguntas/wp-json/wp/v2/comments`)
+  2. the same API on `www.editorialivrea.com`
+  3. the same API through `?rest_route=/wp/v2/comments` (avoids rules that only block `/wp-json/`)
+  4. the WordPress comments RSS feed `https://www.editorialivrea.com/ESP/preguntas/comments/feed/`
+     (only the newest 10 comments, but with identical text, so nothing is reported twice)
+- A `403`/`404` answer is no longer retried on the same address (it always gave the same
+  answer); network errors and `5xx` errors still are. The log shows which server sent an error.
+- **When every source fails, the run is skipped with a warning instead of failing**: the feed
+  and `state.json` stay as they are and the next run tries again. Only when nothing could be
+  read for `MAX_BLOCKED_HOURS` (48 h) does the run fail, so GitHub e-mails you. For this,
+  `state.json` keeps `last_success`, updated at most once a day (no hourly commits).
+
 ## What changed in v7
 - **Single source: the REST API** `https://editorialivrea.com/ESP/preguntas/wp-json/wp/v2/comments`.
   It always holds the newest comments, so page numbers (22, 23, …) no longer matter and the
@@ -74,15 +91,19 @@ feed. Each RSS item contains **the reader's question and Ivrea's answer** (text 
 | `API_COMMENTS` | 100 | Newest comments read per run (max 100) |
 | `FEED_LIMIT` | 200 | Items kept in the feed |
 | `BASELINE_ITEMS` | 10 | Items shown after the first run (0 = empty feed) |
-| `HTTP_TIMEOUT` | 30 | Seconds per HTTP request (3 retries) |
+| `API_FALLBACKS` | the same API on `www.` and via `?rest_route=` | Other API addresses tried in order when one fails (space separated) |
+| `COMMENTS_FEED` | `https://www.editorialivrea.com/ESP/preguntas/comments/feed/` | Last-resort source (newest 10 comments) |
+| `MAX_BLOCKED_HOURS` | 48 | Hours without any successful read before runs start failing |
+| `HTTP_TIMEOUT` | 30 | Seconds per HTTP request (network errors are retried 3 times) |
 
 ## Behaviour notes
 - New entries use the detection time as `pubDate` (comments are published when Ivrea approves and
   answers them, which can be much later than the question date).
 - If an existing entry changes (e.g. answer edited) an item marked with ✏️ is added.
   Edits are only detected while the comment is still among the newest 100 in the API.
-- If the site blocks the request or the markup changes, the run fails and the previous feed and
-  state are left untouched.
+- If every source is blocked or the markup changes, the previous feed and state are left
+  untouched. The run only shows a warning until `MAX_BLOCKED_HOURS` have passed without a
+  successful read; after that it fails, so GitHub e-mails you.
 - The feed published on GitHub Pages is public and contains text written by readers and Ivrea.
   Use it for personal reading; consider a private alternative if you do not want to republish it.
 

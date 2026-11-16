@@ -1,5 +1,10 @@
+import email.message
+import io
+import os
 import tempfile
 import unittest
+import urllib.error
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import xml.etree.ElementTree as ET
 from unittest import mock
@@ -136,6 +141,120 @@ class Tests(unittest.TestCase):
             with self.subTest(payload=payload):
                 with self.assertRaises(RuntimeError):
                     self._crawl(payload)
+
+    @staticmethod
+    def _feed(*ids):
+        items = ''.join(
+            '<item><title>Por: Lector {0}</title>'
+            '<link>https://www.editorialivrea.com/ESP/preguntas/comment-page-22/#comment-{0}</link>'
+            '<dc:creator><![CDATA[Lector {0}]]></dc:creator>'
+            '<pubDate>Fri, 23 Oct 2026 10:00:00 +0000</pubDate>'
+            '<guid isPermaLink="false">https://www.editorialivrea.com/ESP/preguntas/#comment-{0}</guid>'
+            '<description><![CDATA[Pregunta {0}]]></description>'
+            '<content:encoded><![CDATA[<p>Pregunta {0}<br />\n<strong><br />\n'
+            '(((Respuesta {0} -DANIEL)))</strong></p>\n]]></content:encoded></item>'.format(i) for i in ids)
+        return ('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" '
+                'xmlns:content="http://purl.org/rss/1.0/modules/content/" '
+                'xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Comentarios</title>'
+                + items + '</channel></rss>')
+
+    def _crawl_blocked(self, answers):
+        """Every address answers 403 Forbidden, except those starting with a key of `answers`."""
+        calls = []
+        def fake(url, **kw):
+            calls.append(url)
+            for prefix, text in answers.items():
+                if url.startswith(prefix):
+                    return text, url
+            raise scraper.SourceError('HTTP Error 403: Forbidden')
+        with mock.patch.object(scraper, 'fetch_http', side_effect=fake):
+            return scraper.crawl(), calls
+
+    def test_blocked_api_falls_back_to_other_addresses(self):
+        rest_route = 'https://www.editorialivrea.com/ESP/preguntas/?rest_route=/wp/v2/comments'
+        recs, calls = self._crawl_blocked({rest_route: self._api(600)})
+        self.assertEqual(len(calls), 3)
+        self.assertTrue(calls[1].startswith('https://www.editorialivrea.com/ESP/preguntas/wp-json/wp/v2/comments?'))
+        self.assertTrue(calls[2].startswith(rest_route + '&per_page=100'))
+        self.assertEqual(set(recs), {'600'})
+
+    def test_comments_feed_gives_the_same_entries_as_the_api(self):
+        from_api, _ = self._crawl(self._api(600, 601))
+        from_feed, calls = self._crawl_blocked({scraper.COMMENTS_FEED: self._feed(600, 601)})
+        self.assertEqual(len(calls), 4)
+        self.assertEqual(calls[-1], scraper.COMMENTS_FEED)
+        self.assertEqual(from_feed, from_api)
+        # so switching between both sources reports nothing as new or edited
+        state = {}
+        update(state, from_api, T0)
+        self.assertEqual(update(state, from_feed, T1), (0, False))
+
+    def test_every_source_blocked(self):
+        with self.assertRaises(scraper.SourcesUnavailable):
+            self._crawl_blocked({})
+
+    def test_forbidden_is_not_retried(self):
+        error = urllib.error.HTTPError('https://x/api', 403, 'Forbidden', email.message.Message(),
+                                       io.BytesIO(b'<html>Request blocked</html>'))
+        with mock.patch.object(scraper.urllib.request, 'urlopen', side_effect=error) as urlopen, \
+                mock.patch.object(scraper.time, 'sleep') as sleep:
+            with self.assertRaises(scraper.SourceError):
+                scraper.fetch_http('https://x/api')
+        self.assertEqual(urlopen.call_count, 1)
+        sleep.assert_not_called()
+
+    def test_network_errors_are_retried(self):
+        with mock.patch.object(scraper.urllib.request, 'urlopen',
+                               side_effect=urllib.error.URLError('timed out')) as urlopen, \
+                mock.patch.object(scraper.time, 'sleep') as sleep:
+            with self.assertRaises(scraper.SourceError):
+                scraper.fetch_http('https://x/api')
+        self.assertEqual(urlopen.call_count, 3)
+        self.assertEqual(sleep.call_count, 2)
+
+    def _run_main(self, state, **crawl):
+        """Run main() in an empty folder; return the saved state.json text and whether a feed was written."""
+        cwd = os.getcwd()
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / 'state.json'
+            if state is not None:
+                path.write_text(scraper.json.dumps(state), encoding='utf-8')
+            os.chdir(d)
+            try:
+                with mock.patch.object(scraper, 'crawl', **crawl), mock.patch('sys.argv', ['scraper.py']):
+                    scraper.main()
+            finally:
+                os.chdir(cwd)
+            return (path.read_text(encoding='utf-8') if path.exists() else None,
+                    (Path(d) / 'public' / 'feed.xml').exists())
+
+    def test_successful_run_saves_state_and_feed(self):
+        text, feed = self._run_main(None, return_value=records())
+        state = scraper.json.loads(text)
+        self.assertIn('last_success', state)
+        self.assertEqual(set(state['seen']), {'10', '11'})
+        self.assertTrue(feed)
+
+    def test_blocked_run_is_skipped_until_it_lasts_too_long(self):
+        def ago(hours):
+            return (datetime.now(timezone.utc) - timedelta(hours=hours)).isoformat()
+        blocked = scraper.SourcesUnavailable('blocked')
+        state = {'last_success': ago(5), 'events': []}
+        self.assertEqual(self._run_main(state, side_effect=blocked), (scraper.json.dumps(state), False))
+        # a recently detected entry also counts as a successful read
+        self._run_main({'events': [{'detected': ago(5)}]}, side_effect=blocked)
+        for state in ({'last_success': ago(scraper.MAX_BLOCKED_HOURS + 1)}, {}):
+            with self.subTest(state=state), self.assertRaises(RuntimeError):
+                self._run_main(state, side_effect=blocked)
+
+    def test_last_success_is_saved_at_most_daily(self):
+        state = {}
+        scraper.note_success(state, T0)
+        scraper.note_success(state, '2026-01-01T12:00:00+00:00')
+        self.assertEqual(state['last_success'], T0)
+        scraper.note_success(state, T1)
+        self.assertEqual(state['last_success'], T1)
+
 
 if __name__ == '__main__':
     unittest.main()

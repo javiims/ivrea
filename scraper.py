@@ -10,30 +10,43 @@ import html
 import json
 import os
 import re
+import sys
 import time
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email import policy
 from email.parser import BytesParser
-from email.utils import format_datetime
+from email.utils import format_datetime, parsedate_to_datetime
 from pathlib import Path
-from urllib.parse import urldefrag, urljoin, urlparse, urlunparse
+from urllib.parse import urldefrag, urlencode, urljoin, urlparse, urlunparse
 import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup, NavigableString
 
 
 SOURCE = "https://www.editorialivrea.com/ESP/preguntas/"
-# Only source: the WordPress REST API of the Q&A section. It always contains the newest
+# Main source: the WordPress REST API of the Q&A section. It always contains the newest
 # comments (older ones drop out of it, which is fine: state.json remembers what was seen).
 API = os.environ.get("API_URL", "https://editorialivrea.com/ESP/preguntas/wp-json/wp/v2/comments")
+# The site's firewall often answers "403 Forbidden" to GitHub's servers. Then the same comments
+# are requested from these other addresses, in order (space separated).
+API_FALLBACKS = os.environ.get("API_FALLBACKS", " ".join([
+    "https://www.editorialivrea.com/ESP/preguntas/wp-json/wp/v2/comments",
+    "https://www.editorialivrea.com/ESP/preguntas/?rest_route=/wp/v2/comments",
+])).split()
+# Last resort: the WordPress comments RSS feed (identical text, but only the newest 10 comments).
+COMMENTS_FEED = os.environ.get("COMMENTS_FEED", "https://www.editorialivrea.com/ESP/preguntas/comments/feed/")
 API_COMMENTS = min(int(os.environ.get("API_COMMENTS", "100")), 100)  # WordPress maximum is 100
 STATE_VERSION = 7
 FEED_LIMIT = int(os.environ.get("FEED_LIMIT", "200"))
 # On the very first run, put the latest N entries in the feed so it is not empty.
 BASELINE_ITEMS = int(os.environ.get("BASELINE_ITEMS", "10"))
 TIMEOUT = int(os.environ.get("HTTP_TIMEOUT", "30"))
+# If no source can be read, the run is skipped with a warning and the feed stays as it is. Only
+# after this many hours without a successful read does the run fail (GitHub then e-mails you).
+MAX_BLOCKED_HOURS = float(os.environ.get("MAX_BLOCKED_HOURS", "48"))
+SUCCESS_EVERY_HOURS = 24  # how often the time of the last successful read is saved in state.json
 USER_AGENT = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
               "Chrome/130.0 Safari/537.36 IvreaRSS/7.0")
 ANSWER_RE = re.compile(r"\(\(\((.*?)\)\)\)", re.S)
@@ -54,9 +67,34 @@ def load_snapshot(path):
     return raw.decode("utf-8-sig")
 
 
+class SourceError(RuntimeError):
+    """One source could not be read (blocked by the site firewall, down, or an odd answer)."""
+
+
+class SourcesUnavailable(RuntimeError):
+    """No source could be read; nothing was changed."""
+
+
+def with_params(url, **params):
+    return url + ("&" if "?" in url else "?") + urlencode(params)
+
+
 def no_cache(url):
     """Add a unique query parameter so page caches/CDNs cannot return an old copy."""
-    return url + ("&" if "?" in url else "?") + f"nocache={int(time.time() * 1000)}"
+    return with_params(url, nocache=int(time.time() * 1000))
+
+
+def _describe(exc):
+    """Who sent an HTTP error (server headers and start of the page), to recognise blocks in the log."""
+    parts = [f"{k}: {v}" for k, v in (exc.headers or {}).items()
+             if k.lower() in ("server", "via") or k.lower().startswith(("x-amz", "x-cache", "cf-"))]
+    try:
+        body = " ".join(exc.read(300).decode("utf-8", "replace").split())
+    except (OSError, ValueError, AttributeError):
+        body = ""
+    if body:
+        parts.append(f"body: {body[:200]}")
+    return f" [{'; '.join(parts)}]" if parts else ""
 
 
 def fetch_http(url, retries=3, accept="text/html,application/xhtml+xml"):
@@ -74,11 +112,17 @@ def fetch_http(url, retries=3, accept="text/html,application/xhtml+xml"):
                 charset = resp.headers.get_content_charset() or "utf-8"
                 final = urlunparse(urlparse(resp.geturl())._replace(query="", fragment=""))
                 return resp.read().decode(charset, errors="replace"), final
+        except urllib.error.HTTPError as exc:
+            last = exc
+            print(f"HTTP attempt {attempt}/{retries} failed for {url}: {exc}{_describe(exc)}")
+            if exc.code < 500:  # e.g. 403 Forbidden: the same address gives the same answer again
+                break
         except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
             last = exc
             print(f"HTTP attempt {attempt}/{retries} failed for {url}: {exc}")
+        if attempt < retries:
             time.sleep(5 * attempt)
-    raise RuntimeError(f"Could not fetch {url}: {last}")
+    raise SourceError(str(last))
 
 
 # ------------------------------------------------------------------------- parsing
@@ -190,22 +234,70 @@ def api_to_html(items):
     return "".join(parts)
 
 
-def crawl():
-    url = f"{API}?per_page={API_COMMENTS}&orderby=date&order=desc"
-    text, _ = fetch_http(url, accept="application/json")
+def _api_items(url):
+    """Newest comments from one address of the WordPress REST API."""
+    text, _ = fetch_http(with_params(url, per_page=API_COMMENTS, orderby="date", order="desc"),
+                         accept="application/json")
     try:
-        items = json.loads(text)
+        return json.loads(text)
     except json.JSONDecodeError:
-        raise RuntimeError(f"The API did not return JSON (blocked?): {text[:200]!r}. "
-                           "No state or feed was overwritten.")
-    if not isinstance(items, list) or not items:
-        raise RuntimeError(f"The API returned no comments: {text[:200]!r}. "
-                           "No state or feed was overwritten.")
-    records = extract(api_to_html(items), SOURCE)[0]
-    if not records:
-        raise RuntimeError("API comments could not be parsed. No state or feed was overwritten.")
-    print(f"REST API: {len(records)} comments (ids {min(map(int, records))}-{max(map(int, records))})")
-    return records
+        raise SourceError(f"did not return JSON (blocked?): {text[:200]!r}") from None
+
+
+def _feed_items(url):
+    """Newest comments from the WordPress comments RSS feed, in the REST API format.
+
+    content:encoded in the feed is the same HTML as content.rendered in the API, so the hashes
+    match and switching between both sources reports nothing as new or edited.
+    """
+    text, _ = fetch_http(url, accept="application/rss+xml,application/xml;q=0.9,*/*;q=0.8")
+    try:
+        root = ET.fromstring(text)
+    except ET.ParseError:
+        raise SourceError(f"did not return RSS (blocked?): {text[:200]!r}") from None
+    items = []
+    for item in root.iterfind("./channel/item"):
+        link = (item.findtext("link") or "").strip()
+        match = re.search(r"#comment-(\d+)$", link)
+        content = item.findtext("{http://purl.org/rss/1.0/modules/content/}encoded")
+        if not match or content is None:
+            continue
+        try:
+            date = parsedate_to_datetime(item.findtext("pubDate")).astimezone(timezone.utc)
+            date = date.strftime("%Y-%m-%dT%H:%M:%S")
+        except (TypeError, ValueError):
+            date = None
+        items.append({"id": int(match.group(1)), "link": link, "date_gmt": date,
+                      "author_name": item.findtext("{http://purl.org/dc/elements/1.1/}creator") or "",
+                      "content": {"rendered": content}})
+    return items
+
+
+def crawl():
+    """Newest comments from the first source that can be read."""
+    sources = [("REST API", _api_items, url) for url in dict.fromkeys([API, *API_FALLBACKS])]
+    sources.append(("Comments feed", _feed_items, COMMENTS_FEED))
+    errors = []
+    for name, read, url in sources:
+        try:
+            items = read(url)
+            if not isinstance(items, list) or not items:
+                raise SourceError(f"returned no comments: {str(items)[:200]!r}")
+            try:
+                page = api_to_html(items)
+            except (AttributeError, KeyError, TypeError, ValueError) as exc:
+                raise SourceError(f"returned unexpected data: {exc!r}") from None
+            records = extract(page, SOURCE)[0]
+            if not records:
+                raise SourceError("returned comments that could not be parsed")
+        except SourceError as exc:
+            errors.append(f"{name} {url}: {exc}")
+            print(f"Failed: {errors[-1]}")
+            continue
+        print(f"{name}: {len(records)} comments (ids {min(map(int, records))}-{max(map(int, records))})")
+        return records
+    raise SourcesUnavailable("Could not read the comments from any source:\n  " + "\n  ".join(errors)
+                             + "\nNo state or feed was overwritten.")
 
 
 def newest(records):
@@ -220,6 +312,29 @@ def _event(record, cid, kind, now, date=None):
             "url": record["url"], "detected": now, "date": date or now,
             "author": record.get("author", ""), "published": record.get("published"),
             "segments": record.get("segments", [])}
+
+
+def _when(value):
+    """ISO date text -> datetime with time zone (None if missing or invalid)."""
+    try:
+        date = datetime.fromisoformat(value)
+    except (TypeError, ValueError):
+        return None
+    return date if date.tzinfo else date.replace(tzinfo=timezone.utc)
+
+
+def hours_since_success(state, now):
+    """Hours since the comments were last read (detected entries count too); None if unknown."""
+    dates = [_when(state.get("last_success"))] + [_when(e.get("detected")) for e in state.get("events", [])]
+    dates = [d for d in dates if d]
+    return (_when(now) - max(dates)).total_seconds() / 3600 if dates else None
+
+
+def note_success(state, now):
+    """Save when the comments were read, at most once a day so state.json is not committed hourly."""
+    last = _when(state.get("last_success"))
+    if last is None or _when(now) - last >= timedelta(hours=SUCCESS_EVERY_HOURS):
+        state["last_success"] = now
 
 
 def update(state, records, now):
@@ -353,8 +468,21 @@ def main():
         return
     state_path = Path("state.json")
     state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {}
-    records = crawl()  # fetch everything before modifying any files
     now = datetime.now(timezone.utc).isoformat()
+    try:
+        records = crawl()  # fetch everything before modifying any files
+    except SourcesUnavailable as exc:
+        hours = hours_since_success(state, now)
+        if hours is None or hours >= MAX_BLOCKED_HOURS:
+            when = "never" if hours is None else f"{hours:.0f} hours ago"
+            raise RuntimeError(f"{exc}\nLast successful read: {when}. Runs fail after "
+                               f"{MAX_BLOCKED_HOURS:g} hours without one.") from None
+        print(exc)
+        print(f"::warning title=Ivrea could not be read::Every source failed (blocked or down), so the "
+              f"feed and state were left as they are. Last successful read {hours:.0f} hours ago; runs "
+              f"fail after {MAX_BLOCKED_HOURS:g} hours without one.")
+        return
+    note_success(state, now)
     count, initial = update(state, records, now)
     write_feed(state, Path("public"))
     state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -363,4 +491,5 @@ def main():
 
 
 if __name__ == "__main__":
+    sys.stdout.reconfigure(line_buffering=True)  # keep messages and errors in order in the log
     main()
