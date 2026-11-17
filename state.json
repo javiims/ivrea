@@ -664,6 +664,11 @@
       "hash": "f3d85a4ea497077760a568d456c78b56075368ebe75f80242bc5e5e92fba4707",
       "question_hash": "27e2fe531ac135e0bfa37b244bd3adfbf18d6d61bfccdd166fd6cd9c3ffd5b63",
       "answer_hash": "5a69ae2be78167a21113489fc9841738256ebc782ed8169dc3c84dd16f3cb68b"
+    },
+    "567": {
+      "hash": "a68cff9e66ccda8d3c81b14a40b670478c9d6eca6c97dd6705618392a38baeff",
+      "question_hash": "6100195941d16e3556e2b8b23dbb88df3d06ee41920eb651d809ed5cfb16bcd0",
+      "answer_hash": "a4ffb50f4e28db19319ea986bedc17f0fa1c8f65269f2ce8aac3d15856a112d4"
     }
   },
   "events": [
@@ -1624,6 +1629,26 @@
         [
           "a",
           "Disculpa si te lo has sentido de esa manera; desde luego, no era mi intención. Simplemente te preguntaba de dónde venía esa inquietud, porque, por lo que parecía, la única forma de tenerla es que nunca hubieras comprado un libro nuestro y, por tanto, no habías tenido ocasión de comprobarlo directamente. Me sorprendió que, como único planteamiento en tu mensaje, afirmaras que no incluimos los nombres de los traductores y preguntaras por qué. Mi respuesta iba un poco en esa misma línea: entender qué te llevaba a plantear esa cuestión que siquiera era real. Me alegra que hayamos podido aclararlo y que tú mismo hayas comprobado que, en realidad, no es así. En cualquier caso, te reitero mis disculpas si mi respuesta te ha parecido prepotente o te ha hecho sentir incómodo. No era en absoluto mi intención y lamento que se haya podido interpretar así. Un abrazo. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:567:a68cff9e66ccda8d3c81b14a40b670478c9d6eca6c97dd6705618392a38baeff:2026-11-17T04:30:04.384876+00:00",
+      "id": "567",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-567",
+      "detected": "2026-11-17T04:30:04.384876+00:00",
+      "date": "2026-11-17T04:30:04.384876+00:00",
+      "author": "Javier",
+      "published": "2026-11-16T23:19:21+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola, equipo de Ivrea.\nMuchos lectores estábamos muy pendientes de vuestra presentación en el próximo Manga Barcelona.\n¿Podéis confirmar si finalmente habéis retirado o cancelado esa charla de anuncios de licencias? Y si es así, ¿podéis explicar un poco el motivo?\nHabía bastante gente ilusionada con ir expresamente a esa presentación, así que cualquier información que podáis dar sería muy bienvenida.\n¡Gracias de antemano y un saludo!"
+        ],
+        [
+          "a",
+          "Jajaja, ¿cómo te has dado cuenta tan rápido? Pues mira, la historia es que, después de llevar 25 años participando en la feria montando stand y siendo una de las editoriales de referencia del sector, los organizadores nos han encasquetado el peor horario posible: el último día y prácticamente cuando la feria está a punto de cerrar. No ha habido forma de hacerles cambiar de opinión. Lo más llamativo es que todas las pequeñas editoriales que han ido apareciendo en los últimos años tienen mejores días y horarios que nosotros. No sé qué motivos tendrán para habernos colocado ahí y no aceptar cambiarnos. Pero, desde luego, no es algo que veamos justo o lógico. No tenemos por qué hacer una presentación en la feria en semejantes condiciones y jugarnos los anuncios más importantes a una hora en la que apenas va a quedar público. Así que hemos decidido hacer las cosas por nuestra cuenta y organizar un directo en nuestro canal de YouTube (https://www.youtube.com/c/IvreaEspaña) el domingo a las 18:00 h. Allí anunciaremos todo lo que teníamos preparado para la presentación en Manga Barcelona. Habrá un montón de novedades de manga y webtoon que lleváis tiempo esperando y unas cuantas sorpresas bastante interesantes. ¡Creo que va a merecer mucho la pena! -DANIEL"
         ]
       ]
     }
