@@ -669,6 +669,16 @@
       "hash": "a68cff9e66ccda8d3c81b14a40b670478c9d6eca6c97dd6705618392a38baeff",
       "question_hash": "6100195941d16e3556e2b8b23dbb88df3d06ee41920eb651d809ed5cfb16bcd0",
       "answer_hash": "a4ffb50f4e28db19319ea986bedc17f0fa1c8f65269f2ce8aac3d15856a112d4"
+    },
+    "568": {
+      "hash": "d850ce9e3f09faef7d171f0e5552b9a42ca8d2288c2ad630ecbfbd4bafeda5b0",
+      "question_hash": "f834cdb2069d9594539689e38b6308f64ef9a9e6c8d1818268e096d8cb4d62df",
+      "answer_hash": "7241569557302d79ec61720af1fee1335b18920df941caf4911d03253e347ee1"
+    },
+    "569": {
+      "hash": "d6d7a097376eaff7eca29b497b7f23a0dbb64f4f9bbe552f76a0c41083d1c427",
+      "question_hash": "5a72419480fd3240ef609fa2bda21795b5031dd936e725bf1038260b490dfae8",
+      "answer_hash": "f17a26521699c1bb88a941293fb5a6c4bc58d417b19f6393b545f6eeaa11fcef"
     }
   },
   "events": [
@@ -1651,9 +1661,49 @@
           "Jajaja, ¿cómo te has dado cuenta tan rápido? Pues mira, la historia es que, después de llevar 25 años participando en la feria montando stand y siendo una de las editoriales de referencia del sector, los organizadores nos han encasquetado el peor horario posible: el último día y prácticamente cuando la feria está a punto de cerrar. No ha habido forma de hacerles cambiar de opinión. Lo más llamativo es que todas las pequeñas editoriales que han ido apareciendo en los últimos años tienen mejores días y horarios que nosotros. No sé qué motivos tendrán para habernos colocado ahí y no aceptar cambiarnos. Pero, desde luego, no es algo que veamos justo o lógico. No tenemos por qué hacer una presentación en la feria en semejantes condiciones y jugarnos los anuncios más importantes a una hora en la que apenas va a quedar público. Así que hemos decidido hacer las cosas por nuestra cuenta y organizar un directo en nuestro canal de YouTube (https://www.youtube.com/c/IvreaEspaña) el domingo a las 18:00 h. Allí anunciaremos todo lo que teníamos preparado para la presentación en Manga Barcelona. Habrá un montón de novedades de manga y webtoon que lleváis tiempo esperando y unas cuantas sorpresas bastante interesantes. ¡Creo que va a merecer mucho la pena! -DANIEL"
         ]
       ]
+    },
+    {
+      "guid": "ivrea:568:d850ce9e3f09faef7d171f0e5552b9a42ca8d2288c2ad630ecbfbd4bafeda5b0:2026-11-18T04:23:55.688431+00:00",
+      "id": "568",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-568",
+      "detected": "2026-11-18T04:23:55.688431+00:00",
+      "date": "2026-11-18T04:23:55.688431+00:00",
+      "author": "Miguel Pedrós Abellán",
+      "published": "2026-11-17T02:55:10+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola, tengo un ejemplar del manga Versus tomo 2 que presenta un defecto de encuadernación: aproximadamente diez páginas aparecen duplicadas.\n\nLo compré en el momento de su lanzamiento, pero lamentablemente no conservo el ticket de compra.\n\nMe gustaría saber si existe alguna posibilidad de conseguir un ejemplar correcto mediante una sustitución o reposición.\n\nPuedo enviar fotografías del defecto y los datos de edición del tomo si lo necesitáis.\n\nMuchas gracias por vuestra atención."
+        ],
+        [
+          "a",
+          "Escribe al servicio de atención al cliente de nuestra tienda online y te lo cambiarán. Ya les he explicado el caso y están al tanto. Puedes contactar con ellos a través del mail ventas(arroba)lacomiqueria.com o al whatsapp 631 39 62 27. Como alternativa, si lo compraste en una librería especializada a la que suelas ir, lo más probable es que también te lo cambien, aunque no conserves el ticket y haya pasado bastante tiempo. ¡Un saludo! -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:569:d6d7a097376eaff7eca29b497b7f23a0dbb64f4f9bbe552f76a0c41083d1c427:2026-11-18T04:23:55.688431+00:00",
+      "id": "569",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-569",
+      "detected": "2026-11-18T04:23:55.688431+00:00",
+      "date": "2026-11-18T04:23:55.688431+00:00",
+      "author": "Javier",
+      "published": "2026-11-17T07:55:19+00:00",
+      "segments": [
+        [
+          "q",
+          "Que lástima, es totalmente comprensible de vuestra parte. Por lo que me han comentado de las editoriales, podíais escoger el día de preferencia, pero no la hora.\n¿Sería posible seguirlo con vosotros desde el stand, aunque sea a través de una pantalla? Jajaja"
+        ],
+        [
+          "a",
+          "No, no nos dieron la opción de cambiarlo a otro día. Si hubiera sido en el mismo horario, pero en un día más lógico, como el sábado o el domingo, lo habríamos aceptado, como hemos hecho otras veces. Pero conocemos perfectamente cómo está todo a última hora del martes, el último día de feria: la gente y los medios ya se han marchado, los fans apenas prestan atención a las publicaciones en redes sociales relacionadas con la feria, el recinto suele estar bastante vacío y, fuera de allí, todo el mundo ya ha pasado página y tiene la cabeza puesta en empezar la semana de trabajo. -DANIEL"
+        ]
+      ]
     }
   ],
   "initialised": true,
   "version": 7,
-  "last_success": "2026-11-16T12:03:12.568746+00:00"
+  "last_success": "2026-11-18T04:23:55.688431+00:00"
 }
