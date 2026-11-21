@@ -679,6 +679,51 @@
       "hash": "d6d7a097376eaff7eca29b497b7f23a0dbb64f4f9bbe552f76a0c41083d1c427",
       "question_hash": "5a72419480fd3240ef609fa2bda21795b5031dd936e725bf1038260b490dfae8",
       "answer_hash": "f17a26521699c1bb88a941293fb5a6c4bc58d417b19f6393b545f6eeaa11fcef"
+    },
+    "570": {
+      "hash": "4bd31ab1a6f03a0609ce1ea0967707015c3295303b4bb1cb34ac477c4ff128aa",
+      "question_hash": "a405f179522e7fb6a06f547c909d4dff124908fe7ec8f9ae1817e764cc6772b0",
+      "answer_hash": "c5610f46b2e3d9a484710967647c757ac590762c5328b852f8564fcebd5ac9a8"
+    },
+    "571": {
+      "hash": "1514fcf9503aa9bfe0bf029b31b0e0507fda0bdc729ee12dc636934ad656d8d3",
+      "question_hash": "a42ab7155c99591eebb2f9ee483fa48e81420a156a98da46c77bac3c8b79618e",
+      "answer_hash": "ff8d72eae06d8f52d86c5c3bcfe63b9282e6a42e3573913f82966da9ee4bb7d3"
+    },
+    "572": {
+      "hash": "b00f46fcba85ef155d3958ecefe08822449da03393a583f47b1ebce82415d4bb",
+      "question_hash": "a3c8e1461966ac39103686d2b5c6b8fa18dbbc1b721f8dae38ba705e9d631396",
+      "answer_hash": "68b5c0c473f367b1f029afbf29c949b5fa364326d1cc13aec75a0dc02fb186ba"
+    },
+    "573": {
+      "hash": "07c675896a049eca705e2632b87e42b847efcb6b4355423961ff1f0f9744f553",
+      "question_hash": "4f10761d69e32ee853cf31d8670f671c693274d2ed0277916f4f3ce67be71224",
+      "answer_hash": "32a8717e7ea97b1a3b2d25fe386be2eb7ef3f2d5a928efa0ec06cedd2061125e"
+    },
+    "574": {
+      "hash": "e4150dbf29540eb7f895f44d7dae269ee914b7411d8d02a5cb3631b4cccc3ae8",
+      "question_hash": "179a1d463e9f5ccd01a7301862128fcc1f34269ab6e7469341563c8dd8af114e",
+      "answer_hash": "7e915599f2df899cceb44fdafc6220e7e5a5c9f1c2921bd8ce9d498efe81b31a"
+    },
+    "575": {
+      "hash": "23f055307e552e9b19cde25f2a9d36625f7a75368109a8f73ef7026b0513ce7c",
+      "question_hash": "14235d614f95241ca9d530a35135e4d800f8697972cd72c198f612b39c2e1969",
+      "answer_hash": "e02bc8c613a72505cbdde1526d10b56a67710ac32aec56ee7c2007c715339b6e"
+    },
+    "577": {
+      "hash": "3a1040f5c3cf0303bde6958ea5da2625d2eafe358b226e188a4ca1d1c04d4556",
+      "question_hash": "db319fa9dbd1170cc14ad549b4f845725e80286adfab5e80ea496a7905955081",
+      "answer_hash": "5ace2c8ca87102b1eee8f896f37e88cea21d9e00e4f47348c9925bbf89a37ede"
+    },
+    "578": {
+      "hash": "fec763447d0d605c4179cfed335b69613417e986dd56989d655ff94ab62fe3d0",
+      "question_hash": "82170879ab11f3d0d3f40c3fedd2fa6111c92d0e2e045fea0647607831321519",
+      "answer_hash": "97616f2547866e43d63f6f3404ce981c7c13c884f76837081f445b94d91158ce"
+    },
+    "580": {
+      "hash": "65c3621ce8bf013abbbd847ac65f4a5d326c7facb9a32c284206b6edb051ecc2",
+      "question_hash": "4a8f8f1e580865f69145b39e66a0b1b43acc904aaded4e39bbc291fe97e4ee4a",
+      "answer_hash": "61c0e7cbca865b66ddfa5214842324e3bad2e622677d456ae9f22ce80238510a"
     }
   },
   "events": [
@@ -1699,6 +1744,186 @@
         [
           "a",
           "No, no nos dieron la opción de cambiarlo a otro día. Si hubiera sido en el mismo horario, pero en un día más lógico, como el sábado o el domingo, lo habríamos aceptado, como hemos hecho otras veces. Pero conocemos perfectamente cómo está todo a última hora del martes, el último día de feria: la gente y los medios ya se han marchado, los fans apenas prestan atención a las publicaciones en redes sociales relacionadas con la feria, el recinto suele estar bastante vacío y, fuera de allí, todo el mundo ya ha pasado página y tiene la cabeza puesta en empezar la semana de trabajo. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:570:4bd31ab1a6f03a0609ce1ea0967707015c3295303b4bb1cb34ac477c4ff128aa:2026-11-21T17:58:57.378273+00:00",
+      "id": "570",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-570",
+      "detected": "2026-11-21T17:58:57.378273+00:00",
+      "date": "2026-11-21T17:58:57.378273+00:00",
+      "author": "Mizuni",
+      "published": "2026-11-21T11:00:01+00:00",
+      "segments": [
+        [
+          "q",
+          "Sobre lo de la presentación del Salón del Manga, no me extraña que hayáis dicho que nones a los ‘organizadores’. Os dan un horario penoso (igual que a otras editoriales que les han puesto a las 11 aun teniendo hasta obras en las nominaciones de los premios) y pretenden que traguéis. Eso sin contar que vuestros buenos cuartos os estaréis gastando en alquilar el espacio para la isla donde estará el stand.\nYa me pasaré el domingo por el stand a las 18:00 por si se os puede comentar algo."
+        ],
+        [
+          "a",
+          "Muchas gracias por escribir y comprender la decisión. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:571:1514fcf9503aa9bfe0bf029b31b0e0507fda0bdc729ee12dc636934ad656d8d3:2026-11-21T17:58:57.378273+00:00",
+      "id": "571",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-571",
+      "detected": "2026-11-21T17:58:57.378273+00:00",
+      "date": "2026-11-21T17:58:57.378273+00:00",
+      "author": "Robert",
+      "published": "2026-11-17T20:35:39+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola, sé que no podéis decir si sí o si no, pero ya que tenéis dos de las obras de la saga, me gustaría animaros a publicar en España Gunnm: Panzer Kunst Chronicle.\n\nSaludos!"
+        ],
+        [
+          "a",
+          "Te agradecemos la sugerencia. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:572:b00f46fcba85ef155d3958ecefe08822449da03393a583f47b1ebce82415d4bb:2026-11-21T17:58:57.378273+00:00",
+      "id": "572",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-572",
+      "detected": "2026-11-21T17:58:57.378273+00:00",
+      "date": "2026-11-21T17:58:57.378273+00:00",
+      "author": "ELIA CORTES",
+      "published": "2026-11-17T22:14:48+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola, me gustaría que trajeran la versión kanzenban del manga Crows.\nTop de pandilleros y que estaría genial con vosotros."
+        ],
+        [
+          "a",
+          "Gracias por la sugerencia. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:573:07c675896a049eca705e2632b87e42b847efcb6b4355423961ff1f0f9744f553:2026-11-21T17:58:57.378273+00:00",
+      "id": "573",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-573",
+      "detected": "2026-11-21T17:58:57.378273+00:00",
+      "date": "2026-11-21T17:58:57.378273+00:00",
+      "author": "Tsuki",
+      "published": "2026-11-17T23:58:01+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola,\n\nLo primero de todo, quería agradeceros por vuestro trabajo~. He comprado los primeros tomos de Kaichou wa maid sama, pero hay varios que ya no se encuentran por ningún sitio y me preguntaba si teníais pensado hacer reimpresión en un futuro de los tomos que están agotados.\n\n¡Gracias!"
+        ],
+        [
+          "a",
+          "Actualmente, la serie se encuentra descatalogada, por eso es que sus tomos ya no se encuentran disponible ni es posible realizar reimpresiones. Lo sentimos. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:574:e4150dbf29540eb7f895f44d7dae269ee914b7411d8d02a5cb3631b4cccc3ae8:2026-11-21T17:58:57.378273+00:00",
+      "id": "574",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-574",
+      "detected": "2026-11-21T17:58:57.378273+00:00",
+      "date": "2026-11-21T17:58:57.378273+00:00",
+      "author": "Victoria",
+      "published": "2026-11-18T12:47:55+00:00",
+      "segments": [
+        [
+          "q",
+          "¡Hola! ¿Vais a tener alguna promo o regalo con compras en el salón del manga? ¿Algo relacionado con Iruma-kun o la Boticaria? Gracias"
+        ],
+        [
+          "a",
+          "Se regalará material promocional de todo tipo. Daremos detalles unos días antes de la feria. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:575:23f055307e552e9b19cde25f2a9d36625f7a75368109a8f73ef7026b0513ce7c:2026-11-21T17:58:57.378273+00:00",
+      "id": "575",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-575",
+      "detected": "2026-11-21T17:58:57.378273+00:00",
+      "date": "2026-11-21T17:58:57.378273+00:00",
+      "author": "Adrian",
+      "published": "2026-11-17T09:43:25+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola Ivrea! Mi pregunta es sobre la situación concreta de la serie Trinity seven.\nEn una respuesta anterior habéis puesto que por las bajas ventas la idea es esperar a que finalice en Japón para sacar nuevos tomos. ¿Esa decisión está confirmada y significa que ya no veremos tomos nuevos de la serie en 2027? Esque recuerdo que hace unos meses estaban listados los tomos 25 y 26 para salir, pero luego desaparecieron de próximos lanzamientos y no se supo nada más.\n\nUn saludo y gracias de antemano!"
+        ],
+        [
+          "a",
+          "Ninguna decisión es nunca final e irreversible, son situaciones que el equipo de derechos valora trimestralmente. Perfectamente podría haber un cambio de estrategia de aquí a unos meses. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:577:3a1040f5c3cf0303bde6958ea5da2625d2eafe358b226e188a4ca1d1c04d4556:2026-11-21T17:58:57.378273+00:00",
+      "id": "577",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-577",
+      "detected": "2026-11-21T17:58:57.378273+00:00",
+      "date": "2026-11-21T17:58:57.378273+00:00",
+      "author": "Cris BN",
+      "published": "2026-11-20T12:54:50+00:00",
+      "segments": [
+        [
+          "q",
+          "Buenas tardes.\nQuerría saber si habría posibilidad de que editasen a futuro una edición de tapa dura coleccionista de Gunn: Alita battle Angel.\nEn EEUU ha editado una propuesta así y es impresionante.\nUn saludo y muchas gracias por anticipado."
+        ],
+        [
+          "a",
+          "Tal edición no existe en Japón, pero imposible no es imposible. Gracias por sugerir. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:578:fec763447d0d605c4179cfed335b69613417e986dd56989d655ff94ab62fe3d0:2026-11-21T17:58:57.378273+00:00",
+      "id": "578",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-578",
+      "detected": "2026-11-21T17:58:57.378273+00:00",
+      "date": "2026-11-21T17:58:57.378273+00:00",
+      "author": "Jorge",
+      "published": "2026-11-20T16:00:05+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola buenas ivrea, os escribo para agradecer muchísimo la salida de la novela ligera de classroom of the elite, después de una gran espera, y pasarme unas cuantas veces a preguntar por aqui cosas sobre esta novela por fin me ha llegado hoy y ya la he estado ojeando y esta muy guay está edición, se nota mucho el trabajo que a habido detrás, he podido leer los 2 primeros episodios y me está gustando mucho, muchas gracias por todo el trabajo espero que le vaya muy bien y podamos tener las del segundo año también, habéis hecho un gran trabajo y espero el segundo tomo con muchas ganas. Un saludo 😄😄"
+        ],
+        [
+          "a",
+          "Me alegra mucho que te haya gustado nuestra edición de las novelas de Classroom of the Elite. Si puedes, te agradeceríamos mucho que la recomendaras a tus amigos y conocidos, ya que es la mejor forma de contribuir a que podamos publicar cuanto antes todas sus secuelas. En cualquier caso, la intención está ahí y me consta que en el departamento editorial hay mucha determinación por apostar fuerte por esta serie y llegar hasta el final. Gracias por escribir, saludos! -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:580:65c3621ce8bf013abbbd847ac65f4a5d326c7facb9a32c284206b6edb051ecc2:2026-11-21T17:58:57.378273+00:00",
+      "id": "580",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-580",
+      "detected": "2026-11-21T17:58:57.378273+00:00",
+      "date": "2026-11-21T17:58:57.378273+00:00",
+      "author": "Marcos",
+      "published": "2026-11-17T11:47:44+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola quería saber el estado de Trinity Seven, en mayo había Dos tomos programados , pero pasaron averano y luego nada. La serie se que no venderá mucho pero la van a seguir? Por los que la tenemos abierta . Un saludo"
+        ],
+        [
+          "a",
+          "Repito lo dicho unos mensajes atrás: Sus nulas ventas y la lentitud con la que avanza en Japón no ayudan precisamente. Lleva ya 16 años publicándose allí y hace más de 10 años que terminó el anime y dejó de interesarle a la inmensa mayoría de los lectores. El hecho de que la serie todavía no tenga un final a la vista complica aún más la situación. Habrá nuevos tomos cuando haya finalizado en Japón y así pueda tener un poco de esperanza de recuperar a al menos una parte de los lectores que ha perdido por extenderse tanto a ritmo tan lento. En cualquier caso no te preocupes que completarse se completará. -DANIEL"
         ]
       ]
     }
