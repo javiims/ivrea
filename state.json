@@ -696,9 +696,9 @@
       "answer_hash": "68b5c0c473f367b1f029afbf29c949b5fa364326d1cc13aec75a0dc02fb186ba"
     },
     "573": {
-      "hash": "07c675896a049eca705e2632b87e42b847efcb6b4355423961ff1f0f9744f553",
+      "hash": "01a648482d05ffdb362470ef46550261a93ccad90c11eef13150020b692e6ca5",
       "question_hash": "4f10761d69e32ee853cf31d8670f671c693274d2ed0277916f4f3ce67be71224",
-      "answer_hash": "32a8717e7ea97b1a3b2d25fe386be2eb7ef3f2d5a928efa0ec06cedd2061125e"
+      "answer_hash": "dbdcd9eee8b8ad72fa86e9442140015db0c3552845493b51b8b069c7bbc87db7"
     },
     "574": {
       "hash": "e4150dbf29540eb7f895f44d7dae269ee914b7411d8d02a5cb3631b4cccc3ae8",
@@ -724,6 +724,11 @@
       "hash": "65c3621ce8bf013abbbd847ac65f4a5d326c7facb9a32c284206b6edb051ecc2",
       "question_hash": "4a8f8f1e580865f69145b39e66a0b1b43acc904aaded4e39bbc291fe97e4ee4a",
       "answer_hash": "61c0e7cbca865b66ddfa5214842324e3bad2e622677d456ae9f22ce80238510a"
+    },
+    "581": {
+      "hash": "df8d0c680f7051d77088d23c2cc9e5c72ceb0ca050a0980344a7a1dcc8a9fa94",
+      "question_hash": "df12e363940a3b12fbb226f12a312bae7cbc7813688e155ecb6d53023742c9a9",
+      "answer_hash": "c286926a89abeabe1d9e89d0b12e3437f69942f04d0c50178649d473ef054ee0"
     }
   },
   "events": [
@@ -1924,6 +1929,46 @@
         [
           "a",
           "Repito lo dicho unos mensajes atrás: Sus nulas ventas y la lentitud con la que avanza en Japón no ayudan precisamente. Lleva ya 16 años publicándose allí y hace más de 10 años que terminó el anime y dejó de interesarle a la inmensa mayoría de los lectores. El hecho de que la serie todavía no tenga un final a la vista complica aún más la situación. Habrá nuevos tomos cuando haya finalizado en Japón y así pueda tener un poco de esperanza de recuperar a al menos una parte de los lectores que ha perdido por extenderse tanto a ritmo tan lento. En cualquier caso no te preocupes que completarse se completará. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:573:01a648482d05ffdb362470ef46550261a93ccad90c11eef13150020b692e6ca5:2026-11-22T15:20:04.619153+00:00",
+      "id": "573",
+      "kind": "updated",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-573",
+      "detected": "2026-11-22T15:20:04.619153+00:00",
+      "date": "2026-11-22T15:20:04.619153+00:00",
+      "author": "Tsuki",
+      "published": "2026-11-17T23:58:01+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola,\n\nLo primero de todo, quería agradeceros por vuestro trabajo~. He comprado los primeros tomos de Kaichou wa maid sama, pero hay varios que ya no se encuentran por ningún sitio y me preguntaba si teníais pensado hacer reimpresión en un futuro de los tomos que están agotados.\n\n¡Gracias!"
+        ],
+        [
+          "a",
+          "Actualmente, la serie se encuentra descatalogada, por eso es que sus tomos ya no se encuentran disponibles ni es posible realizar reimpresiones. Lo sentimos. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:581:df8d0c680f7051d77088d23c2cc9e5c72ceb0ca050a0980344a7a1dcc8a9fa94:2026-11-22T15:20:04.619153+00:00",
+      "id": "581",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-581",
+      "detected": "2026-11-22T15:20:04.619153+00:00",
+      "date": "2026-11-22T15:20:04.619153+00:00",
+      "author": "Jon",
+      "published": "2026-11-21T14:17:41+00:00",
+      "segments": [
+        [
+          "q",
+          "Hola buenas ivrea, os escribo para tener información del volumen 7 de citrus+ en Japón salió en conjunto con un libreto con un capítulo especial llamado\nExchanging Glances\nLa edicion vuestra lo va a tener\nSaludos"
+        ],
+        [
+          "a",
+          "Ese libreto forma parte de la edición especial limitada japonesa, no de la edición estándar que estamos publicando aquí. En Japón, todos los tomos de Citrus+ cuentan con una segunda edición, notablemente más cara (en este caso, el doble de precio allá), que incluye contenidos y extras adicionales. Si quisiéramos reproducirlos aquí, el precio final se encarecería considerablemente, ya que nuestras tiradas son mucho más pequeñas que las japonesas. Además, estos extras requieren procesos de impresión específicos que retrasarían la publicación de la serie (que ya de por sí lleva un ritmo lento debido a su publicación irregular en Japón… ¡Imagina!). Nuestro tomo 7 de Citrus+, al igual que los anteriores, incluye íntegramente el contenido de la edición estándar japonesa. Por otro lado, las ventas actuales de la serie no hacen viable plantearnos la publicación de ediciones especiales limitadas. -DANIEL"
         ]
       ]
     }
