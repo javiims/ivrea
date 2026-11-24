@@ -15,9 +15,6 @@ jobs:
     runs-on: ubuntu-24.04
     # A normal run takes about 1 minute; fail fast instead of hanging for 25 minutes.
     timeout-minutes: 10
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
         with:
@@ -50,10 +47,38 @@ jobs:
             git commit -m 'Update RSS detection state'
             git push origin HEAD:${{ github.event.repository.default_branch }}
           fi
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: public
+  # Publishing runs in its own job, after the upload above has finished.
+  # GitHub sometimes does not yet list an artifact uploaded a moment earlier
+  # ("No artifacts named github-pages were found", actions/deploy-pages#451),
+  # so if that still happens, wait and try again before failing the run.
+  publish:
+    needs: update
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.publish1.outputs.page_url || steps.publish2.outputs.page_url || steps.publish3.outputs.page_url }}
+    steps:
       - name: Publish feed
-        id: deploy
-        uses: actions/deploy-pages@v4
+        id: publish1
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+      - name: Wait before retrying
+        if: steps.publish1.outcome == 'failure'
+        run: sleep 30
+      - name: Publish feed (2nd try)
+        id: publish2
+        if: steps.publish1.outcome == 'failure'
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+      - name: Wait before the last try
+        if: steps.publish1.outcome == 'failure' && steps.publish2.outcome == 'failure'
+        run: sleep 120
+      - name: Publish feed (last try)
+        id: publish3
+        if: steps.publish1.outcome == 'failure' && steps.publish2.outcome == 'failure'
+        uses: actions/deploy-pages@v5
