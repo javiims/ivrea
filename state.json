@@ -729,6 +729,11 @@
       "hash": "df8d0c680f7051d77088d23c2cc9e5c72ceb0ca050a0980344a7a1dcc8a9fa94",
       "question_hash": "df12e363940a3b12fbb226f12a312bae7cbc7813688e155ecb6d53023742c9a9",
       "answer_hash": "c286926a89abeabe1d9e89d0b12e3437f69942f04d0c50178649d473ef054ee0"
+    },
+    "582": {
+      "hash": "cdf73ecf7a76e86417e92e59239d47e92724d64058f97e682408e16627483c2e",
+      "question_hash": "6b6570f524263595dc6923edd3c68ecd3be7ae2bcdc833c4e6909fd4b3c08add",
+      "answer_hash": "9f564021567b7a991a78524220163128d810e84f668c302e7aadaeb2aa188843"
     }
   },
   "events": [
@@ -1969,6 +1974,26 @@
         [
           "a",
           "Ese libreto forma parte de la edición especial limitada japonesa, no de la edición estándar que estamos publicando aquí. En Japón, todos los tomos de Citrus+ cuentan con una segunda edición, notablemente más cara (en este caso, el doble de precio allá), que incluye contenidos y extras adicionales. Si quisiéramos reproducirlos aquí, el precio final se encarecería considerablemente, ya que nuestras tiradas son mucho más pequeñas que las japonesas. Además, estos extras requieren procesos de impresión específicos que retrasarían la publicación de la serie (que ya de por sí lleva un ritmo lento debido a su publicación irregular en Japón… ¡Imagina!). Nuestro tomo 7 de Citrus+, al igual que los anteriores, incluye íntegramente el contenido de la edición estándar japonesa. Por otro lado, las ventas actuales de la serie no hacen viable plantearnos la publicación de ediciones especiales limitadas. -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:582:cdf73ecf7a76e86417e92e59239d47e92724d64058f97e682408e16627483c2e:2026-11-24T00:53:24.337547+00:00",
+      "id": "582",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-582",
+      "detected": "2026-11-24T00:53:24.337547+00:00",
+      "date": "2026-11-24T00:53:24.337547+00:00",
+      "author": "Rubén",
+      "published": "2026-11-23T10:30:42+00:00",
+      "segments": [
+        [
+          "q",
+          "¡Buenas! Ya me he comprado el primer tomo de Classroom of the Elite y lo estoy disfrutando un montón. Ojalá tenga buenas ventas y os animéis a traer también el segundo y tercer año, que tengo muchas ganas de leerlos. ¡Por mi parte, tenéis un comprador asegurado para toda la colección! Las novelas de haruhi caerán también 🙂"
+        ],
+        [
+          "a",
+          "Nos alegra enormemente saber que has disfrutado de nuestra edición de las novelas de Classroom of the Elite. Si te apetece compartir tu opinión y recomendarla a tus amigos y conocidos, te lo agradeceríamos muchísimo, pues ese apoyo es fundamental para ayudarnos a seguir adelante con la publicación de las siguientes entregas lo antes posible. En cualquier caso, puedo asegurarte que existe una clara voluntad de continuar apostando por esta serie. Sé que desde el departamento editorial hay mucho interés y firmeza en llevar el proyecto adelante y publicar todas sus secuelas hasta completar la colección. Muchas gracias por tu mensaje y por tu interés. ¡Un saludo! -DANIEL"
         ]
       ]
     }
