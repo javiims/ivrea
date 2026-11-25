@@ -734,6 +734,16 @@
       "hash": "cdf73ecf7a76e86417e92e59239d47e92724d64058f97e682408e16627483c2e",
       "question_hash": "6b6570f524263595dc6923edd3c68ecd3be7ae2bcdc833c4e6909fd4b3c08add",
       "answer_hash": "9f564021567b7a991a78524220163128d810e84f668c302e7aadaeb2aa188843"
+    },
+    "583": {
+      "hash": "14c0f85d5a1299c008c8546912302e66faffb70d851836de518849f5a257bf47",
+      "question_hash": "f0462660dec79ba49c95c94d7cc05dcf1544aa7a38e2e5ea6bfd882d0b7f8bc5",
+      "answer_hash": "0d74aa5353d98821beb368d1cd68966029bc641ec163a6351ba02d44543c3aa7"
+    },
+    "584": {
+      "hash": "6629d4d5b24cd72075c37bae7b497da78344f04818e66af00887702359b3d6b8",
+      "question_hash": "b96631cf6bf5488682d36e5eb6bd7e3e04a970b716ac81cced21bcd1db3115c6",
+      "answer_hash": "68b5c0c473f367b1f029afbf29c949b5fa364326d1cc13aec75a0dc02fb186ba"
     }
   },
   "events": [
@@ -1994,6 +2004,46 @@
         [
           "a",
           "Nos alegra enormemente saber que has disfrutado de nuestra edición de las novelas de Classroom of the Elite. Si te apetece compartir tu opinión y recomendarla a tus amigos y conocidos, te lo agradeceríamos muchísimo, pues ese apoyo es fundamental para ayudarnos a seguir adelante con la publicación de las siguientes entregas lo antes posible. En cualquier caso, puedo asegurarte que existe una clara voluntad de continuar apostando por esta serie. Sé que desde el departamento editorial hay mucho interés y firmeza en llevar el proyecto adelante y publicar todas sus secuelas hasta completar la colección. Muchas gracias por tu mensaje y por tu interés. ¡Un saludo! -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:583:14c0f85d5a1299c008c8546912302e66faffb70d851836de518849f5a257bf47:2026-11-25T23:38:19.904896+00:00",
+      "id": "583",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-583",
+      "detected": "2026-11-25T23:38:19.904896+00:00",
+      "date": "2026-11-25T23:38:19.904896+00:00",
+      "author": "Jorge",
+      "published": "2026-11-23T16:43:03+00:00",
+      "segments": [
+        [
+          "q",
+          "Holaa, buenas tardes ivrea, el otro día vi que por problemas con el manga Barcelona los anuncios de manga los anunciariais en vuestro de canal de Youtube el domingo a las 18, el domingo estuve revisando vuestro canal y no hubo directo 😭, quería preguntar si a habido cambio de planes o si me confundí yo y sería otro domingo, muchas gracias por todo y espero con muchas ganas los anunció 😄"
+        ],
+        [
+          "a",
+          "Jajaja, no…. Pero era el domingo de la feria, no el domingo pasado. Aunque, al final, tampoco será ese día. Hemos decidido buscar una fecha que no coincida con Manga Barcelona, porque, si no, seguimos haciéndoles de comparsa a gente que no nos quiere. Finalmente, será el Miércoles 23 de diciembre a las 21:00 h. Este fin de semana publicaremos toda la información en nuestras redes sociales y en la web. Iros subscribiendo a nuestro canal youtube los que queraís verlo por favor: https://www.youtube.com/IvreaEspaña -DANIEL"
+        ]
+      ]
+    },
+    {
+      "guid": "ivrea:584:6629d4d5b24cd72075c37bae7b497da78344f04818e66af00887702359b3d6b8:2026-11-25T23:38:19.904896+00:00",
+      "id": "584",
+      "kind": "new",
+      "url": "https://www.editorialivrea.com/ESP/preguntas/comment-page-9/#comment-584",
+      "detected": "2026-11-25T23:38:19.904896+00:00",
+      "date": "2026-11-25T23:38:19.904896+00:00",
+      "author": "Ismael",
+      "published": "2026-11-24T11:39:12+00:00",
+      "segments": [
+        [
+          "q",
+          "Me encantaría que en algún momento publicaseis el manga Ahiru no Sora, me gustaría mucho tenerlo en la estantería junto a otras como Slam Dunk"
+        ],
+        [
+          "a",
+          "Gracias por la sugerencia. -DANIEL"
         ]
       ]
     }
